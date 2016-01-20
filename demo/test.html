@@ -27,5 +27,16 @@
 			alert(screen.width);
 			alert(window.devicePixelRatio);
 		</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+		var viewportmeta = document.querySelector('meta[name="viewport"]');
+		var dd = screen.width/720;
+   	 if (viewportmeta) {
+    	viewportmeta.content = 'width=device-width,  maximum-scale=1.0, initial-scale='+dd;
+   }
+});
+</script>
+		
 	</body>
 </html>
