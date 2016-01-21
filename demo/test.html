@@ -11,9 +11,10 @@
         <meta http-equiv="Pragma" content="no-cache">
 		
 		<style type="text/css">
-			#s{width:150px;}
-			#one{width:720px;height:30px;background-color:yellow}
-		</style>
+			/*#s{width:150px;}
+		#one{width:720px;height:30px;background-color:yellow}*/
+			body {width:640px}
+	</style>
 	</head>
 	<body>
 		<img src="image/test.jpg" width="100%"/>
@@ -24,20 +25,5 @@
 		<img id="s" src="image/test2.jpg" />
 		<div id="one"></div>
 		<div id="two"></div>
-		<script type="text/javascript">
-			alert(screen.width);
-			alert(window.devicePixelRatio);
-		</script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script type="text/javascript">
-$(function(){
-		var viewportmeta = document.querySelector('meta[name="viewport"]');
-		var dd = screen.width/720;
-   	 if (viewportmeta) {
-    	viewportmeta.content = 'width=device-width,  maximum-scale=1.0, initial-scale='+dd;
-   }
-});
-</script>
-		
 	</body>
 </html>
