@@ -5,44 +5,44 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     
     <url>
-        <loc>https://xiajingchuan.github.io//test/this_is_test</loc>
-        <lastmod>2016-07-08T15:03:58+08:00</lastmod>
+        <loc>http://panke.me//test/this_is_test</loc>
+        <lastmod>2016-07-08T15:09:27+08:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     <url>
-        <loc>https://xiajingchuan.github.io//translation/Install-WAMP</loc>
-        <lastmod>2016-07-08T15:03:58+08:00</lastmod>
+        <loc>http://panke.me//translation/Install-WAMP</loc>
+        <lastmod>2016-07-08T15:09:27+08:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     <url>
-        <loc>https://xiajingchuan.github.io//tutorial/IRC-quick-start</loc>
-        <lastmod>2016-07-08T15:03:58+08:00</lastmod>
+        <loc>http://panke.me//tutorial/IRC-quick-start</loc>
+        <lastmod>2016-07-08T15:09:27+08:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     <url>
-        <loc>https://xiajingchuan.github.io//translation/Formating_PHP_Strings_With_Printf_And_Sprintf</loc>
-        <lastmod>2016-07-08T15:03:58+08:00</lastmod>
+        <loc>http://panke.me//translation/Formating_PHP_Strings_With_Printf_And_Sprintf</loc>
+        <lastmod>2016-07-08T15:09:27+08:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     <url>
-        <loc>https://xiajingchuan.github.io//notes/learning-note-YII(1.1)</loc>
-        <lastmod>2016-07-08T15:03:58+08:00</lastmod>
+        <loc>http://panke.me//notes/learning-note-YII(1.1)</loc>
+        <lastmod>2016-07-08T15:09:27+08:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     <url>
-        <loc>https://xiajingchuan.github.io//translation/Understanding_the_diff_command_in_unix</loc>
-        <lastmod>2016-07-08T15:03:58+08:00</lastmod>
+        <loc>http://panke.me//translation/Understanding_the_diff_command_in_unix</loc>
+        <lastmod>2016-07-08T15:09:27+08:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     
     <url>
-        <loc>https://xiajingchuan.github.io//translation/Http_headers_and_PHP_header()_function</loc>
-        <lastmod>2016-07-08T15:03:58+08:00</lastmod>
+        <loc>http://panke.me//translation/Http_headers_and_PHP_header()_function</loc>
+        <lastmod>2016-07-08T15:09:27+08:00</lastmod>
         <changefreq>weekly</changefreq>
     </url>
     

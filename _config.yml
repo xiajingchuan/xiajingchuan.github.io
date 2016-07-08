@@ -15,7 +15,7 @@ excerpt_separator: "[-----]"
 
 # mode: dev
 mode: product
-url: https://xiajingchuan.github.io/
+url: http://panke.me/
 devurl: http://localhost:4000/
 name: panke
 title: this is panke's blog
@@ -39,7 +39,7 @@ my:
             city: Beijing
             distribute: ChaoYang
             postcode: 000000
-            cell: "AnHuiLi"
+            cell: ""
     skills:
         frontend: ["HTML | Markdown", "CSS | SASS", "JS | jQuery", "Bootstrap"]
         backend: ["PHP", "MySQL", "Redis", "Regex", "Laravel", "OSC"]

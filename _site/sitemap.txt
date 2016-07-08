@@ -1,10 +1,10 @@
-https://xiajingchuan.github.io//test/this_is_test
-https://xiajingchuan.github.io//translation/Install-WAMP
-https://xiajingchuan.github.io//tutorial/IRC-quick-start
-https://xiajingchuan.github.io//translation/Formating_PHP_Strings_With_Printf_And_Sprintf
-https://xiajingchuan.github.io//notes/learning-note-YII(1.1)
-https://xiajingchuan.github.io//translation/Understanding_the_diff_command_in_unix
-https://xiajingchuan.github.io//translation/Http_headers_and_PHP_header()_function
+http://panke.me//test/this_is_test
+http://panke.me//translation/Install-WAMP
+http://panke.me//tutorial/IRC-quick-start
+http://panke.me//translation/Formating_PHP_Strings_With_Printf_And_Sprintf
+http://panke.me//notes/learning-note-YII(1.1)
+http://panke.me//translation/Understanding_the_diff_command_in_unix
+http://panke.me//translation/Http_headers_and_PHP_header()_function
 
 
 
