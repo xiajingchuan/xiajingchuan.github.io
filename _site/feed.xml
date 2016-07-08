@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>UniFreak | Another yet unique freak is showing a freakshow</title>
-    <description>Fanghao&#39;s personal weblog, on coding or such stuff</description>
-    <link>https://unifreak.github.io//</link>
-    <atom:link href="https://unifreak.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Jul 2016 11:59:04 +0800</pubDate>
-    <lastBuildDate>Fri, 08 Jul 2016 11:59:04 +0800</lastBuildDate>
+    <title>this is panke&#39;s blog</title>
+    <description>welcome</description>
+    <link>https://xiajingchuan.github.io//</link>
+    <atom:link href="https://xiajingchuan.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 08 Jul 2016 14:58:32 +0800</pubDate>
+    <lastBuildDate>Fri, 08 Jul 2016 14:58:32 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -16,8 +16,8 @@
 &lt;p&gt;hello world&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 +0800</pubDate>
-        <link>https://unifreak.github.io//test/this_is_test</link>
-        <guid isPermaLink="true">https://unifreak.github.io//test/this_is_test</guid>
+        <link>https://xiajingchuan.github.io//test/this_is_test</link>
+        <guid isPermaLink="true">https://xiajingchuan.github.io//test/this_is_test</guid>
         
         
         <category>test</category>
@@ -147,8 +147,8 @@ httpd.exe
 
 </description>
         <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
-        <link>https://unifreak.github.io//translation/Install-WAMP</link>
-        <guid isPermaLink="true">https://unifreak.github.io//translation/Install-WAMP</guid>
+        <link>https://xiajingchuan.github.io//translation/Install-WAMP</link>
+        <guid isPermaLink="true">https://xiajingchuan.github.io//translation/Install-WAMP</guid>
         
         <category>wamp</category>
         
@@ -289,8 +289,8 @@ httpd.exe
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
-        <link>https://unifreak.github.io//tutorial/IRC-quick-start</link>
-        <guid isPermaLink="true">https://unifreak.github.io//tutorial/IRC-quick-start</guid>
+        <link>https://xiajingchuan.github.io//tutorial/IRC-quick-start</link>
+        <guid isPermaLink="true">https://xiajingchuan.github.io//tutorial/IRC-quick-start</guid>
         
         <category>irc</category>
         
@@ -531,8 +531,8 @@ echo $result;
 &lt;/宽度&gt;&lt;/填充符&gt;&lt;/宽度&gt;&lt;/填充符&gt;
 </description>
         <pubDate>Sat, 23 Jan 2016 00:00:00 +0800</pubDate>
-        <link>https://unifreak.github.io//translation/Formating_PHP_Strings_With_Printf_And_Sprintf</link>
-        <guid isPermaLink="true">https://unifreak.github.io//translation/Formating_PHP_Strings_With_Printf_And_Sprintf</guid>
+        <link>https://xiajingchuan.github.io//translation/Formating_PHP_Strings_With_Printf_And_Sprintf</link>
+        <guid isPermaLink="true">https://xiajingchuan.github.io//translation/Formating_PHP_Strings_With_Printf_And_Sprintf</guid>
         
         <category>php</category>
         
@@ -2575,8 +2575,8 @@ $auth-&amp;gt;createRole(&#39;guest&#39;, &#39;guest user&#39;, $bizRule);
 
 </description>
         <pubDate>Thu, 19 Nov 2015 00:00:00 +0800</pubDate>
-        <link>https://unifreak.github.io//notes/learning-note-YII(1.1)</link>
-        <guid isPermaLink="true">https://unifreak.github.io//notes/learning-note-YII(1.1)</guid>
+        <link>https://xiajingchuan.github.io//notes/learning-note-YII(1.1)</link>
+        <guid isPermaLink="true">https://xiajingchuan.github.io//notes/learning-note-YII(1.1)</guid>
         
         <category>php</category>
         
@@ -2788,8 +2788,8 @@ wiw_labs:$ diff second first
 
 </description>
         <pubDate>Mon, 28 Sep 2015 00:00:00 +0800</pubDate>
-        <link>https://unifreak.github.io//translation/Understanding_the_diff_command_in_unix</link>
-        <guid isPermaLink="true">https://unifreak.github.io//translation/Understanding_the_diff_command_in_unix</guid>
+        <link>https://xiajingchuan.github.io//translation/Understanding_the_diff_command_in_unix</link>
+        <guid isPermaLink="true">https://xiajingchuan.github.io//translation/Understanding_the_diff_command_in_unix</guid>
         
         <category>linux</category>
         
@@ -3314,8 +3314,8 @@ header(&#39;Pragma: no-cache&#39;); //HTTP/1.0
 
 </description>
         <pubDate>Sat, 26 Sep 2015 00:00:00 +0800</pubDate>
-        <link>https://unifreak.github.io//translation/Http_headers_and_PHP_header()_function</link>
-        <guid isPermaLink="true">https://unifreak.github.io//translation/Http_headers_and_PHP_header()_function</guid>
+        <link>https://xiajingchuan.github.io//translation/Http_headers_and_PHP_header()_function</link>
+        <guid isPermaLink="true">https://xiajingchuan.github.io//translation/Http_headers_and_PHP_header()_function</guid>
         
         <category>php</category>
         

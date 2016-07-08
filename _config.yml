@@ -15,26 +15,26 @@ excerpt_separator: "[-----]"
 
 # mode: dev
 mode: product
-url: https://unifreak.github.io/
+url: https://xiajingchuan.github.io/
 devurl: http://localhost:4000/
-name: UniFreak
-title: UniFreak | Another yet unique freak is showing a freakshow
-description: "Fanghao's personal weblog, on coding or such stuff"
+name: panke
+title: this is panke's blog
+description: "welcome"
 
 my:
-    displayName: UniFreak
-    realName: FangHao
-    realName_cn: 方浩
+    displayName: panke 
+    realName: panke
+    realName_cn: panke
     jobTitle: "PHP Coder"
     contact:
-        qq: 744910240
-        email: fanghao90s@gmail.com
-        github: http://www.github.com/UniFreak
-        qzone: http://744910240.qzone.qq.com
-        pinterest: https://www.pinterest.com/miblah/
-        tel: 15532915861
+        qq: 223321
+        email: ddd@gmail.com
+        github: http://www.github.com/xiajingchuan
+        qzone: http://ewe0.qzone.qq.com
+        pinterest: ddd/
+        tel: 11122
         address:
-            country: China
+            country: 中国 
             state: Beijing
             city: Beijing
             distribute: ChaoYang
