@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="虽然集成环境很方便, 但是也经常遇到各种奇怪问题, 所以我最终打算自己搭建 WAMP 环境. 搜索网络在 stackoverflow 网站看到此问答, 按照其步骤安装成功. 所以将其整理翻译出来, 以备将来参考">
+
+<title>手动安装 WAMP 环境</title>
+
+<!-- favicon -->
+<link rel="shortcut icon" href="https://unifreak.github.io/favicon.ico" type="image/icon">
+<link rel="icon" href="https://unifreak.github.io/favicon.ico" type="image/icon">
+<link rel="stylesheet" type="text/css" href="https://unifreak.github.io/stylesheets/base.css">
+<link rel="stylesheet" type="text/css" href="https://unifreak.github.io/stylesheets/simplePagination.css">
+
+<script type="text/javascript" src="https://unifreak.github.io/javascripts/jquery.js"></script>
+
+<!--[if lt IE 9]>
+<script src="https://unifreak.github.io/javascripts/html5shiv.js"></script>
+<![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://unifreak.github.io/stylesheets/markdownreader.css">
+<link rel="stylesheet" type="text/css" href="https://unifreak.github.io/stylesheets/pygments_monokai.css">
+<link rel="stylesheet" type="text/css" href="https://unifreak.github.io/stylesheets/code_block.css">
+</head>
+
+<body>
+    <header id="l-header">
+    <div class="container">
+        <div class="row logo">
+            <div class="col-lg-7">
+                <h1>UniFreak</h1>
+            </div>
+
+
+            <div class="col-lg-5">
+                <p>On the way to death</p>
+                <p>On the way of learning</p>
+            </div>
+        </div>
+
+        <div class="row navicon">
+            <a href=""><i class="fa fa-navicon"></i></a>
+        </div>
+
+        <div class="row navbar">
+            <nav class="col-lg-8 col-md-8 col-xs-12">
+                <ul class="row">
+                    <li class="col-lg-3"><a href="https://unifreak.github.io/">HOME</a></li>
+                    <li class="col-lg-3">
+                        <ul class="subnav">
+                            <a href="javascript:void(0)">POST</a>
+                            <li><a href="https://unifreak.github.io/category">CATEGORY</a></li>
+                            <li><a href="https://unifreak.github.io/tag">TAG</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-3"><a href="https://unifreak.github.io/about">ABOUT</a></li>
+                    <li class="col-lg-3"><a href="https://unifreak.github.io/building">PLAY GROUND</a></li>
+                </ul>
+            </nav>
+
+            <div class="search col-lg-4 col-md-4 col-xs-12">
+                <form id="dummySearch">
+                    <label for="search"></label>
+                    <input id="search" name="serach" type="text" placeholder="Not That Dummy Search">
+                    <i class="fa fa-search"></i>
+                </form>
+                <script>
+                $(function(){
+                    $('#dummySearch').submit(function(e) {
+                        e.preventDefault();
+                        keyword = $('#search').val();
+                        url = 'https://www.google.com.hk/search?q=site%3Aunifreak.github.io+' + keyword;
+                        location.href = url;
+                    })
+                })
+                </script>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="container">
+        <div class="row">
+            <div id="markdown-container" class="col-lg-9">
+                <header>
+                    <p id="postTitle">手动安装 WAMP 环境</p>
+                    
+                    <ul class="tags clearfix">
+                        
+                        <li><i class="fa fa-tag"></i> wamp</li>
+                        
+                        <li><i class="fa fa-tag"></i> tuts</li>
+                        
+                    </ul>
+                    
+                    <p id="postMeta">posted on 20 Apr 2016 under category <a href="https://unifreak.github.io/category/">translation</a></p>
+
+                </header>
+
+                <p><em>原回答在 2014/04/30 由 <code>user256743</code> 发表于 <a href="http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows">http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows</a></em></p>
+
+<p>#环境</p>
+
+<p>我的系统是 Win7 32 位</p>
+
+<p>如果你的系统是 64 的, 建议尽量下载并使用 64 位的各软件</p>
+
+<p>你当然可以下载自己想要的版本的各软件, 也可以把各软件装到自己想要的目录中
+但是为了避免不必要的麻烦, 建议完全跟着教程来</p>
+
+<p>#参考</p>
+
+<ul>
+  <li>http://httpd.apache.org/docs/current/platform/windows.html</li>
+  <li>http://www.php.net/manual/en/install.windows.apache2.php</li>
+</ul>
+
+<p>#准备</p>
+
+<ol>
+  <li>下载   <a href="http://www.apachelounge.com/download/VC11/binaries/httpd-2.4.20-win32-VC11.zip" title="httpd-2.4.20-win32-VC11.zip ">Apache</a></li>
+  <li>下载   <a href="http://windows.php.net/downloads/releases/php-5.6.20-Win32-VC11-x86.zip" title="php-5.6.20-Win32-VC11-x86.zip">PHP</a></li>
+  <li>下载   <a href="https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.27.0.msi" title="mysql-installer-web-community-5.6.27.0.msi">MySQL</a></li>
+  <li>下载   <a href="https://www.microsoft.com/en-us/download/details.aspx?id=30679" title="vs download site">VS2012</a>[可选]</li>
+</ol>
+
+<p>#安装</p>
+
+<p>###安装 Apache</p>
+
+<p>解压 Apache 到 C 盘根目录, 解压完后目录应该像这样: <code>C:\Apache24\bin</code></p>
+
+<p>打开 cmd, 运行</p>
+
+<pre><code>cd C:\Apache24\bin
+httpd.exe
+</code></pre>
+
+<p>如果不报错, 则说明安装正常</p>
+
+<p>如果报找不到 <code>MSVCR110.dll</code>, 则需要安装 <code>VS2012</code></p>
+
+<p>如果报无法绑定 80 端口, 检查是否有其他程序占用 80 端口, 关闭之</p>
+
+<p>如果报 <code>Could not reliably determine the ...</code>:</p>
+
+<ul>
+  <li>打开 <code>C:\Apache2\conf\httpd.conf</code></li>
+  <li>
+    <p>找到 <code>ServerName</code> 这一行, 替换为:</p>
+
+    <pre><code>  ServerName localhost
+</code></pre>
+  </li>
+</ul>
+
+<p>确保防火墙没有屏蔽 Apache</p>
+
+<p>打开 <code>http://localhost</code>, 如果你看到 <code>It Works</code> 字样, 说明运行成功</p>
+
+<p>如果你想要开机自动启动 Apache, 运行 <code>httpd.exe -k install</code>. 然后可以在 windows 服务中控制 Apache2.4, 让其自动启动</p>
+
+<p>###安装 PHP</p>
+
+<p>在 C 盘根目录新建文件夹 <code>PHP/</code>, 解压 PHP  压缩包 到此文件夹中, 路径看上去是这样: <code>C:\PHP\ext</code></p>
+
+<p>在 <code>C:\PHP</code> 目录中, 重命名 <code>php.ini-production</code> 或者 <code>php.ini-development</code> 为 <code>php.ini</code></p>
+
+<p>打开 <code>php.ini</code>, 找到 <code>extension_dir = "ext"</code> 这一行并取消注释(去掉行前的 ;)</p>
+
+<p>###配置 Apache 使用 PHP</p>
+
+<p>打开 <code>C:\Apache24\conf\httpd.conf</code></p>
+
+<p>在所有的 <code>LoadModule</code> 那些行的下面, 添加下列内容:</p>
+
+<pre><code>LoadModule php5_module C:/PHP/php5apache2_4.dll
+
+&lt;IfModule php5_module&gt;
+    DirectoryIndex index.html index.php
+    AddHandler application/x-httpd-php .php
+    PHPIniDir "C:/PHP"
+&lt;/IfModule&gt;
+</code></pre>
+
+<p>进入 <code>C:\Apache24\bin</code>, 运行 <code>httpd.exe</code>, 如果没有错误产生, 说明配置正常</p>
+
+<p>在 <code>C:\Apache24\htdocs\</code> 下, 新建一个 <code>phpinfo.php</code> 文件, 内容如下:</p>
+
+<pre><code>&lt;?php phpinfo(); ?&gt;
+</code></pre>
+
+<p>打开 <code>http://localhost/phpinfo.php</code>, 如果你看到类似如下输出, 说明 PHP 解析正常:</p>
+
+<p><img src="/images/posts/201604/phpinfoOutput.png" alt="phpinfo output" /></p>
+
+<p>###[可选] 启用 PHP MySql 扩展</p>
+
+<p>打开 <code>C:\PHP\php.ini</code></p>
+
+<p>找到 <code>php_mysqli</code> 或 <code>php_pdo_mysql</code>, 取消注释</p>
+
+<p>现在, 你变可以使用 <code>mysqli</code> 或 <code>PDO</code> 来操作 MySQL 数据库了</p>
+
+<p>###安装 MySQL</p>
+
+<p>双击下载的 MySQL 文件</p>
+
+<p>选择 Developer default</p>
+
+<p>安装时会让你配置 root 密码</p>
+
+<p>安装完后, 可以右击右下角的 MySQL Notifier 图标, 禁用其开机自启动</p>
+
+<p>###DONE</p>
+
+<p>你现在已经配置完成整个 WAMP 环境了</p>
+
+
+            </div>
+
+            <div id="markdown-outline" class="col-lg-3">
+            </div>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'unifreak-github';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+
+    
+<footer id="l-footer">
+    <div class="container">
+        <div class="row">
+            <div id="contact" class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-9">
+                <h3>CONTACT</h3>
+                <div class="row">
+                    <address id="address" class="col-lg-6 col-md-6 col-sm-6">
+                        China Beijing Beijing<br>
+                        ChaoYang, 0<br>
+                        AnHuiLi<br>
+                        FangHao<br>
+                    </address>
+
+                    <ul class="col-lg-6 col-md-6 col-sm-6">
+                        <li class="qq"><i class="fa fa-qq"></i> &nbsp;&nbsp;744910240</li>
+                        <li class="email"><i class="fa fa-envelope"></i> <a href="mailto:fanghao90s@gmail.com"> &nbsp;&nbsp;fanghao90s@gmail.com</a></li>
+                        <li class="tel"><i class="fa fa-mobile"></i> <a href="tel:15671542698">&nbsp;&nbsp; 15532915861</a></li>
+                        <li class="github"><i class="fa fa-github"></i> <a href="http://www.github.com/UniFreak"> &nbsp;&nbsp;http://www.github.com/UniFreak</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="rss" class="col-lg-2 col-md-2 col-sm-2">
+                    <h3>SUBSCRIBE<br>
+                    via</h3>
+                <a href="feed.xml">
+                    <i class="rss fa fa-rss-square"></i>
+                </a>
+            </div>
+        </div>
+
+        <p id="legal">
+            Copyright (c) 2015 UniFreak | Powered by <a href="http://jekyllrb.com">Jekyll</a> &amp; <a href="http://github.com">GitHub</a> | designed &amp; build by <a href="http://unifreak.github.io">UniFreak</a>
+        </p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://unifreak.github.io/javascripts/base.js"></script>
+
+
+<!-- 百度统计 -->
+<script type="text/javascript" src="https://unifreak.github.io/javascripts/baidu_statistics.js"></script>
+
+
+    <script type="text/javascript" src="https://unifreak.github.io/javascripts/markdownreader.js"></script>
+</body>
+</html>
