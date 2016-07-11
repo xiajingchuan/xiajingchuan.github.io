@@ -14,4 +14,3 @@ http://panke.me//translation/Http_headers_and_PHP_header()_function
 
 
 
-
