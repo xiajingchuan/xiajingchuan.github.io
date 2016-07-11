@@ -676,7 +676,15 @@ header('Pragma: no-cache'); //HTTP/1.0
 
 
 <!-- 百度统计 -->
-<script type="text/javascript" src="http://panke.me/javascripts/baidu_statistics.js"></script>
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 
 
     <script type="text/javascript" src="http://panke.me/javascripts/markdownreader.js"></script>
