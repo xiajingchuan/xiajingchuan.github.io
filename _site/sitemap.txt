@@ -14,4 +14,7 @@ http://panke.me//translation/Http_headers_and_PHP_header()_function
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b8472c7ae2e1227352311392548aaf596f27319a
