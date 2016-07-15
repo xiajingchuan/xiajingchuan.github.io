@@ -1,2 +1,4 @@
 *.lock
 .sass-cache/
+_config.yml
+.gitignore

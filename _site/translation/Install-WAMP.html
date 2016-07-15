@@ -11,32 +11,19 @@
 <title>手动安装 WAMP 环境</title>
 
 <!-- favicon -->
-<<<<<<< HEAD
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/icon">
-<link rel="icon" href="http://localhost:4000/favicon.ico" type="image/icon">
-<link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/base.css">
-<link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/simplePagination.css">
-=======
 <link rel="shortcut icon" href="http://panke.me/favicon.ico" type="image/icon">
 <link rel="icon" href="http://panke.me/favicon.ico" type="image/icon">
 <link rel="stylesheet" type="text/css" href="http://panke.me/css/base.css">
 <link rel="stylesheet" type="text/css" href="http://panke.me/css/simplePagination.css">
->>>>>>> b8472c7ae2e1227352311392548aaf596f27319a
 
-<script type="text/javascript" src="http://localhost:4000/javascripts/jquery.js"></script>
+<script type="text/javascript" src="http://panke.me/javascripts/jquery.js"></script>
 
 <!--[if lt IE 9]>
-<script src="http://localhost:4000/javascripts/html5shiv.js"></script>
+<script src="http://panke.me/javascripts/html5shiv.js"></script>
 <![endif]-->
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/markdownreader.css">
-<link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/pygments_monokai.css">
-<link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/code_block.css">
-=======
     <link rel="stylesheet" type="text/css" href="http://panke.me/css/markdownreader.css">
 <link rel="stylesheet" type="text/css" href="http://panke.me/css/pygments_monokai.css">
 <link rel="stylesheet" type="text/css" href="http://panke.me/css/code_block.css">
->>>>>>> b8472c7ae2e1227352311392548aaf596f27319a
 </head>
 
 <body>
@@ -61,15 +48,15 @@
         <div class="row navbar">
             <nav class="col-lg-8 col-md-8 col-xs-12">
                 <ul class="row">
-                    <li class="col-lg-3"><a href="http://localhost:4000/">首页</a></li>
+                    <li class="col-lg-3"><a href="http://panke.me/">首页</a></li>
                     <li class="col-lg-3">
                         <ul class="subnav">
                             <a href="javascript:void(0)">列表</a>
-                            <li><a href="http://localhost:4000/category">分类</a></li>
-                            <li><a href="http://localhost:4000/tag">标签</a></li>
+                            <li><a href="http://panke.me/category">分类</a></li>
+                            <li><a href="http://panke.me/tag">标签</a></li>
                         </ul>
                     </li>
-                    <li class="col-lg-3"><a href="http://localhost:4000/about">ABOUT</a></li>
+                    <li class="col-lg-3"><a href="http://panke.me/about">ABOUT</a></li>
                 </ul>
             </nav>
 
@@ -108,13 +95,13 @@
                         
                     </ul>
                     
-                    <p id="postMeta">posted on 20 Apr 2016 under category <a href="http://localhost:4000/category/">translation</a></p>
+                    <p id="postMeta">posted on 20 Apr 2016 under category <a href="http://panke.me/category/">translation</a></p>
 
                 </header>
 
                 <p><em>原回答在 2014/04/30 由 <code>user256743</code> 发表于 <a href="http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows">http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows</a></em></p>
 
-<h1 id=">环境</h1>
+<p>#环境</p>
 
 <p>我的系统是 Win7 32 位</p>
 
@@ -123,32 +110,34 @@
 <p>你当然可以下载自己想要的版本的各软件, 也可以把各软件装到自己想要的目录中
 但是为了避免不必要的麻烦, 建议完全跟着教程来</p>
 
-<h1 id=">参考</h1>
+<p>#参考</p>
 
 <ul>
-<li><a href="http://httpd.apache.org/docs/current/platform/windows.html">http://httpd.apache.org/docs/current/platform/windows.html</a></li>
-<li><a href="http://www.php.net/manual/en/install.windows.apache2.php">http://www.php.net/manual/en/install.windows.apache2.php</a></li>
+  <li>http://httpd.apache.org/docs/current/platform/windows.html</li>
+  <li>http://www.php.net/manual/en/install.windows.apache2.php</li>
 </ul>
 
-<h1 id=">准备</h1>
+<p>#准备</p>
 
 <ol>
-<li>下载 &nbsp;&nbsp;<a href="http://www.apachelounge.com/download/VC11/binaries/httpd-2.4.20-win32-VC11.zip" title="httpd-2.4.20-win32-VC11.zip ">Apache</a></li>
-<li>下载 &nbsp;&nbsp;<a href="http://windows.php.net/downloads/releases/php-5.6.20-Win32-VC11-x86.zip" title="php-5.6.20-Win32-VC11-x86.zip">PHP</a></li>
-<li>下载 &nbsp;&nbsp;<a href="https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.27.0.msi" title="mysql-installer-web-community-5.6.27.0.msi">MySQL</a></li>
-<li>下载 &nbsp;&nbsp;<a href="https://www.microsoft.com/en-us/download/details.aspx?id=30679" title="vs download site">VS2012</a>[可选]</li>
+  <li>下载   <a href="http://www.apachelounge.com/download/VC11/binaries/httpd-2.4.20-win32-VC11.zip" title="httpd-2.4.20-win32-VC11.zip ">Apache</a></li>
+  <li>下载   <a href="http://windows.php.net/downloads/releases/php-5.6.20-Win32-VC11-x86.zip" title="php-5.6.20-Win32-VC11-x86.zip">PHP</a></li>
+  <li>下载   <a href="https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.27.0.msi" title="mysql-installer-web-community-5.6.27.0.msi">MySQL</a></li>
+  <li>下载   <a href="https://www.microsoft.com/en-us/download/details.aspx?id=30679" title="vs download site">VS2012</a>[可选]</li>
 </ol>
 
-<h1 id=">安装</h1>
+<p>#安装</p>
 
-<h3 id="apache">安装 Apache</h3>
+<p>###安装 Apache</p>
 
 <p>解压 Apache 到 C 盘根目录, 解压完后目录应该像这样: <code>C:\Apache24\bin</code></p>
 
 <p>打开 cmd, 运行</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cd C:\Apache24\bin
+
+<pre><code>cd C:\Apache24\bin
 httpd.exe
-</code></pre></div>
+</code></pre>
+
 <p>如果不报错, 则说明安装正常</p>
 
 <p>如果报找不到 <code>MSVCR110.dll</code>, 则需要安装 <code>VS2012</code></p>
@@ -158,10 +147,13 @@ httpd.exe
 <p>如果报 <code>Could not reliably determine the ...</code>:</p>
 
 <ul>
-<li>打开 <code>C:\Apache2\conf\httpd.conf</code></li>
-<li><p>找到 <code>ServerName</code> 这一行, 替换为:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ServerName localhost
-</code></pre></div></li>
+  <li>打开 <code>C:\Apache2\conf\httpd.conf</code></li>
+  <li>
+    <p>找到 <code>ServerName</code> 这一行, 替换为:</p>
+
+    <pre><code>  ServerName localhost
+</code></pre>
+  </li>
 </ul>
 
 <p>确保防火墙没有屏蔽 Apache</p>
@@ -170,37 +162,41 @@ httpd.exe
 
 <p>如果你想要开机自动启动 Apache, 运行 <code>httpd.exe -k install</code>. 然后可以在 windows 服务中控制 Apache2.4, 让其自动启动</p>
 
-<h3 id="php">安装 PHP</h3>
+<p>###安装 PHP</p>
 
 <p>在 C 盘根目录新建文件夹 <code>PHP/</code>, 解压 PHP  压缩包 到此文件夹中, 路径看上去是这样: <code>C:\PHP\ext</code></p>
 
 <p>在 <code>C:\PHP</code> 目录中, 重命名 <code>php.ini-production</code> 或者 <code>php.ini-development</code> 为 <code>php.ini</code></p>
 
-<p>打开 <code>php.ini</code>, 找到 <code>extension_dir = &quot;ext&quot;</code> 这一行并取消注释(去掉行前的 ;)</p>
+<p>打开 <code>php.ini</code>, 找到 <code>extension_dir = "ext"</code> 这一行并取消注释(去掉行前的 ;)</p>
 
-<h3 id="apache-php">配置 Apache 使用 PHP</h3>
+<p>###配置 Apache 使用 PHP</p>
 
 <p>打开 <code>C:\Apache24\conf\httpd.conf</code></p>
 
 <p>在所有的 <code>LoadModule</code> 那些行的下面, 添加下列内容:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">LoadModule php5_module C:/PHP/php5apache2_4.dll
+
+<pre><code>LoadModule php5_module C:/PHP/php5apache2_4.dll
 
 &lt;IfModule php5_module&gt;
     DirectoryIndex index.html index.php
     AddHandler application/x-httpd-php .php
-    PHPIniDir &quot;C:/PHP&quot;
+    PHPIniDir "C:/PHP"
 &lt;/IfModule&gt;
-</code></pre></div>
+</code></pre>
+
 <p>进入 <code>C:\Apache24\bin</code>, 运行 <code>httpd.exe</code>, 如果没有错误产生, 说明配置正常</p>
 
 <p>在 <code>C:\Apache24\htdocs\</code> 下, 新建一个 <code>phpinfo.php</code> 文件, 内容如下:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;?php phpinfo(); ?&gt;
-</code></pre></div>
+
+<pre><code>&lt;?php phpinfo(); ?&gt;
+</code></pre>
+
 <p>打开 <code>http://localhost/phpinfo.php</code>, 如果你看到类似如下输出, 说明 PHP 解析正常:</p>
 
-<p><img src="/images/posts/201604/phpinfoOutput.png" alt="phpinfo output"></p>
+<p><img src="/images/posts/201604/phpinfoOutput.png" alt="phpinfo output" /></p>
 
-<h3 id="php-mysql">[可选] 启用 PHP MySql 扩展</h3>
+<p>###[可选] 启用 PHP MySql 扩展</p>
 
 <p>打开 <code>C:\PHP\php.ini</code></p>
 
@@ -208,7 +204,7 @@ httpd.exe
 
 <p>现在, 你变可以使用 <code>mysqli</code> 或 <code>PDO</code> 来操作 MySQL 数据库了</p>
 
-<h3 id="mysql">安装 MySQL</h3>
+<p>###安装 MySQL</p>
 
 <p>双击下载的 MySQL 文件</p>
 
@@ -218,9 +214,10 @@ httpd.exe
 
 <p>安装完后, 可以右击右下角的 MySQL Notifier 图标, 禁用其开机自启动</p>
 
-<h3 id="done">DONE</h3>
+<p>###DONE</p>
 
 <p>你现在已经配置完成整个 WAMP 环境了</p>
+
 
             </div>
 
@@ -281,10 +278,9 @@ httpd.exe
     </div>
 </footer>
 
-<script type="text/javascript" src="http://localhost:4000/javascripts/base.js"></script>
+<script type="text/javascript" src="http://panke.me/javascripts/base.js"></script>
 
-<<<<<<< HEAD
-=======
+
 <!-- 百度统计 -->
 <script type="text/javascript">
 var _hmt = _hmt || [];
@@ -295,9 +291,8 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
->>>>>>> b8472c7ae2e1227352311392548aaf596f27319a
 
 
-    <script type="text/javascript" src="http://localhost:4000/javascripts/markdownreader.js"></script>
+    <script type="text/javascript" src="http://panke.me/javascripts/markdownreader.js"></script>
 </body>
 </html>
