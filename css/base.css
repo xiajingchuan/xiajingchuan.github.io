@@ -4620,7 +4620,7 @@ ul.tags {
 #l-footer {
   background-color: #1c3340;
   color: white;
-  margin-top: 7rem;
+ /* margin-top: 7rem;*/
   padding: 1.5rem;
 }
 #l-footer h3 {
