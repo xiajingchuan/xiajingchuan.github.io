@@ -11,32 +11,19 @@
 <title>HTTP 头和 PHP header() 函数</title>
 
 <!-- favicon -->
-<<<<<<< HEAD
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/icon">
-<link rel="icon" href="http://localhost:4000/favicon.ico" type="image/icon">
-<link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/base.css">
-<link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/simplePagination.css">
-=======
 <link rel="shortcut icon" href="http://panke.me/favicon.ico" type="image/icon">
 <link rel="icon" href="http://panke.me/favicon.ico" type="image/icon">
 <link rel="stylesheet" type="text/css" href="http://panke.me/css/base.css">
 <link rel="stylesheet" type="text/css" href="http://panke.me/css/simplePagination.css">
->>>>>>> b8472c7ae2e1227352311392548aaf596f27319a
 
-<script type="text/javascript" src="http://localhost:4000/javascripts/jquery.js"></script>
+<script type="text/javascript" src="http://panke.me/javascripts/jquery.js"></script>
 
 <!--[if lt IE 9]>
-<script src="http://localhost:4000/javascripts/html5shiv.js"></script>
+<script src="http://panke.me/javascripts/html5shiv.js"></script>
 <![endif]-->
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/markdownreader.css">
-<link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/pygments_monokai.css">
-<link rel="stylesheet" type="text/css" href="http://localhost:4000/stylesheets/code_block.css">
-=======
     <link rel="stylesheet" type="text/css" href="http://panke.me/css/markdownreader.css">
 <link rel="stylesheet" type="text/css" href="http://panke.me/css/pygments_monokai.css">
 <link rel="stylesheet" type="text/css" href="http://panke.me/css/code_block.css">
->>>>>>> b8472c7ae2e1227352311392548aaf596f27319a
 </head>
 
 <body>
@@ -61,20 +48,20 @@
         <div class="row navbar">
             <nav class="col-lg-8 col-md-8 col-xs-12">
                 <ul class="row">
-                    <li class="col-lg-3"><a href="http://localhost:4000/">首页</a></li>
+                    <li class="col-lg-3"><a href="http://panke.me/">首页</a></li>
                     <li class="col-lg-3">
                         <ul class="subnav">
                             <a href="javascript:void(0)">列表</a>
-                            <li><a href="http://localhost:4000/category">分类</a></li>
-                            <li><a href="http://localhost:4000/tag">标签</a></li>
+                            <li><a href="http://panke.me/category">分类</a></li>
+                            <li><a href="http://panke.me/tag">标签</a></li>
                         </ul>
                     </li>
-                    <li class="col-lg-3"><a href="http://localhost:4000/about">ABOUT</a></li>
+                    <li class="col-lg-3"><a href="http://panke.me/about">ABOUT</a></li>
                 </ul>
             </nav>
 
             <div class="search col-lg-4 col-md-4 col-xs-12">
-                <form id="dummySearch">
+<!--                <form id="dummySearch">
                     <label for="search"></label>
                     <input id="search" name="serach" type="text" placeholder="Not That Dummy Search">
                     <i class="fa fa-search"></i>
@@ -88,11 +75,14 @@
                         location.href = url;
                     })
                 })
+
                 </script>
+                -->
             </div>
         </div>
     </div>
 </header>
+
 
     <div class="container">
         <div class="row">
@@ -108,7 +98,7 @@
                         
                     </ul>
                     
-                    <p id="postMeta">posted on 26 Sep 2015 under category <a href="http://localhost:4000/category/">translation</a></p>
+                    <p id="postMeta">posted on 26 Sep 2015 under category <a href="http://panke.me/category/">translation</a></p>
 
                 </header>
 
@@ -558,6 +548,73 @@ Content-Type: text/html
             </div>
 
             <div id="markdown-outline" class="col-lg-3">
+                <ul class="col-lg-2" id="filterList">
+                    
+                    
+                    <li  class="current"  data-show="php">
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-tag"></i>
+                            php
+                            <span class="tagCnt">3</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li  data-show="http">
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-tag"></i>
+                            http
+                            <span class="tagCnt">1</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li  data-show="linux">
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-tag"></i>
+                            linux
+                            <span class="tagCnt">1</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li  data-show="framework">
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-tag"></i>
+                            framework
+                            <span class="tagCnt">1</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li  data-show="irc">
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-tag"></i>
+                            irc
+                            <span class="tagCnt">1</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li  data-show="tuts">
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-tag"></i>
+                            tuts
+                            <span class="tagCnt">2</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li  data-show="wamp">
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-tag"></i>
+                            wamp
+                            <span class="tagCnt">1</span>
+                        </a>
+                    </li>
+                    
+                    
+                    </ul>
             </div>
 
             <div id="disqus_thread"></div>
@@ -574,12 +631,13 @@ Content-Type: text/html
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         </div>
+
     </div>
 
     
 <footer id="l-footer">
     <div class="container">
-        <div class="row">
+        <!--<div class="row">
             <div id="contact" class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-9">
                 <h3>CONTACT</h3>
                 <div class="row">
@@ -607,17 +665,16 @@ Content-Type: text/html
                 </a>
             </div>
         </div>
-
+-->
         <p id="legal">
-            Copyright (c) 2015 panke | Powered by <a href="http://jekyllrb.com">Jekyll</a> &amp; <a href="http://github.com">GitHub</a> | designed &amp; build by <a href="http://unifreak.github.io">UniFreak</a>
+            Copyright (c) 2015 panke | Powered by <a href="http://jekyllrb.com">Jekyll</a> &amp; <a href="http://github.com">GitHub</a>
         </p>
     </div>
 </footer>
 
-<script type="text/javascript" src="http://localhost:4000/javascripts/base.js"></script>
+<script type="text/javascript" src="http://panke.me/javascripts/base.js"></script>
 
-<<<<<<< HEAD
-=======
+
 <!-- 百度统计 -->
 <script type="text/javascript">
 var _hmt = _hmt || [];
@@ -628,9 +685,9 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
->>>>>>> b8472c7ae2e1227352311392548aaf596f27319a
 
 
-    <script type="text/javascript" src="http://localhost:4000/javascripts/markdownreader.js"></script>
+
+    <script type="text/javascript" src="http://panke.me/javascripts/markdownreader.js"></script>
 </body>
 </html>
