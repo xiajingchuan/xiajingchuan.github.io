@@ -30,10 +30,24 @@
             </div>
 
             <div id="markdown-outline" class="col-lg-3">
+                <ul class="col-lg-2" id="filterList">
+                    {% assign idx = 0 %}
+                    {% for tag in site.tags %}
+                    <li {% if idx == 0 %} class="current" {% endif %} data-show="{{ tag | first }}">
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-tag"></i>
+                            {{ tag | first }}
+                            <span class="tagCnt">{{ tag | last | size }}</span>
+                        </a>
+                    </li>
+                    {% assign idx = idx | plus: 1 %}
+                    {% endfor %}
+                    </ul>
             </div>
 
             {% include disqus_load.html %}
         </div>
+
     </div>
 
     {% include footer.html %}
