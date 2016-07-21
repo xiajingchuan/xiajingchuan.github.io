@@ -5,8 +5,13 @@
     <description>welcome</description>
     <link>http://panke.me//</link>
     <atom:link href="http://panke.me//feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Fri, 15 Jul 2016 14:46:06 +0800</pubDate>
     <lastBuildDate>Fri, 15 Jul 2016 14:46:06 +0800</lastBuildDate>
+=======
+    <pubDate>Wed, 20 Jul 2016 21:08:49 +0800</pubDate>
+    <lastBuildDate>Wed, 20 Jul 2016 21:08:49 +0800</lastBuildDate>
+>>>>>>> c7ba1fcd664533fd303c73a54e5f9fb750fe1e10
     <generator>Jekyll v3.1.6</generator>
     
       <item>

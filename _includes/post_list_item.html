@@ -1,7 +1,7 @@
 <article class="row">
     <div class="date col-lg-2 col-md-2 col-sm-2">
         <p class="day">{{ post.date | date: "%d" }}</p>
-        <p class="month">{{ post.date | date: "%b/%Y" }}</p>
+        <p class="month">{{ post.date | date: "%m/%Y" }}</p>
         <p class="category">{{ post.category }}</p>
     </div>
 
@@ -19,5 +19,5 @@
         </p>
     </div>
 
-    <button class="continue"><a href="{{ post.url }}">FULL ARTICLE</a></button>
+    <a href="{{ post.url }}" class="continue">详细>></a>
 </article>

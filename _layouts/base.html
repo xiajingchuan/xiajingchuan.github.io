@@ -11,7 +11,42 @@
 
     <section id="l-main">
         <div class="container">
-            {{ content }}
+            <div class="row">
+                <div class="col-lg-9">
+                    {{ content }}
+                </div>
+                <div class="col-lg-3">
+                    <!--分类start-->
+                    <ul class="" id="filterList">
+                        {% assign idx = 0 %}
+                        {% for category in site.categories %}
+                        <li {% if idx == 0 %} class="current" {% endif %} data-show="{{ category | first }}">
+                            <a href="javascript:void(0)">
+                                {{ category | first }}
+                                <span class="cateCnt">{{ category | last | size }}</span>
+                            </a>
+                        </li>
+                        {% assign idx = idx | plus: 1 %}
+                        {% endfor %}
+                    </ul>
+                    <!--分类end-->
+                    <!--标签start-->
+                    <ul class="" id="filterList">
+                        {% assign idx = 0 %}
+                        {% for tag in site.tags %}
+                        <li {% if idx == 0 %} class="current" {% endif %} data-show="{{ tag | first }}">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-tag"></i>
+                                {{ tag | first }}
+                                <span class="tagCnt">{{ tag | last | size }}</span>
+                            </a>
+                        </li>
+                        {% assign idx = idx | plus: 1 %}
+                        {% endfor %}
+                    </ul>
+                    <!--标签end-->
+                </div>
+            </div>
         </div>
     </section>
 
