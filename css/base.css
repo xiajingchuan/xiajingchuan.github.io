@@ -4207,10 +4207,10 @@ ul {
   color: white;
 }
 #l-header h1 {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 35px;
-  font: normal bold 10rem/5.5rem "verdana",helvetica, sans-serif;
-  letter-spacing: -1rem;
+  font: normal bold 8rem/5.5rem "verdana",helvetica, sans-serif;
+  letter-spacing: -0.5rem;
   margin-left: -2rem;
 }
 #l-header p {
