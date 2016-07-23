@@ -4647,3 +4647,10 @@ ul.tags {
     margin-bottom: 2rem;
   }
 }
+
+.sideBox{
+  padding: 0px 0px;
+  max-width: 22%;
+  float: right;
+  overflow-y: auto;
+}
