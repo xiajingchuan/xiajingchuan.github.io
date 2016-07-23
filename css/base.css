@@ -4364,7 +4364,7 @@ ul {
 #l-main article {
   background: white;
   padding-right: 3rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   box-shadow: 0 0 10px #999;
 }
 #l-main article .date {
@@ -4547,7 +4547,7 @@ ul.tags {
 
 #filterList {
   background-color: #F6F6F6;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 0;
   font-size: 2rem;
   box-shadow: 0 0 10px #999;
