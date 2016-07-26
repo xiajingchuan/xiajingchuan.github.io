@@ -1,57 +1,43 @@
-{% include mode_switcher.html %}
+{% include header.html %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    {% include head_base.html %}
-    {% include head_post.html %}
-</head>
-
-<body>
-    {% include header.html %}
-
-    <div class="container">
-        <div class="row">
-            <div id="markdown-container" class="col-lg-9">
-                <header>
-                    <p id="postTitle">{{ page.title }}</p>
-                    {% if page.tags %}
-                    <ul class="tags clearfix">
-                        {% for tag in page.tags %}
-                        <li><i class="fa fa-tag"></i> {{ tag }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                    <p id="postMeta">posted on {{ page.date | date_to_string }} under category <a href="{{crturl}}category/">{{ page.categories[0] }}</a></p>
-
-                </header>
-
-                {{ content }}
-            </div>
-
-            <div id="markdown-outline" class="col-lg-3">
-                <ul class="col-lg-2" id="filterList">
-                    {% assign idx = 0 %}
-                    {% for tag in site.tags %}
-                    <li {% if idx == 0 %} class="current" {% endif %} data-show="{{ tag | first }}">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            {{ tag | first }}
-                            <span class="tagCnt">{{ tag | last | size }}</span>
-                        </a>
-                    </li>
-                    {% assign idx = idx | plus: 1 %}
+<div class="container">
+    <div class="row">
+        <div id="markdown-container" class="col-lg-9">
+            <header>
+                <p id="postTitle">{{ page.title }}</p>
+                {% if page.tags %}
+                <ul class="tags clearfix">
+                    {% for tag in page.tags %}
+                    <li><i class="fa fa-tag"></i> {{ tag }}</li>
                     {% endfor %}
-                    </ul>
-            </div>
+                </ul>
+                {% endif %}
+                <p id="postMeta">posted on {{ page.date | date_to_string }} under category <a href="{{crturl}}category/">{{ page.categories[0] }}</a></p>
 
-            {% include disqus_load.html %}
+            </header>
+
+            {{ content }}
         </div>
 
+        <div id="markdown-outline" class="col-lg-3">
+            <ul class="col-lg-2" id="filterList">
+                {% assign idx = 0 %}
+                {% for tag in site.tags %}
+                <li {% if idx == 0 %} class="current" {% endif %} data-show="{{ tag | first }}">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        {{ tag | first }}
+                        <span class="tagCnt">{{ tag | last | size }}</span>
+                    </a>
+                </li>
+                {% assign idx = idx | plus: 1 %}
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% include comment.html %}
     </div>
 
-    {% include footer.html %}
-
-    <script type="text/javascript" src="{{crturl}}javascripts/markdownreader.js"></script>
-</body>
-</html>
+</div>
+<script type="text/javascript" src="{{crturl}}javascripts/markdownreader.js"></script>
+{% include footer.html %}

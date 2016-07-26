@@ -1,10 +1,10 @@
 highlighter: pygments
 
-#markdown: kramdown
+markdown: kramdown
 
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 gems: [jekyll-paginate]
 paginate: 7
@@ -30,24 +30,12 @@ my:
         qq: 223321
         email: ddd@gmail.com
         github: http://www.github.com/xiajingchuan
-        qzone: http://ewe0.qzone.qq.com
-        pinterest: ddd/
-        tel: 11122
-        address:
-            country: 中国 
-            state: Beijing
-            city: Beijing
-            distribute: ChaoYang
-            postcode: 000000
-            cell: ""
+        
     skills:
         frontend: ["HTML | Markdown", "CSS | SASS", "JS | jQuery", "Bootstrap"]
         backend: ["PHP", "MySQL", "Redis", "Regex", "Laravel", "OSC"]
         tools: ["Sublime Text", "Git | Github", "Linux", "Jekyll | Liquid"]
 
-collections:
-    qqGroupGuide:
-        output: true
 
 defaults:
   - scope:

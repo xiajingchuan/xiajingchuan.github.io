@@ -1,15 +1,13 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="虽然集成环境很方便, 但是也经常遇到各种奇怪问题, 所以我最终打算自己搭建 WAMP 环境. 搜索网络在 stackoverflow 网站看到此问答, 按照其步骤安装成功. 所以将其整理翻译出来, 以备将来参考">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="虽然集成环境很方便, 但是也经常遇到各种奇怪问题, 所以我最终打算自己搭建 WAMP 环境. 搜索网络在 stackoverflow 网站看到此问答, 按照其步骤安装成功. 所以将其整理翻译出来, 以备将来参考">
 
-<title>手动安装 WAMP 环境</title>
-
+<<<<<<< HEAD
 <!-- favicon -->
 <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/icon">
 <link rel="icon" href="http://localhost:4000/favicon.ico" type="image/icon">
@@ -24,10 +22,33 @@
     <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/markdownreader.css">
 <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/pygments_monokai.css">
 <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/code_block.css">
+=======
+    <title>手动安装 WAMP 环境</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="http://panke.me/favicon.ico" type="image/icon">
+    <link rel="icon" href="http://panke.me/favicon.ico" type="image/icon">
+    <link rel="stylesheet" type="text/css" href="http://panke.me/css/base.css">
+    <!--<link rel="stylesheet" type="text/css" href="http://panke.me/css/simplePagination.css">-->
+
+    
+    <link rel="stylesheet" type="text/css" href="http://panke.me/css/markdownreader.css">
+    <link rel="stylesheet" type="text/css" href="http://panke.me/css/pygments_monokai.css">
+    <link rel="stylesheet" type="text/css" href="http://panke.me/css/code_block.css">
+    
+
+    <script type="text/javascript" src="http://panke.me/javascripts/jquery.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://panke.me/javascripts/html5shiv.js"></script>
+    <![endif]-->
+
+>>>>>>> 8c58f601b8883bcd9a6dc69b656b4751bb72c385
 </head>
 
 <body>
-    <header id="l-header">
+
+<header id="l-header">
     <div class="container">
         <div class="row logo">
             <div class="col-lg-7">
@@ -84,27 +105,31 @@
 </header>
 
 
-    <div class="container">
-        <div class="row">
-            <div id="markdown-container" class="col-lg-9">
-                <header>
-                    <p id="postTitle">手动安装 WAMP 环境</p>
+<div class="container">
+    <div class="row">
+        <div id="markdown-container" class="col-lg-9">
+            <header>
+                <p id="postTitle">手动安装 WAMP 环境</p>
+                
+                <ul class="tags clearfix">
                     
-                    <ul class="tags clearfix">
-                        
-                        <li><i class="fa fa-tag"></i> wamp</li>
-                        
-                        <li><i class="fa fa-tag"></i> tuts</li>
-                        
-                    </ul>
+                    <li><i class="fa fa-tag"></i> wamp</li>
                     
+<<<<<<< HEAD
                     <p id="postMeta">posted on 20 Apr 2016 under category <a href="http://localhost:4000/category/">translation</a></p>
+=======
+                    <li><i class="fa fa-tag"></i> tuts</li>
+                    
+                </ul>
+                
+                <p id="postMeta">posted on 20 Apr 2016 under category <a href="http://panke.me/category/">translation</a></p>
+>>>>>>> 8c58f601b8883bcd9a6dc69b656b4751bb72c385
 
-                </header>
+            </header>
 
-                <p><em>原回答在 2014/04/30 由 <code>user256743</code> 发表于 <a href="http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows">http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows</a></em></p>
+            <p><em>原回答在 2014/04/30 由 <code>user256743</code> 发表于 <a href="http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows">http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows</a></em></p>
 
-<h1 id=">环境</h1>
+<p>#环境</p>
 
 <p>我的系统是 Win7 32 位</p>
 
@@ -113,32 +138,34 @@
 <p>你当然可以下载自己想要的版本的各软件, 也可以把各软件装到自己想要的目录中
 但是为了避免不必要的麻烦, 建议完全跟着教程来</p>
 
-<h1 id=">参考</h1>
+<p>#参考</p>
 
 <ul>
-<li><a href="http://httpd.apache.org/docs/current/platform/windows.html">http://httpd.apache.org/docs/current/platform/windows.html</a></li>
-<li><a href="http://www.php.net/manual/en/install.windows.apache2.php">http://www.php.net/manual/en/install.windows.apache2.php</a></li>
+  <li>http://httpd.apache.org/docs/current/platform/windows.html</li>
+  <li>http://www.php.net/manual/en/install.windows.apache2.php</li>
 </ul>
 
-<h1 id=">准备</h1>
+<p>#准备</p>
 
 <ol>
-<li>下载 &nbsp;&nbsp;<a href="http://www.apachelounge.com/download/VC11/binaries/httpd-2.4.20-win32-VC11.zip" title="httpd-2.4.20-win32-VC11.zip ">Apache</a></li>
-<li>下载 &nbsp;&nbsp;<a href="http://windows.php.net/downloads/releases/php-5.6.20-Win32-VC11-x86.zip" title="php-5.6.20-Win32-VC11-x86.zip">PHP</a></li>
-<li>下载 &nbsp;&nbsp;<a href="https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.27.0.msi" title="mysql-installer-web-community-5.6.27.0.msi">MySQL</a></li>
-<li>下载 &nbsp;&nbsp;<a href="https://www.microsoft.com/en-us/download/details.aspx?id=30679" title="vs download site">VS2012</a>[可选]</li>
+  <li>下载   <a href="http://www.apachelounge.com/download/VC11/binaries/httpd-2.4.20-win32-VC11.zip" title="httpd-2.4.20-win32-VC11.zip ">Apache</a></li>
+  <li>下载   <a href="http://windows.php.net/downloads/releases/php-5.6.20-Win32-VC11-x86.zip" title="php-5.6.20-Win32-VC11-x86.zip">PHP</a></li>
+  <li>下载   <a href="https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.27.0.msi" title="mysql-installer-web-community-5.6.27.0.msi">MySQL</a></li>
+  <li>下载   <a href="https://www.microsoft.com/en-us/download/details.aspx?id=30679" title="vs download site">VS2012</a>[可选]</li>
 </ol>
 
-<h1 id=">安装</h1>
+<p>#安装</p>
 
-<h3 id="apache">安装 Apache</h3>
+<p>###安装 Apache</p>
 
 <p>解压 Apache 到 C 盘根目录, 解压完后目录应该像这样: <code>C:\Apache24\bin</code></p>
 
 <p>打开 cmd, 运行</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cd C:\Apache24\bin
+
+<pre><code>cd C:\Apache24\bin
 httpd.exe
-</code></pre></div>
+</code></pre>
+
 <p>如果不报错, 则说明安装正常</p>
 
 <p>如果报找不到 <code>MSVCR110.dll</code>, 则需要安装 <code>VS2012</code></p>
@@ -148,10 +175,13 @@ httpd.exe
 <p>如果报 <code>Could not reliably determine the ...</code>:</p>
 
 <ul>
-<li>打开 <code>C:\Apache2\conf\httpd.conf</code></li>
-<li><p>找到 <code>ServerName</code> 这一行, 替换为:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ServerName localhost
-</code></pre></div></li>
+  <li>打开 <code>C:\Apache2\conf\httpd.conf</code></li>
+  <li>
+    <p>找到 <code>ServerName</code> 这一行, 替换为:</p>
+
+    <pre><code>  ServerName localhost
+</code></pre>
+  </li>
 </ul>
 
 <p>确保防火墙没有屏蔽 Apache</p>
@@ -160,37 +190,41 @@ httpd.exe
 
 <p>如果你想要开机自动启动 Apache, 运行 <code>httpd.exe -k install</code>. 然后可以在 windows 服务中控制 Apache2.4, 让其自动启动</p>
 
-<h3 id="php">安装 PHP</h3>
+<p>###安装 PHP</p>
 
 <p>在 C 盘根目录新建文件夹 <code>PHP/</code>, 解压 PHP  压缩包 到此文件夹中, 路径看上去是这样: <code>C:\PHP\ext</code></p>
 
 <p>在 <code>C:\PHP</code> 目录中, 重命名 <code>php.ini-production</code> 或者 <code>php.ini-development</code> 为 <code>php.ini</code></p>
 
-<p>打开 <code>php.ini</code>, 找到 <code>extension_dir = &quot;ext&quot;</code> 这一行并取消注释(去掉行前的 ;)</p>
+<p>打开 <code>php.ini</code>, 找到 <code>extension_dir = "ext"</code> 这一行并取消注释(去掉行前的 ;)</p>
 
-<h3 id="apache-php">配置 Apache 使用 PHP</h3>
+<p>###配置 Apache 使用 PHP</p>
 
 <p>打开 <code>C:\Apache24\conf\httpd.conf</code></p>
 
 <p>在所有的 <code>LoadModule</code> 那些行的下面, 添加下列内容:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">LoadModule php5_module C:/PHP/php5apache2_4.dll
+
+<pre><code>LoadModule php5_module C:/PHP/php5apache2_4.dll
 
 &lt;IfModule php5_module&gt;
     DirectoryIndex index.html index.php
     AddHandler application/x-httpd-php .php
-    PHPIniDir &quot;C:/PHP&quot;
+    PHPIniDir "C:/PHP"
 &lt;/IfModule&gt;
-</code></pre></div>
+</code></pre>
+
 <p>进入 <code>C:\Apache24\bin</code>, 运行 <code>httpd.exe</code>, 如果没有错误产生, 说明配置正常</p>
 
 <p>在 <code>C:\Apache24\htdocs\</code> 下, 新建一个 <code>phpinfo.php</code> 文件, 内容如下:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;?php phpinfo(); ?&gt;
-</code></pre></div>
+
+<pre><code>&lt;?php phpinfo(); ?&gt;
+</code></pre>
+
 <p>打开 <code>http://localhost/phpinfo.php</code>, 如果你看到类似如下输出, 说明 PHP 解析正常:</p>
 
-<p><img src="/images/posts/201604/phpinfoOutput.png" alt="phpinfo output"></p>
+<p><img src="/images/posts/201604/phpinfoOutput.png" alt="phpinfo output" /></p>
 
-<h3 id="php-mysql">[可选] 启用 PHP MySql 扩展</h3>
+<p>###[可选] 启用 PHP MySql 扩展</p>
 
 <p>打开 <code>C:\PHP\php.ini</code></p>
 
@@ -198,7 +232,7 @@ httpd.exe
 
 <p>现在, 你变可以使用 <code>mysqli</code> 或 <code>PDO</code> 来操作 MySQL 数据库了</p>
 
-<h3 id="mysql">安装 MySQL</h3>
+<p>###安装 MySQL</p>
 
 <p>双击下载的 MySQL 文件</p>
 
@@ -208,83 +242,84 @@ httpd.exe
 
 <p>安装完后, 可以右击右下角的 MySQL Notifier 图标, 禁用其开机自启动</p>
 
-<h3 id="done">DONE</h3>
+<p>###DONE</p>
 
 <p>你现在已经配置完成整个 WAMP 环境了</p>
 
-            </div>
 
-            <div id="markdown-outline" class="col-lg-3">
-                <ul class="col-lg-2" id="filterList">
-                    
-                    
-                    <li  class="current"  data-show="php">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            php
-                            <span class="tagCnt">3</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="http">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            http
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="linux">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            linux
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="framework">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            framework
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="irc">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            irc
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="tuts">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            tuts
-                            <span class="tagCnt">2</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="wamp">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            wamp
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    </ul>
-            </div>
+        </div>
 
-            <div id="disqus_thread"></div>
+        <div id="markdown-outline" class="col-lg-3">
+            <ul class="col-lg-2" id="filterList">
+                
+                
+                <li  class="current"  data-show="php">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        php
+                        <span class="tagCnt">3</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="http">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        http
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="linux">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        linux
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="framework">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        framework
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="irc">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        irc
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="tuts">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        tuts
+                        <span class="tagCnt">2</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="wamp">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        wamp
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+
+        <!--<div id="disqus_thread"></div>
 <script>
 
     (function() {  // DON'T EDIT BELOW THIS LINE
@@ -297,11 +332,29 @@ httpd.exe
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-        </div>
+-->
+<!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="" data-url=""></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"panke"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+<!-- 多说公共JS代码 end -->
 
     </div>
 
-    
+</div>
+<script type="text/javascript" src="http://panke.me/javascripts/markdownreader.js"></script>
+
 <footer id="l-footer">
     <div class="container">
         <!--<div class="row">
@@ -309,8 +362,8 @@ httpd.exe
                 <h3>CONTACT</h3>
                 <div class="row">
                     <address id="address" class="col-lg-6 col-md-6 col-sm-6">
-                        中国 Beijing Beijing<br>
-                        ChaoYang, 0<br>
+                          <br>
+                        , <br>
                         <br>
                         panke<br>
                     </address>
@@ -318,7 +371,7 @@ httpd.exe
                     <ul class="col-lg-6 col-md-6 col-sm-6">
                         <li class="qq"><i class="fa fa-qq"></i> &nbsp;&nbsp;223321</li>
                         <li class="email"><i class="fa fa-envelope"></i> <a href="mailto:ddd@gmail.com"> &nbsp;&nbsp;ddd@gmail.com</a></li>
-                        <li class="tel"><i class="fa fa-mobile"></i> <a href="tel:15671542698">&nbsp;&nbsp; 11122</a></li>
+                        <li class="tel"><i class="fa fa-mobile"></i> <a href="tel:15671542698">&nbsp;&nbsp; </a></li>
                         <li class="github"><i class="fa fa-github"></i> <a href="http://www.github.com/xiajingchuan"> &nbsp;&nbsp;http://www.github.com/xiajingchuan</a></li>
                     </ul>
                 </div>
@@ -342,8 +395,22 @@ httpd.exe
 <script type="text/javascript" src="http://localhost:4000/javascripts/base.js"></script>
 
 
+<<<<<<< HEAD
 
 
     <script type="text/javascript" src="http://localhost:4000/javascripts/markdownreader.js"></script>
+=======
+<!-- 百度统计 -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+>>>>>>> 8c58f601b8883bcd9a6dc69b656b4751bb72c385
 </body>
 </html>
