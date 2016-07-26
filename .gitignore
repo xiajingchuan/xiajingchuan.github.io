@@ -2,3 +2,4 @@
 .sass-cache/
 _config.yml
 .gitignore
+_site/
