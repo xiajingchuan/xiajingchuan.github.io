@@ -4205,6 +4205,7 @@ ul {
 #l-header {
   background-color: #1c3340;
   color: white;
+  box-shadow: 0 0 10px #999;
 }
 #l-header h1 {
   margin-top: 10px;
