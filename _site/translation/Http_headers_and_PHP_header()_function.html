@@ -4,30 +4,35 @@
 <html>
 <head>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="许多初级到中级的的 PHP 程序员把 header() 函数当作某种神秘巫术. 他们可以照着代码示例把功能实现, 但是还是不知道到底它是如果运作的. 我最开始就是这样的.实际上它非常简单. 在这篇文章中, 我会解释 HTTP 头(header) 是如何运作的, 它们与 PHP 的关系, 以及它们的 meta 标签...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="许多初级到中级的的 PHP 程序员把 header() 函数当作某种神秘巫术. 他们可以照着代码示例把功能实现, 但是还是不知道到底它是如果运作的. 我最开始就是这样的.实际上它非常简单. 在这篇文章中, 我会解释 HTTP 头(header) 是如何运作的, 它们与 PHP 的关系, 以及它们的 meta 标签...">
 
-<title>HTTP 头和 PHP header() 函数</title>
+    <title>HTTP 头和 PHP header() 函数</title>
 
-<!-- favicon -->
-<link rel="shortcut icon" href="http://panke.me/favicon.ico" type="image/icon">
-<link rel="icon" href="http://panke.me/favicon.ico" type="image/icon">
-<link rel="stylesheet" type="text/css" href="http://panke.me/css/base.css">
-<link rel="stylesheet" type="text/css" href="http://panke.me/css/simplePagination.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="http://panke.me/favicon.ico" type="image/icon">
+    <link rel="icon" href="http://panke.me/favicon.ico" type="image/icon">
+    <link rel="stylesheet" type="text/css" href="http://panke.me/css/base.css">
+    <link rel="stylesheet" type="text/css" href="http://panke.me/css/simplePagination.css">
 
-<script type="text/javascript" src="http://panke.me/javascripts/jquery.js"></script>
-
-<!--[if lt IE 9]>
-<script src="http://panke.me/javascripts/html5shiv.js"></script>
-<![endif]-->
+    
     <link rel="stylesheet" type="text/css" href="http://panke.me/css/markdownreader.css">
-<link rel="stylesheet" type="text/css" href="http://panke.me/css/pygments_monokai.css">
-<link rel="stylesheet" type="text/css" href="http://panke.me/css/code_block.css">
+    <link rel="stylesheet" type="text/css" href="http://panke.me/css/pygments_monokai.css">
+    <link rel="stylesheet" type="text/css" href="http://panke.me/css/code_block.css">
+    
+
+    <script type="text/javascript" src="http://panke.me/javascripts/jquery.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://panke.me/javascripts/html5shiv.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-    <header id="l-header">
+
+<header id="l-header">
     <div class="container">
         <div class="row logo">
             <div class="col-lg-7">
@@ -84,25 +89,25 @@
 </header>
 
 
-    <div class="container">
-        <div class="row">
-            <div id="markdown-container" class="col-lg-9">
-                <header>
-                    <p id="postTitle">HTTP 头和 PHP header() 函数</p>
+<div class="container">
+    <div class="row">
+        <div id="markdown-container" class="col-lg-9">
+            <header>
+                <p id="postTitle">HTTP 头和 PHP header() 函数</p>
+                
+                <ul class="tags clearfix">
                     
-                    <ul class="tags clearfix">
-                        
-                        <li><i class="fa fa-tag"></i> php</li>
-                        
-                        <li><i class="fa fa-tag"></i> http</li>
-                        
-                    </ul>
+                    <li><i class="fa fa-tag"></i> php</li>
                     
-                    <p id="postMeta">posted on 26 Sep 2015 under category <a href="http://panke.me/category/">translation</a></p>
+                    <li><i class="fa fa-tag"></i> http</li>
+                    
+                </ul>
+                
+                <p id="postMeta">posted on 26 Sep 2015 under category <a href="http://panke.me/category/">translation</a></p>
 
-                </header>
+            </header>
 
-                <p><em>原文链接: <a href="http://www.nicholassolutions.com/tutorials/php/headers.html">http://www.nicholassolutions.com/tutorials/php/headers.html</a></em></p>
+            <p><em>原文链接: <a href="http://www.nicholassolutions.com/tutorials/php/headers.html">http://www.nicholassolutions.com/tutorials/php/headers.html</a></em></p>
 
 <p><em>版权: 本文受 Creative Commons License 版权保护, 你可以在 Creative Commons Attribution NonCommercial NoDerives 2.5 License 下分发该文</em></p>
 
@@ -615,79 +620,79 @@ header('Pragma: no-cache'); //HTTP/1.0
 <hr />
 
 
-            </div>
+        </div>
 
-            <div id="markdown-outline" class="col-lg-3">
-                <ul class="col-lg-2" id="filterList">
-                    
-                    
-                    <li  class="current"  data-show="php">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            php
-                            <span class="tagCnt">3</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="http">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            http
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="linux">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            linux
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="framework">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            framework
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="irc">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            irc
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="tuts">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            tuts
-                            <span class="tagCnt">2</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li  data-show="wamp">
-                        <a href="javascript:void(0)">
-                            <i class="fa fa-tag"></i>
-                            wamp
-                            <span class="tagCnt">1</span>
-                        </a>
-                    </li>
-                    
-                    
-                    </ul>
-            </div>
+        <div id="markdown-outline" class="col-lg-3">
+            <ul class="col-lg-2" id="filterList">
+                
+                
+                <li  class="current"  data-show="php">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        php
+                        <span class="tagCnt">3</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="http">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        http
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="linux">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        linux
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="framework">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        framework
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="irc">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        irc
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="tuts">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        tuts
+                        <span class="tagCnt">2</span>
+                    </a>
+                </li>
+                
+                
+                <li  data-show="wamp">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tag"></i>
+                        wamp
+                        <span class="tagCnt">1</span>
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
 
-            <div id="disqus_thread"></div>
+        <div id="disqus_thread"></div>
 <script>
 
     (function() {  // DON'T EDIT BELOW THIS LINE
@@ -700,11 +705,11 @@ header('Pragma: no-cache'); //HTTP/1.0
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-        </div>
-
     </div>
 
-    
+</div>
+<script type="text/javascript" src="http://panke.me/javascripts/markdownreader.js"></script>
+
 <footer id="l-footer">
     <div class="container">
         <!--<div class="row">
@@ -756,11 +761,5 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> c7ba1fcd664533fd303c73a54e5f9fb750fe1e10
-    <script type="text/javascript" src="http://panke.me/javascripts/markdownreader.js"></script>
 </body>
 </html>
