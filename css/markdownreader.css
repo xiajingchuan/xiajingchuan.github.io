@@ -1,6 +1,6 @@
 *{margin:0;padding:0;}
 #markdown-container{
-    margin:3rem auto 2.5rem auto;
+    margin:2rem auto 2rem auto;
     background-color: white;
     border:1px solid #ccc;
     padding:0 2em;
@@ -69,7 +69,7 @@
 #markdown-container dd{margin-left:2em;margin-bottom:1em;}
 
 #markdown-outline{
-    margin-top: 3rem;
+    margin-top: 2rem;
     border:1px solid #ccc;
     padding: 5px 10px;
     max-width: 22%;
