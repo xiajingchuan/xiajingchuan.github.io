@@ -4652,3 +4652,11 @@ ul.tags {
   float: right;
   overflow-y: auto;
 }
+
+/*
+ 评论框样式
+*/
+#ds-thread{
+  background-color: white;
+  padding:20px;
+}
