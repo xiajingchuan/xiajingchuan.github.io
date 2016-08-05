@@ -3,7 +3,6 @@
     margin:3rem auto 2.5rem auto;
     background-color: white;
     border:1px solid #ccc;
-    box-shadow:0 0 10px #999;
     padding:0 2em;
     line-height:1.4em;
     font:16px helvetica,arial,freesans,clean,sans-serif;
@@ -72,7 +71,6 @@
 #markdown-outline{
     margin-top: 3rem;
     border:1px solid #ccc;
-    box-shadow:0 0 10px #999;
     padding: 5px 10px;
     max-width: 22%;
     float: right;
