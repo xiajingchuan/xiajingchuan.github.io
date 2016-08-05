@@ -4240,7 +4240,7 @@ ul {
   float: left;
   text-align: center;
   font-size: 2rem;
-  line-height: 5rem;
+  line-height: 4rem;
   border-right: 1px solid #e0e0e0;
   padding: 0;
 }
@@ -4365,7 +4365,7 @@ ul {
 #l-main article {
   background: white;
   padding-right: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   box-shadow: 0 0 10px #999;
 }
 #l-main article .date {
@@ -4548,7 +4548,7 @@ ul.tags {
 
 #filterList {
   background-color: #F6F6F6;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 0;
   font-size: 2rem;
   box-shadow: 0 0 10px #999;
@@ -4651,7 +4651,7 @@ ul.tags {
 
 .sideBox{
   padding: 0px 0px;
-  max-width: 22%;
+  max-width: 23%;
   float: right;
   overflow-y: auto;
 }

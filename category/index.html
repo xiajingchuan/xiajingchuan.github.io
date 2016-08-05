@@ -6,7 +6,7 @@ layout: list
         {% assign idx = 0 %}
         {% for category in site.categories %}
             <li {% if idx == 0 %} class="current" {% endif %} data-show="{{ category | first }}">
-                <a href="javascript:void(0)">
+                <a href="/category/{{ category | first }}">
                 {{ category | first }}
                 <span class="cateCnt">{{ category | last | size }}</span>
                 </a>
