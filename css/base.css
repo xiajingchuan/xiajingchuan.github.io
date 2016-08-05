@@ -4205,7 +4205,6 @@ ul {
 #l-header {
   background-color: #1c3340;
   color: white;
-  box-shadow: 0 0 10px #999;
 }
 #l-header h1 {
   margin-top: 10px;
@@ -4366,7 +4365,6 @@ ul {
   background: white;
   padding-right: 3rem;
   margin-top: 2rem;
-  box-shadow: 0 0 10px #999;
 }
 #l-main article .date {
   text-align: center;
@@ -4551,7 +4549,6 @@ ul.tags {
   margin-top: 2rem;
   padding: 0;
   font-size: 2rem;
-  box-shadow: 0 0 10px #999;
 }
 #filterList li {
   height: 5rem;
