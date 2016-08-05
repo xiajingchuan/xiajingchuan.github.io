@@ -4528,6 +4528,7 @@ ul.tags {
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
+  list-style-type: none;
 }
 
 .tags li:first-child {
