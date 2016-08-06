@@ -4370,6 +4370,11 @@ ul {
   text-align: center;
   font-weight: bold;
 }
+@media (max-width: 1200px){
+#l-main article .date {
+    display: none !important;
+}
+}
 #l-main article .day {
   background-color: black;
   color: white;
