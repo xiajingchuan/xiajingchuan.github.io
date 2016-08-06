@@ -199,7 +199,7 @@ hr {
  * Contain overflow in all browsers.
  */
 pre {
-  overflow: auto;
+  overflow: scroll;
 }
 
 /**
