@@ -104,7 +104,7 @@ exit($exitCode);
 
 - 然后需覆盖控制器类的 `actions` 方法:
 
-{% heighlight bash lineno %}
+{% highlight php linenos %}
 <?php
 class PostController extends CController {
     public function actions() {
