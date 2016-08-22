@@ -14,7 +14,7 @@ layout: post
 {% assign src='/cloudflare/cloudflare.png' %}
 {% include image.html %}
 
-A few weeks ago I posted that I [had just moved to CloudFlare for my Media Temple hosted site]({% post_url 2011-08-09-cloudflare-and-mediatemple %}). I received a good bit of feedback on the post, so I thought it would be good to do a follow-up that covers the things I've learned and my overall impression since I first enabled this service.
+A few weeks ago I posted that I . I received a good bit of feedback on the post, so I thought it would be good to do a follow-up that covers the things I've learned and my overall impression since I first enabled this service.
 
 {% assign src='/cloudflare/views.png' %}
 {% include image.html %}

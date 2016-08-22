@@ -6,7 +6,7 @@ category: journal
 layout: post
 ---
 
-As I discussed earlier this year, [Media Temple has refreshed their VPS offerings]({% post_url 2013-07-31-media-temple-dv-platform %}), improving their underlying virtualization software, getting a more recent kernel, and otherwise polishing up the various bits. After slogging through the last couple months of my second child being born, I finally got my head above water and pulled the trigger on migrating to a new installation. I was on an old (ve), so I chose to go to a [DV Developer](http://mediatemple.net/webhosting/vps/developer/), Level 2.
+As I discussed earlier this year, , improving their underlying virtualization software, getting a more recent kernel, and otherwise polishing up the various bits. After slogging through the last couple months of my second child being born, I finally got my head above water and pulled the trigger on migrating to a new installation. I was on an old (ve), so I chose to go to a [DV Developer](http://mediatemple.net/webhosting/vps/developer/), Level 2.
 
 Since both the (ve) and the DV Developer are a raw, bare-bones Linux installation, there isn't a ton to report in terms of pretty oohs and ahhs, and the provisioning and migration occurred entirely without incident (as it should be), so I can't prattle on about that arduous process, since it was pretty much a single button press followed by "ssh #######" 5 minutes later.
 

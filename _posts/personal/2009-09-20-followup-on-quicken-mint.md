@@ -12,7 +12,7 @@ layout: post
 {% assign src='/misc/quicken_mint.png' %}
 {% include image.html %}
 
-A couple weeks ago, I [blogged about the recent acquisition]({% post_url 2009-09-14-quicken-mint %}) of [Mint.com](http://www.mint.com) by [Intuit](http://www.intuit.com) (the Quicken folks).
+A couple weeks ago, I  of [Mint.com](http://www.mint.com) by [Intuit](http://www.intuit.com) (the Quicken folks).
 
 This weekend, Scott Cook (founder of Intuit) posted [on the Mint.com site](http://www.mint.com/blog/updates/intuit-not-out-to-change-mint-says-founder/) about the recent acquisition. He covered a lot of the topics where I showed concern.
 

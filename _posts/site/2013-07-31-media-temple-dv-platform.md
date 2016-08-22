@@ -10,7 +10,7 @@ category: journal
 layout: post
 ---
 
-Earlier this year, I [lamented about the aging virtualization]({% post_url 2013-02-06-media-temple-ve-and-ubuntu-1204 %}) underpinning the (ve) platform at [Media Temple](http://mediatemple.net). While their hardware is high quality, and their support is always great, the kernel was ancient, and it allowed me to trap myself into upgrade hell. The long and short of it was that Ubuntu 12.04 was very unadvisable as an OS choice on the (ve), and that included upgrading directly through the OS. This was largely due to a very old virtualization kernel that prevented some of the core libraries in 12.04 from being accessible due to needing too new of a kernel.
+Earlier this year, I  underpinning the (ve) platform at [Media Temple](http://mediatemple.net). While their hardware is high quality, and their support is always great, the kernel was ancient, and it allowed me to trap myself into upgrade hell. The long and short of it was that Ubuntu 12.04 was very unadvisable as an OS choice on the (ve), and that included upgrading directly through the OS. This was largely due to a very old virtualization kernel that prevented some of the core libraries in 12.04 from being accessible due to needing too new of a kernel.
 
 Because of timing of some major platform changes, Media Temple was not offering a quick solution:
 
