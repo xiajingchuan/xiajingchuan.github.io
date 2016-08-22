@@ -104,17 +104,17 @@ exit($exitCode);
 
 - 然后需覆盖控制器类的 `actions` 方法:
 
-    ```php
-    <?php
-    class PostController extends CController {
-        public function actions() {
-            return array(
-                'edit'=>'application.controllers.post.UpdateAction',
-            );
-        }
+```php
+<?php
+class PostController extends CController {
+    public function actions() {
+        return array(
+            'edit'=>'application.controllers.post.UpdateAction',
+        );
     }
-    ?>
-    ```
+}
+?>
+```
 
 动作参数绑定:
 
