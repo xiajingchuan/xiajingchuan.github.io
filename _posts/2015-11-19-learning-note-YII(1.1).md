@@ -104,7 +104,7 @@ exit($exitCode);
 
 - 然后需覆盖控制器类的 `actions` 方法:
 
-{% highlight php linenos %}
+
 <?php
 class PostController extends CController {
     public function actions() {
@@ -114,7 +114,7 @@ class PostController extends CController {
     }
 }
 ?>
-{% endhighlight %}
+
 
 动作参数绑定:
 
