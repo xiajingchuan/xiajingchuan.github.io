@@ -1,42 +1,24 @@
-safe: false
-highlighter: pygments
 
+future: true
+paginate: 10
+#pygments: true
+
+highlighter: pygments
 markdown: kramdown
 
-#markdown: redcarpet
-#redcarpet:
-#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+tag_page_dir: tag
+tag_feed_dir: tag
+tag_page_layout: tag_page
+tag_feed_layout: tag_feed
+#permalink: /:year/:month/:day/:title/
+url: http://panke.me
+exclude: [README.md]
+gems: [jekyll-paginate]
 
-gems: [jekyll-paginate,jekyll-category_archive_plugin]
-paginate: 7
 paginate_path: "page:num"
 layout: post
-permalink: /:categories/:title
+#permalink: /:categories/:title
 excerpt_separator: "[-----]"
-
-#mode: dev
-mode: product
-url: http://panke.me/
-devurl: http://localhost:4000/
-name: panke.me
-title: this is panke's blog
-description: "welcome"
-
-my:
-    displayName: panke 
-    realName: panke
-    realName_cn: panke
-    jobTitle: "PHP Coder"
-    contact:
-        qq: 223321
-        email: ddd@gmail.com
-        github: http://www.github.com/xiajingchuan
-        
-    skills:
-        frontend: ["HTML | Markdown", "CSS | SASS", "JS | jQuery", "Bootstrap"]
-        backend: ["PHP", "MySQL", "Redis", "Regex", "Laravel", "OSC"]
-        tools: ["Sublime Text", "Git | Github", "Linux", "Jekyll | Liquid"]
-
 
 defaults:
   - scope:
@@ -44,8 +26,3 @@ defaults:
         type: "posts"
     values:
         excerpt: "{{ page.content }} | slice: 0 300"
-  - scope:
-        path: ""
-        type: "qqGroupGuide"
-    values:
-        layout: markdownreader_bare

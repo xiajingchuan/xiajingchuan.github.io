@@ -6,9 +6,9 @@ tags: [php, framework]
 excerpt: "Yii 是一个基于组件的高性能 PHP 框架, 用于快速开发大型 Web 应用. 它使 Web 开发中的 可复用度最大化, 可以显著提高你的 Web 应用开发速度. Yii 这个名字(读作易(Yee) 或 [ji:])代表 简单(easy), 高效(efficient) 和 可扩展(extensible)."
 ---
 
-#基础
+# 基础
 
-##入口脚本
+## 入口脚本
 
 WEB 应用一般为 `index.php`, 控制台应用一般为 `yii.php` 并在文件开头加上 `#! /usr/bin/env php`
 
@@ -104,17 +104,17 @@ exit($exitCode);
 
 - 然后需覆盖控制器类的 `actions` 方法:
 
-    ```php
-    <?php
-    class PostController extends CController {
-        public function actions() {
-            return array(
-                'edit'=>'application.controllers.post.UpdateAction',
-            );
-        }
+
+<?php
+class PostController extends CController {
+    public function actions() {
+        return array(
+            'edit'=>'application.controllers.post.UpdateAction',
+        );
     }
-    ?>
-    ```
+}
+?>
+
 
 动作参数绑定:
 
