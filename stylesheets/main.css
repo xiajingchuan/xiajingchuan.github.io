@@ -59,6 +59,7 @@ blockquote p {
 	font-size: 16px;
 	color: #666;
 }
+.main{margin-top:50px;}
 
 #content {
 	padding-bottom: 30px;
@@ -95,7 +96,9 @@ blockquote p {
 .entry-title a:hover {
 	color: #fa6900;
 }
-
+.entry-date{
+	color:#aaa;
+}
 
 .post-date {
 	padding: 0 5px 5px 5px;
