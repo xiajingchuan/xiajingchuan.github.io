@@ -1,8 +1,7 @@
 ---
 title: 关于我
-summary: A short summary of what RealJenius.com is.
+excerpt: panke.me blog
 layout: page
-category: android
 ---
 
 {% assign align = 'right' %}

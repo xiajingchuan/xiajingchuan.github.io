@@ -6,8 +6,6 @@ tags: [sublime]
 layout: post
 ---
 
-## sublime text 多光标 Multiple Selections
-
 前段时间投入到subliem text的阵营了，因为发现sublime text有许多非常好的特性，今天我们来了解下sublime text的多光标特性。
 
 本人环境：

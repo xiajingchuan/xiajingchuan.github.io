@@ -1,12 +1,16 @@
----
-layout: main
----
-
-<article class="page">
-	<div class="page-header">
-		<h1 class="entry-title"><a href="{{page.url}}">{{page.title}}</a></h1>
-	</div>
-	<div class="article-body">
-		{{content}}
-	</div>
-</article>
+{% include header.html %}
+<div class="container main">
+<div class="row">
+    <div class="col-lg-12" id="content">
+        <article class="page">
+           <div class="page-header">
+              <h1 class="entry-title"><a href="{{page.url}}">{{page.title}}</a></h1>
+          </div>
+          <div class="article-body">
+              {{content}}
+          </div>
+      </article>
+  </div>
+</div>
+</div>
+{% include footer.html %}

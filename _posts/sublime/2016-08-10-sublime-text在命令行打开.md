@@ -6,7 +6,6 @@ tags: [sublime]
 layout: post
 ---
 
-### 在命令行中用sublime text打开文件
 
 对于经常使用终端用户来说，他们的大部分时间都是在命令行下工作的，如果浏览到某个文件时，想用sublime text编辑器打开时，需要先将sublime text的安装目录添加到环境变量的PATH中。
 使用：

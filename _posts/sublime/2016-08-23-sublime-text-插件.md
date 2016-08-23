@@ -1,7 +1,7 @@
 ---
 title: "sublime text插件管理器Package Control"
 excerpt: "插件是sublime text的一个很好的特性，跟大多数编辑器一样，可以对编辑器进行很好的扩展。"
-categorys: sublime
+categorys: sublimes
 tags: [sublime]
 layout: post
 ---
