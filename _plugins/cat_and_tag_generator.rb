@@ -61,7 +61,7 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = 'atom.xml'
+      @name = 'atom.xml' 
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), "group_atom.xml")
