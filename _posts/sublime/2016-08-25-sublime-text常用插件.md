@@ -1,6 +1,6 @@
 ---
 title: "sublime text常用插件"
-excerpt: "插件是sublime text的一个很好的特性，跟大多数编辑器一样，可以对编辑器进行很好的扩展。"
+excerpt: "在日常使用sublime text的开发中，如果我们能安装一些好用的插件，那么无疑会大大提高我们的开发效率，常用热门插件大家可以去PackageControl网站看看。下面说下我经常使用的插件。"
 category: sublime
 tags: [sublime]
 layout: post
@@ -15,7 +15,7 @@ layout: post
 ### BracketHighlighter
 
 BracketHighlighter是一个自动匹配括号、引号、标签的插件，如：`[]`,`()`,`{}`,`''`,`""`,`<tag></tag>`。方便代码的查看。实际效果如下图：
-![BracketHighlighter](/images/artictes/sublime/BracketHighlighter.png)
+![BracketHighlighter](/images/articles/sublime/BracketHighlighter.png)
 
 ### Emmet
 
@@ -53,6 +53,7 @@ SublimeLinter是一款语法检查插件，还需要安装对应语言的插件�
 ### Terminal
 
 Terminal快速打开终端插件。
+
 * Open Terminal at File Press ctrl+shift+t on Windows and Linux, or cmd+shift+t on OS X
 * Open Terminal at Project Folder Press ctrl+alt+shift+t on Windows and Linux, or cmd+alt+shift+t on OS X
 
@@ -60,6 +61,7 @@ Terminal快速打开终端插件。
 
 ColorPicker 颜色选取插件，调用系统的调色板，快速选取颜色。
 使用：
+
 * Linux: ctrl+shift+c
 * Windows: ctrl+shift+c
 * OS X: cmd+shift+c
