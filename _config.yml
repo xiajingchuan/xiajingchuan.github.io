@@ -1,8 +1,7 @@
 future: true
 paginate: 10
-#pygments: true
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 
 tag_page_dir: tag
@@ -18,4 +17,3 @@ paginate_path: "page:num"
 layout: post
 #permalink: /:categories/:title
 excerpt_separator: "[-----]"
-
