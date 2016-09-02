@@ -12,6 +12,80 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+  <title>sublime text常用插件</title>
+  <link>http://panke.me/sublime/2016/08/25/sublime-text%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2016-08-25T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/sublime/2016/08/25/sublime-text%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6.html</guid>
+  <description><![CDATA[
+     <p>在日常使用sublime text的开发中，如果我们能安装一些好用的插件，那么无疑会大大提高我们的开发效率，常用热门插件大家可以去<a href="https://packagecontrol.io/">PackageControl</a>网站看看。下面说下我经常使用的插件。</p>
+
+<h3 id="sftp">SFTP</h3>
+
+<p>看名字大家应该就知道这个插件是干啥用的了，嗯，就是连接远程服务器传输文件用的。省去了我们使用FTP软件下载远程文件，用编辑器编辑好后，再用FTP软件把文件上传到服务器的繁琐步骤，直接用sublime text就可以下载、编辑、上传，非常的方便。</p>
+
+<h3 id="brackethighlighter">BracketHighlighter</h3>
+
+<p>BracketHighlighter是一个自动匹配括号、引号、标签的插件，如：<code class="highlighter-rouge">[]</code>,<code class="highlighter-rouge">()</code>,<code class="highlighter-rouge"><span class="p">{}</span></code>,<code class="highlighter-rouge">''</code>,<code class="highlighter-rouge">""</code>,<code class="highlighter-rouge">&lt;tag&gt;&lt;/tag&gt;</code>。方便代码的查看。实际效果如下图：
+<img src="http://panke.me/images/articles/sublime/BracketHighlighter.png" alt="BracketHighlighter" /></p>
+
+<h3 id="emmet">Emmet</h3>
+
+<p>Emmet的前身是大名鼎鼎的Zen coding，如果你从事Web前端开发的话，对该插件一定不会陌生。它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。详细的使用方法大家可以去<a href="http://www.emmet.io/">Emmet官网</a>查看.</p>
+
+<h3 id="evernote">Evernote</h3>
+
+<p>Evernote,国内叫印象笔记，是开发人员使用较多的一款笔记应用。这款插件就是方便大家使用sublime对笔记进行快速的创建、修改、删除等操作，并且支持Markdown书写格式。</p>
+
+<h3 id="markdown-preview">Markdown Preview</h3>
+
+<p>快速构建和预览Markdown文件插件。用sublime编辑好的Markdown文件，如果想快速预览则可以安装该插件。
+使用：cmd+shift+P调出命令面板，然后输入Markdown Preview: Preview in Browser 回车，就可在浏览器打开。</p>
+
+<h3 id="pretty-json">Pretty JSON</h3>
+
+<p>这是一款对JSON数据格式化的插件，将JSON数据格式化成方便阅读的形式，并且能将编码的汉字还原。使用方法是按：<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">Alt</code> + <code class="highlighter-rouge">J</code>即可</p>
+
+<h3 id="sidebarenhancements">Side​Bar​Enhancements</h3>
+
+<p>Side​Bar​Enhancements 是一款侧边栏的增强插件。只支持Sublime Text3。对文件右击时会显示更多的选项。</p>
+
+<h3 id="converttoutf8">ConvertToUTF8</h3>
+
+<p>通过本插件，你可以编辑并保存目前编码不被 Sublime Text 支持的文件，特别是中日韩用户使用的 GB2312，GBK，BIG5，EUC-KR，EUC-JP 等。ConvertToUTF8 同时支持 Sublime Text 2 和 3。</p>
+
+<h3 id="sublimecodeintel">SublimeCodeIntel</h3>
+
+<p>这是一款代码提示插件，支持多种编程语言，该插件安装时间可能相对较长，安装完该插件后需要根据您使用的编程语言进行配置。</p>
+
+<h3 id="sublimelinter">SublimeLinter</h3>
+
+<p>SublimeLinter是一款语法检查插件，还需要安装对应语言的插件。</p>
+
+<h3 id="terminal">Terminal</h3>
+
+<p>Terminal快速打开终端插件。</p>
+
+<ul>
+  <li>Open Terminal at File Press ctrl+shift+t on Windows and Linux, or cmd+shift+t on OS X</li>
+  <li>Open Terminal at Project Folder Press ctrl+alt+shift+t on Windows and Linux, or cmd+alt+shift+t on OS X</li>
+</ul>
+
+<h3 id="colorpicker">ColorPicker</h3>
+
+<p>ColorPicker 颜色选取插件，调用系统的调色板，快速选取颜色。
+使用：</p>
+
+<ul>
+  <li>Linux: ctrl+shift+c</li>
+  <li>Windows: ctrl+shift+c</li>
+  <li>OS X: cmd+shift+c</li>
+</ul>
+
+  ]]></description>
+</item>
+
+	<item>
   <title>sublime text插件管理器Package Control</title>
   <link>http://panke.me/sublime/2016/08/23/sublime-text-%E6%8F%92%E4%BB%B6.html</link>
   <author>R.J. Lorimer</author>
@@ -26,18 +100,19 @@
 
 <p>复制以下代码：</p>
 
-<pre><code>import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+<div class="highlighter-rouge"><pre class="highlight"><code>import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 </code></pre>
+</div>
 
 <p>上面是sublime text3的，sublime text2的可以访问这个链接获取<a href="https://packagecontrol.io/installation#st2">https://packagecontrol.io/installation#st2</a></p>
 
-<p>复制好后在sublime text的菜单栏点击 <code>View &gt; Show Console</code> ,将内容粘贴到下面的输入框中然后回车，安装好后会在菜单<code>Preferences</code>下看到<code>Package Control</code>的选项。如果没有请重启下编辑器。</p>
+<p>复制好后在sublime text的菜单栏点击 <code class="highlighter-rouge">View &gt; Show Console</code> ,将内容粘贴到下面的输入框中然后回车，安装好后会在菜单<code class="highlighter-rouge">Preferences</code>下看到<code class="highlighter-rouge">Package Control</code>的选项。如果没有请重启下编辑器。</p>
 
-<p>现在<code>Package Control</code>已经安装好了，下面说下如何使用<code>Package Control</code>安装插件:</p>
+<p>现在<code class="highlighter-rouge">Package Control</code>已经安装好了，下面说下如何使用<code class="highlighter-rouge">Package Control</code>安装插件:</p>
 
 <ul>
-  <li>点击菜单 <code>Preferences &gt; Package Control</code> 选择<code>Install Packages</code>然后回车，等待几秒后会列出一个插件的列表，你可以选择一个或者输入插件名称然后回车安装</li>
-  <li>或者按<code>Ctrl</code> + <code>Shift</code> + <code>P</code> 打开命令面板，输入<code>Package Control:Install Packages</code>回车，输入插件名称回车。</li>
+  <li>点击菜单 <code class="highlighter-rouge">Preferences &gt; Package Control</code> 选择<code class="highlighter-rouge">Install Packages</code>然后回车，等待几秒后会列出一个插件的列表，你可以选择一个或者输入插件名称然后回车安装</li>
+  <li>或者按<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">Shift</code> + <code class="highlighter-rouge">P</code> 打开命令面板，输入<code class="highlighter-rouge">Package Control:Install Packages</code>回车，输入插件名称回车。</li>
 </ul>
 
   ]]></description>
@@ -86,28 +161,28 @@
 <hr />
 
 <ul>
-  <li><code>Ctrl</code> + 鼠标左键</li>
+  <li><code class="highlighter-rouge">Ctrl</code> + 鼠标左键</li>
 </ul>
 
-<p>按住<code>Ctrl</code>键的同时，在你想添加光标的位置点击鼠标左键即可添加一个光标。</p>
+<p>按住<code class="highlighter-rouge">Ctrl</code>键的同时，在你想添加光标的位置点击鼠标左键即可添加一个光标。</p>
 
 <ul>
-  <li><code>Ctrl</code> + <code>Alt</code> + 上下方向键</li>
+  <li><code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">Alt</code> + 上下方向键</li>
 </ul>
 
-<p>按住<code>Ctrl</code> + <code>Alt</code>的同时按上方向键或下方向键，就会在上一行或下一行添加光标。</p>
+<p>按住<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">Alt</code>的同时按上方向键或下方向键，就会在上一行或下一行添加光标。</p>
 
 <ul>
-  <li><code>Ctrl</code> + <code>D</code></li>
+  <li><code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">D</code></li>
 </ul>
 
-<p>按<code>Ctrl</code> + <code>D</code>键之前要先选中一段字符，然后按<code>Ctrl</code> + <code>D</code>，就会从当前光标向后查找与你选中的字符相同的字符，找到后就选中该字符并添加一个光标。</p>
+<p>按<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">D</code>键之前要先选中一段字符，然后按<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">D</code>，就会从当前光标向后查找与你选中的字符相同的字符，找到后就选中该字符并添加一个光标。</p>
 
 <ul>
-  <li><code>Ctrl</code> + <code>Shift</code> + <code>L</code></li>
+  <li><code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">Shift</code> + <code class="highlighter-rouge">L</code></li>
 </ul>
 
-<p>使用<code>Ctrl</code> + <code>Shift</code> + <code>L</code>之前要先使用<code>Ctrl</code> + <code>L</code>组合键选中想要编辑的行（<code>Ctrl</code> + <code>L</code>是选中当前行快捷键，按一下会向下再选中一行），然后按<code>Ctrl</code> + <code>Shift</code> + <code>L</code>组合键就会在每行的末尾添加光标</p>
+<p>使用<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">Shift</code> + <code class="highlighter-rouge">L</code>之前要先使用<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">L</code>组合键选中想要编辑的行（<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">L</code>是选中当前行快捷键，按一下会向下再选中一行），然后按<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">Shift</code> + <code class="highlighter-rouge">L</code>组合键就会在每行的末尾添加光标</p>
 
 <h3 id="section-1">如何删除光标</h3>
 
@@ -117,13 +192,13 @@
   <li>删除全部光标</li>
 </ul>
 
-<p>删除多光标只要鼠标左键点击任何位置多光标就会消失,或按<code>Esc</code>键。</p>
+<p>删除多光标只要鼠标左键点击任何位置多光标就会消失,或按<code class="highlighter-rouge">Esc</code>键。</p>
 
 <ul>
   <li>删除多光标中的某一个光标</li>
 </ul>
 
-<p>如果想删除多光标中的某一个光标只要按住<code>Alt</code> + <code>Shift</code> + 鼠标<strong>右</strong>键点击想删除的光标即可。</p>
+<p>如果想删除多光标中的某一个光标只要按住<code class="highlighter-rouge">Alt</code> + <code class="highlighter-rouge">Shift</code> + 鼠标<strong>右</strong>键点击想删除的光标即可。</p>
 
 <h3 id="section-2">使用技巧</h3>
 
@@ -131,7 +206,7 @@
 
 <h4 id="section-3">将多行合并为一行</h4>
 
-<p><code>Ctrl</code> + <code>J</code> 快捷键可以将光标所在行和其下一行合并为一行，但如果想将多行合并为一行就需要多次按<code>Ctrl</code> + <code>J</code>快捷键。下面说下一个更简便的方法，首先根据上面说到的设置多光标的方法将需要合并为一行的行添加光标(不包括最后一行)，然后再按<code>Ctrl</code> + <code>J</code>快捷键。</p>
+<p><code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">J</code> 快捷键可以将光标所在行和其下一行合并为一行，但如果想将多行合并为一行就需要多次按<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">J</code>快捷键。下面说下一个更简便的方法，首先根据上面说到的设置多光标的方法将需要合并为一行的行添加光标(不包括最后一行)，然后再按<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">J</code>快捷键。</p>
 
   ]]></description>
 </item>
