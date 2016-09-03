@@ -26,11 +26,7 @@
 
 <h3 id="brackethighlighter">BracketHighlighter</h3>
 
-<<<<<<< HEAD
-<p>BracketHighlighter是一个自动匹配括号、引号、标签的插件，如：<code>[]</code>,<code>()</code>,<code>{}</code>,<code>''</code>,<code>""</code>,<code>&lt;tag&gt;&lt;/tag&gt;</code>。方便代码的查看。实际效果如下图：
-=======
 <p>BracketHighlighter是一个自动匹配括号、引号、标签的插件，如：<code class="highlighter-rouge">[]</code>,<code class="highlighter-rouge">()</code>,<code class="highlighter-rouge"><span class="p">{}</span></code>,<code class="highlighter-rouge">''</code>,<code class="highlighter-rouge">""</code>,<code class="highlighter-rouge">&lt;tag&gt;&lt;/tag&gt;</code>。方便代码的查看。实际效果如下图：
->>>>>>> 6e5e94935cc20967a3f25ecfee9f55301db4f009
 <img src="http://panke.me/images/articles/sublime/BracketHighlighter.png" alt="BracketHighlighter" /></p>
 
 <h3 id="emmet">Emmet</h3>
@@ -48,11 +44,7 @@
 
 <h3 id="pretty-json">Pretty JSON</h3>
 
-<<<<<<< HEAD
-<p>这是一款对JSON数据格式化的插件，将JSON数据格式化成方便阅读的形式，并且能将编码的汉字还原。使用方法是按：<code>Ctrl</code> + <code>Alt</code> + <code>J</code>即可</p>
-=======
 <p>这是一款对JSON数据格式化的插件，将JSON数据格式化成方便阅读的形式，并且能将编码的汉字还原。使用方法是按：<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">Alt</code> + <code class="highlighter-rouge">J</code>即可</p>
->>>>>>> 6e5e94935cc20967a3f25ecfee9f55301db4f009
 
 <h3 id="sidebarenhancements">Side​Bar​Enhancements</h3>
 
