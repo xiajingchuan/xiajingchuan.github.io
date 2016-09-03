@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>panke.me - Mint+Quicken: Muicken? Quint? Or Just Plain Scary</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="panke.me - Hold my beer; watch this." />
+    	<meta name="author" content="R.J. Lorimer" />
+		<meta charset="UTF-8" />
+
+
+    	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    	<!--[if lt IE 9]>
+      		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+
+		<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto+Slab' rel='stylesheet' type='text/css'>
+		<link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+		<link href="/stylesheets/syntax-dark.css" rel="stylesheet" />
+		<link href="/stylesheets/main.css" rel="stylesheet"/>
+    </head>
+    <body>
+    	<div class="navrow navbar-fixed-top">
+	    	<div class="container">
+				<div class="navbar navbar-inverse ">
+					<a class="navbar-brand" href="/">
+						<span class="title_letter">P</span>an<span class="title_letter">k</span>e.me
+					</a>
+
+					<ul class="nav navbar-nav ">
+
+                        <li>
+                            <a role="menuitem" tabindex="-1" href="/cats_and_tags.html">分类·标签</a>
+                        </li>
+                        <li class="visible-lg">
+                            <a role="menuitem" tabindex="-1" href="/tag/java/">Java Articles</a>
+                        </li>
+                        <li  class="visible-lg" >
+                            <a role="menuitem" tabindex="-1" href="/category/distilling-jruby/">Distilling JRuby Series</a>
+                        </li>
+                        <li  class="visible-lg" >
+                            <a role="menuitem" tabindex="-1" href="/tag/jekyll/">Jekyll Articles</a>
+                        </li>
+                        <li class="" ><a href="/about.html">关于</a></li>
+	                    <!--<li class="dropdown hidden-sm" id="explore">
+	                    	<a class="dropdown-toggle" role="button" id="exploredrop" data-toggle="dropdown" href="#">Explore <b class="caret"></b></a>
+	                    	<ul class="dropdown-menu" role="menu" aria-labelledby="exploredrop">
+                    			<li role="presentation">
+                					<a role="menuitem" tabindex="-1" href="/cats_and_tags.html#categories">Categories</a>
+                    			</li>
+                    			<li role="presentation">
+                					<a role="menuitem" tabindex="-1" href="/cats_and_tags.html#tags">Tags</a>
+                    			</li>
+                    			<li class="divider"></li>
+                    			<li role="presentation" >
+                					<a role="menuitem" tabindex="-1" href="/tag/java/">Java Articles</a>
+                    			</li>
+                    			<li role="presentation">
+                					<a role="menuitem" tabindex="-1" href="/category/distilling-jruby/">Distilling JRuby Series</a>
+                    			</li>
+                    			<li role="presentation" >
+                					<a role="menuitem" tabindex="-1" href="/tag/jekyll/">Jekyll Articles</a>
+                    			</li>
+                    		</ul>
+	                    </li>-->
+	                </ul>
+
+	                <!--<ul class="nav navbar-nav pull-right hidden-sm">
+	                    <li class="dropdown" id="elsewhere">
+	                    	<a class="dropdown-toggle" role="button" id="elsewheredrop" data-toggle="dropdown" href="#">
+	                			Elsewhere <b class="caret"></b>
+	                		</a>
+	                		<ul class="dropdown-menu" role="menu" aria-labelledby="elsewheredrop">
+	                			<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="http://www.twitter.com/">Twitter</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="http://www.linkedin.com/in/rjlorimer">LinkedIn</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="https://github.com/">GitHub</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="http://live.xbox.com/en-US/profile/profile.aspx?pp=0&GamerTag=Real+Jenius">XBox Live</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="http://beeradvocate.com/user/profile/">BeerAdvocate</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown" id="feeds">
+							<a class="dropdown-toggle" role="button" id="feedsdrop" data-toggle="dropdown" href="#">
+	                			Feeds <b class="caret"></b>
+	                		</a>
+	                		<ul class="dropdown-menu" role="menu" aria-labelledby="feedsdrop">
+	                			<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/atom.xml">Everything</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/category/journal/atom.xml">Journal</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/category/article/atom.xml">Articles</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/tag/java/atom.xml">Java</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/tag/ruby/atom.xml">Ruby</a>
+								</li>
+								<li role="presentation">
+									<a  role="menuitem" tabindex="-1" href="/tag/linux/atom.xml">Linux</a>
+								</li>
+							</ul>
+						</li>
+	  				</ul>-->
+				</div>
+			</div>
+		</div>
+		<div class="container main">
+			<div class="row sitemap" id="sitemap">
+				<div class="col-lg-12">
+					<button type="button" class="close" id="sitemapclose">&times;</button>
+					<div class="row">
+						<div class="col-lg-11 sitemap-section">
+							<h4>分类</h4>
+							<div class="row">
+								 
+									<div class="col-lg-3">
+										<a href="/category/journal/">journal <span class="badge">20</span></a>
+									</div>
+								 
+									<div class="col-lg-3">
+										<a href="/category/notes/">notes <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-3">
+										<a href="/category/android/">android <span class="badge">1</span></a>
+									</div>
+								
+							</div>
+						</div>
+						<div class="col-lg-12 sitemap-section">
+							<h4>标签</h4>
+							<div class="row">
+								 
+									<div class="col-lg-2">
+										<a href="/tag/funnyordie/">funnyordie <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/humor/">humor <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/personal/">personal <span class="badge">8</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/realjenius.com/">realjenius.com <span class="badge">9</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/finances/">finances <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/mint/">mint <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/quicken/">quicken <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/analytics/">analytics <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/hosting/">hosting <span class="badge">3</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/media temple/">media temple <span class="badge">5</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/(ve)/">(ve) <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/cloudflare/">cloudflare <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/linux/">linux <span class="badge">3</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/ubuntu/">ubuntu <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/gaming/">gaming <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/valve/">valve <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/steam/">steam <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/desktop/">desktop <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/elementaryos/">elementaryos <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/LTS/">LTS <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/EOL/">EOL <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/bootstrap/">bootstrap <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/site/">site <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/css/">css <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/mediatemple/">mediatemple <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/php/">php <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/framework/">framework <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/android/">android <span class="badge">1</span></a>
+									</div>
+								
+							</div>
+						</div>							
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+	<div class="col-lg-12" id="content">
+		<article class="page">
+	<div class="page-header">
+		<h2 class="entry-title"><a href="/journal/2009/09/14/quicken-mint.html">Mint+Quicken: Muicken? Quint? Or Just Plain Scary</a>
+			
+		</h2>
+        <small>
+                <span class="entry-date">2009-09-14</span>
+        </small>
+	</div>
+
+	<div class="article-body">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="article-body">
+					
+<div class="img thumbnail pull-right">
+	<img src="/images/articles/misc/quicken_mint.png" />
+	
+</div>
+
+<p>It was <a href="http://www.mint.com/blog/updates/why-mint-com-plus-intuit-is-a-big-idea/">announced today</a> that Mint.com is being acquired by Intuit, the makers of the popular finance software: Quicken, and more recently <a href="http://quicken.intuit.com/online-banking-finances.jsp">Quicken Online</a> (a direct competitor to <a href="http://mint.com">Mint.com</a>). Aaron Patzer, CEO and founder of Mint.com made the announcement, and made several comments and conjectures in the process.</p>
+
+<p>First the potential positives:</p>
+
+<ul>
+  <li>Both have built up significant relationships with banks and institutions which can be leveraged to provide even more comprehensive coverage of a users’ various accounts.</li>
+  <li>Each current product offering has features the other doesn’t. In theory, the best features of each could be leveraged. In practice, the two implementations are totally separate code-bases, but at least they can reuse the concepts; maybe learn something good from each other.</li>
+  <li>The same thing can be said about their various discount offerings (credit cards, mortgages, etc).</li>
+</ul>
+
+<p>Unfortunately, I don’t think all is perfect in care-bear land. Out of Aaron Patzer’s mouth himself:</p>
+
+<blockquote>
+  <p>This acquisition makes sense to me because, first and foremost, Mint.com and Intuit share a common vision.  Intuit is, and has always been, a very customer-centric organization, with constant usability studies and follow-me-homes that observe how people use software and the problems they’re trying to solve.  This is fully aligned with my design philosophy here at Mint.com. </p>
+</blockquote>
+
+<p>When I hear this, it makes me wonder if Mr. Patzer has ever used the original desktop Quicken. I moved to the latest and “greatest” Quicken after it became all-too-apparent that Microsoft Money was a dying star. I was thoroughly disappointed after the move; Quicken desktop was a significant drop in usability; I never thought I would actually long for a Microsoft product.</p>
+
+<p>Don’t get me wrong, I think Quicken Online is a major improvement from it’s former desktop-application counterparts. They implemented a fairly AJAX’y UI using a lot of <a href="http://www.extjs.com/">ExtJS</a> controls and fancy pop-ups. It certainly looks clean and professional. But if it wasn’t for Real Balance, I wouldn’t use Quicken Online. Mint’s toolset it simply more intuitive and usable (which, granted, is much more subjective in the web world – <a href="http://arstechnica.com/old/content/2008/10/hands-on-mint-com-vs-quicken-online.ars">Ars Technica had a more mixed opinion</a>). I find the cash-flow forecasting, charting, and reports more effective on Mint.</p>
+
+<p>More serious to me, however, is the lack of confidence I carry in this statement:</p>
+
+<blockquote>
+  <p>[…] Expect all of this goodness to increase after the acquisition closes. And yes, expect Mint.com to remain free!</p>
+</blockquote>
+
+<p>Why should I expect the goodness to increase, or for it to remain free? After all, the one thing that motivated Quicken to switch away from a monthly fee was competition from Mint (again I’ll reference <a href="http://arstechnica.com/old/content/2008/10/hands-on-mint-com-vs-quicken-online.ars">the Ars Technica article</a>). Plain and simple, competition from Mint is what has driven Quicken to build a <em>competitive</em> product.</p>
+
+<p>That competition is gone (on both sides), and that is scary.</p>
+
+<p>There is a transition that happens (usually it sneaks up on products) where development switches from the best ways to get more customers to the best way to monetize on the consumer base you have – just look at the RIAA and MPAA: a perfect storm monopoly nightmare.</p>
+
+<p>Granted, this “monetization” direction doesn’t occur until a product gets closer to having a monopoly (or at least a decent majority), and when it comes to this line of products, Mint+Quicken just got a lot closer. Sadly, my experience with <a href="http://www.wesabe.com/">Wesabe</a> and <a href="http://www.buxfer.com/">Buxfer</a> (the two primary competitors I now know of) were mixed - they simply didn’t have the bank/institution support of Mint or Quicken; and that can be a deal breaker on an auto-synchronize online finance tool.</p>
+
+<p>Intuit <em>is</em> making Aaron Patzer the GM of their online services division. If that position carries enough strength, maybe he can help motivate them to keep innovating. I just hope that when push comes to shove, he doesn’t get pushed into a direction that goes against his vision.</p>
+
+<p>Oh well - I’ll try to have faith; I for one welcome our Muicken overlords.</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-5 col-offset-7">
+				
+				<div class="post-details">
+	分类:
+		
+			
+				<a href="/category/journal"><span class="label">journal</span></a>
+			
+		
+	|
+	标签:
+		
+			
+				<a href="/tag/finances"><span class="label">finances</span></a>
+			
+				<a href="/tag/mint"><span class="label">mint</span></a>
+			
+				<a href="/tag/quicken"><span class="label">quicken</span></a>
+			
+		
+	|
+	<a href="http://panke.me/journal/2009/09/14/quicken-mint.html"><span class="label label-info">Permalink</span></a>
+</div>
+
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="disqus_thread"></div>
+				<!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="" data-url=""></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"panke"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+<!-- 多说公共JS代码 end -->
+			</div>
+		</div>
+	</div>
+</article>
+	</div>
+</div>
+
+	    </div>
+		<footer class="rjfooter">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-offset-3">
+						<p>&copy 2016-2017 - panke.me | Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> &amp; <a href="http://github.com" target="_blank">GitHub</a></p>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-27375996-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        	$(document).ready(function() {
+    			$("#sitemapbtn").click(function() {
+					$("#sitemap").slideToggle();
+					return false;
+    			});
+    			$("#sitemapclose").click(function() {
+    				$("#sitemap").slideUp();
+    				return false;
+    			});
+        	});
+        </script>
+    </body>
+</html>

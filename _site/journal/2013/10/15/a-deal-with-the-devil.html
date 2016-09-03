@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>panke.me - Media Temple Makes a Deal with the Devil</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="panke.me - Hold my beer; watch this." />
+    	<meta name="author" content="R.J. Lorimer" />
+		<meta charset="UTF-8" />
+
+
+    	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    	<!--[if lt IE 9]>
+      		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+
+		<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto+Slab' rel='stylesheet' type='text/css'>
+		<link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+		<link href="/stylesheets/syntax-dark.css" rel="stylesheet" />
+		<link href="/stylesheets/main.css" rel="stylesheet"/>
+    </head>
+    <body>
+    	<div class="navrow navbar-fixed-top">
+	    	<div class="container">
+				<div class="navbar navbar-inverse ">
+					<a class="navbar-brand" href="/">
+						<span class="title_letter">P</span>an<span class="title_letter">k</span>e.me
+					</a>
+
+					<ul class="nav navbar-nav ">
+
+                        <li>
+                            <a role="menuitem" tabindex="-1" href="/cats_and_tags.html">分类·标签</a>
+                        </li>
+                        <li class="visible-lg">
+                            <a role="menuitem" tabindex="-1" href="/tag/java/">Java Articles</a>
+                        </li>
+                        <li  class="visible-lg" >
+                            <a role="menuitem" tabindex="-1" href="/category/distilling-jruby/">Distilling JRuby Series</a>
+                        </li>
+                        <li  class="visible-lg" >
+                            <a role="menuitem" tabindex="-1" href="/tag/jekyll/">Jekyll Articles</a>
+                        </li>
+                        <li class="" ><a href="/about.html">关于</a></li>
+	                    <!--<li class="dropdown hidden-sm" id="explore">
+	                    	<a class="dropdown-toggle" role="button" id="exploredrop" data-toggle="dropdown" href="#">Explore <b class="caret"></b></a>
+	                    	<ul class="dropdown-menu" role="menu" aria-labelledby="exploredrop">
+                    			<li role="presentation">
+                					<a role="menuitem" tabindex="-1" href="/cats_and_tags.html#categories">Categories</a>
+                    			</li>
+                    			<li role="presentation">
+                					<a role="menuitem" tabindex="-1" href="/cats_and_tags.html#tags">Tags</a>
+                    			</li>
+                    			<li class="divider"></li>
+                    			<li role="presentation" >
+                					<a role="menuitem" tabindex="-1" href="/tag/java/">Java Articles</a>
+                    			</li>
+                    			<li role="presentation">
+                					<a role="menuitem" tabindex="-1" href="/category/distilling-jruby/">Distilling JRuby Series</a>
+                    			</li>
+                    			<li role="presentation" >
+                					<a role="menuitem" tabindex="-1" href="/tag/jekyll/">Jekyll Articles</a>
+                    			</li>
+                    		</ul>
+	                    </li>-->
+	                </ul>
+
+	                <!--<ul class="nav navbar-nav pull-right hidden-sm">
+	                    <li class="dropdown" id="elsewhere">
+	                    	<a class="dropdown-toggle" role="button" id="elsewheredrop" data-toggle="dropdown" href="#">
+	                			Elsewhere <b class="caret"></b>
+	                		</a>
+	                		<ul class="dropdown-menu" role="menu" aria-labelledby="elsewheredrop">
+	                			<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="http://www.twitter.com/">Twitter</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="http://www.linkedin.com/in/rjlorimer">LinkedIn</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="https://github.com/">GitHub</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="http://live.xbox.com/en-US/profile/profile.aspx?pp=0&GamerTag=Real+Jenius">XBox Live</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="http://beeradvocate.com/user/profile/">BeerAdvocate</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown" id="feeds">
+							<a class="dropdown-toggle" role="button" id="feedsdrop" data-toggle="dropdown" href="#">
+	                			Feeds <b class="caret"></b>
+	                		</a>
+	                		<ul class="dropdown-menu" role="menu" aria-labelledby="feedsdrop">
+	                			<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/atom.xml">Everything</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/category/journal/atom.xml">Journal</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/category/article/atom.xml">Articles</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/tag/java/atom.xml">Java</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1"  href="/tag/ruby/atom.xml">Ruby</a>
+								</li>
+								<li role="presentation">
+									<a  role="menuitem" tabindex="-1" href="/tag/linux/atom.xml">Linux</a>
+								</li>
+							</ul>
+						</li>
+	  				</ul>-->
+				</div>
+			</div>
+		</div>
+		<div class="container main">
+			<div class="row sitemap" id="sitemap">
+				<div class="col-lg-12">
+					<button type="button" class="close" id="sitemapclose">&times;</button>
+					<div class="row">
+						<div class="col-lg-11 sitemap-section">
+							<h4>分类</h4>
+							<div class="row">
+								 
+									<div class="col-lg-3">
+										<a href="/category/journal/">journal <span class="badge">20</span></a>
+									</div>
+								 
+									<div class="col-lg-3">
+										<a href="/category/notes/">notes <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-3">
+										<a href="/category/android/">android <span class="badge">1</span></a>
+									</div>
+								
+							</div>
+						</div>
+						<div class="col-lg-12 sitemap-section">
+							<h4>标签</h4>
+							<div class="row">
+								 
+									<div class="col-lg-2">
+										<a href="/tag/funnyordie/">funnyordie <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/humor/">humor <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/personal/">personal <span class="badge">8</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/realjenius.com/">realjenius.com <span class="badge">9</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/finances/">finances <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/mint/">mint <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/quicken/">quicken <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/analytics/">analytics <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/hosting/">hosting <span class="badge">3</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/media temple/">media temple <span class="badge">5</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/(ve)/">(ve) <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/cloudflare/">cloudflare <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/linux/">linux <span class="badge">3</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/ubuntu/">ubuntu <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/gaming/">gaming <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/valve/">valve <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/steam/">steam <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/desktop/">desktop <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/elementaryos/">elementaryos <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/LTS/">LTS <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/EOL/">EOL <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/bootstrap/">bootstrap <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/site/">site <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/css/">css <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/mediatemple/">mediatemple <span class="badge">2</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/php/">php <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/framework/">framework <span class="badge">1</span></a>
+									</div>
+								 
+									<div class="col-lg-2">
+										<a href="/tag/android/">android <span class="badge">1</span></a>
+									</div>
+								
+							</div>
+						</div>							
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+	<div class="col-lg-12" id="content">
+		<article class="page">
+	<div class="page-header">
+		<h2 class="entry-title"><a href="/journal/2013/10/15/a-deal-with-the-devil.html">Media Temple Makes a Deal with the Devil</a>
+			
+		</h2>
+        <small>
+                <span class="entry-date">2013-10-15</span>
+        </small>
+	</div>
+
+	<div class="article-body">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="article-body">
+					<p>Today, Media Temple announced that they are being acquired by GoDaddy.</p>
+
+<p>Here’s a tip for Media Temple: if you have to spend your entire FAQ trying to convince folks that the acquisition isn’t a bad idea… maybe <strong>it actually is a bad idea.</strong></p>
+
+<p>But surely, that’s not enough reason to switch hosts. It seems silly to move, just because of an acquisition that Media Temple has said so strongly <a href="http://weblog.mediatemple.net/2013/10/15/faqs-about-the-godaddy-acquisition/">won’t affect their service</a>:</p>
+
+<blockquote>
+  <h4 id="what-about-godaddys-reputation-in-the-tech-community">What about GoDaddy’s reputation in the tech community?</h4>
+  <p>GoDaddy has been transformed in recent months and is essentially a new company. If we did not like what we have seen, we would not have joined the GoDaddy family. They have overhauled their leadership team and attracted tech talent from the best-of-the-best. We love “the new GoDaddy” that CEO Blake Irving and his team have created, especially their new approach with advertising, product focus and UX.</p>
+
+  <p>Though neither GoDaddy’s brand nor operations are being integrated into ours, we are excited to be a positive influence on them with how to make even more improvements to better serve the Web pro community.</p>
+
+  <h4 id="will-media-temple-be-merging-with-godaddy">Will Media Temple be merging with GoDaddy?</h4>
+  <p>No, we keep operating independently. The strategy to keep the two companies operating independently was critical for us. While we are excited about GoDaddy CEO Blake Irving’s vision to build bridges between GoDaddy and the Web developer community, the commitment to maintain (mt)’s independent operations is what sealed the deal for us.</p>
+
+  <h4 id="how-does-this-affect-me-as-an-mt-customer">How does this affect me, as an (mt) customer?</h4>
+  <p>It doesn’t. (mt) and GoDaddy continue to operate independently, so it’s ‘business as usual.’ We’ll keep doing what we do best: serving you and helping you succeed online.</p>
+</blockquote>
+
+<p>Me believing any of these answers is predicated by me “trusting” the author; my web-host. While I have implicitly trusted the intentions of Media Temple over the years I have used their service, I have absolutely no trust for Go Daddy. And the reason is simple: They have shown time and again to have no integrity.</p>
+
+<p>Integrity is a key element in your relationship with your web-host, as you are giving them a lot of trust in the execution and support of your personal and business ventures. Sebastiaan de With has summarized perfectly how GoDaddy has shown they don’t have the type of integrity I’m interested in my host having:</p>
+
+<div>
+	<blockquote class="twitter-tweet"><p>“<a href="https://twitter.com/Scobleizer">@Scobleizer</a>: <a href="https://twitter.com/sdw">@sdw</a> <a href="https://twitter.com/mediatemple">@mediatemple</a> why switch? What are you looking for that you don&#39;t currently have?”&#10;&#10;Integrity. <a href="http://t.co/DEL6nu9rK8">pic.twitter.com/DEL6nu9rK8</a></p>&mdash; Sebastiaan de With (@sdw) <a href="https://twitter.com/sdw/statuses/390172367856496640">October 15, 2013</a></blockquote>
+	<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>And so, with that, I must choose to vote with the only voice I have: my business. Which means I’m looking at the alternative hosts for the first time in many years. I currently run “unmanaged” VPS-style hosting via a DV-Developer at Media Temple, so my interests are specifically in finding a competitive and well-respected alternative in that space. If you are a Grid-Service or DV-Managed user; this list may not be useful for you.</p>
+
+<p>For my analysis, I’m explicitly targeting the “$50/month” price point in unmanaged servers (tier 2 at MT). Let’s enumerate what I get at Media Temple for that price:</p>
+
+<ul>
+  <li>16 cores; un-documented “fast-enough” CPU speeds.</li>
+  <li>2 GB of memory.</li>
+  <li>40 GB of RAID-10 storage.</li>
+  <li>650 GB bandwidth.</li>
+  <li>Root + SSH access.</li>
+  <li>Old but current-enough OpenVZ kernel capable of running Ubuntu 13.04.</li>
+  <li>Parallels power panel</li>
+  <li>Good top-level tools for re-provisioning, restoring in emergencies, upgrading on-the-spot, and managing DNS.</li>
+  <li>Basic real-time server statistics</li>
+  <li>Good tech support</li>
+  <li>No built-in backups.</li>
+</ul>
+
+<p>Now, let’s look at some competition (in no particular order)!</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align: left">Host</th>
+      <th style="text-align: center">Price</th>
+      <th style="text-align: center">CPU</th>
+      <th style="text-align: center">Memory</th>
+      <th style="text-align: center">Disk</th>
+      <th style="text-align: center">Bandwidth</th>
+      <th style="text-align: left">Other Details</th>
+      <th style="text-align: left">Thoughts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="http://www.atum.com/vps-hosting/unmanaged-vps/">ATUM</a></td>
+      <td style="text-align: center">$49 (Bronze)</td>
+      <td style="text-align: center">1@2.9Ghz</td>
+      <td style="text-align: center">1GB</td>
+      <td style="text-align: center">50GB</td>
+      <td style="text-align: center">2TB</td>
+      <td style="text-align: left">10K RPM Drives,Raid 5.</td>
+      <td style="text-align: left">Not a fan of the single core, and their docs on their VM tech and kernel level is absent. Have to contact for OS details.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.linode.com">Linode</a></td>
+      <td style="text-align: center">$40 (2GB)</td>
+      <td style="text-align: center">8@2x priority</td>
+      <td style="text-align: center">2GB</td>
+      <td style="text-align: center">96GB</td>
+      <td style="text-align: center">4TB</td>
+      <td style="text-align: left">Xen,HA,Data Center Choices,<a href="https://www.linode.com/linodes/">Image Config Tools</a></td>
+      <td style="text-align: left">Linode looks very powerful, and I like their backup pricing and very configurable tools. Xen hypervisor is very nice. 8 cores is good.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.digitalocean.com/pricing">Digital Ocean</a></td>
+      <td style="text-align: center">$40 (Tier 4)</td>
+      <td style="text-align: center">2@2-3Ghz</td>
+      <td style="text-align: center">4GB</td>
+      <td style="text-align: center">60GB</td>
+      <td style="text-align: center">4TB</td>
+      <td style="text-align: left">SSD,KVM,2-factor,custom admin,multiple data centers</td>
+      <td style="text-align: left">Only complaint on specs is cores. Price is good. Popular with the “hip” crowd. Custom admin looks nice. No documentation on kernel/OS options on site without registering. Competitive snapshots and backups for pricing. <a href="https://www.digitalocean.com/community">Awesome community docs</a>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://rimuhosting.com/">RimuHosting</a></td>
+      <td style="text-align: center">$50 (slider configurable)</td>
+      <td style="text-align: center">2@?</td>
+      <td style="text-align: center">2.5GB</td>
+      <td style="text-align: center">48GB</td>
+      <td style="text-align: center">100GB</td>
+      <td style="text-align: left">Xen,Market pricing,slider config,multi data center,dated 12.04 Ubuntu only.</td>
+      <td style="text-align: left">I tried RimuHosting previously. It’s a good company and they have decent tools, but their core count is low, and their pricing isn’t super competitive. Also, their Ubuntu options are old.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.rackspace.com/cloud/servers/">Rackspace</a></td>
+      <td style="text-align: center">$43.80 (Tier 2)</td>
+      <td style="text-align: center">1 “vCPU”</td>
+      <td style="text-align: center">1GB</td>
+      <td style="text-align: center">40GB</td>
+      <td style="text-align: center">.12c/GB</td>
+      <td style="text-align: left">…</td>
+      <td style="text-align: left">I’m not particularly a fan of the EC2-ish-ness of the RackSpace offering for my personal hosting. It’s an OpenStack platform, so it’s in many ways just like EC2. Probably good for horizontal scaling, but not really right for me.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.rocketvps.com/features.html">RocketVPS</a></td>
+      <td style="text-align: center">$44.99 (RS 4)</td>
+      <td style="text-align: center">6@2Ghz</td>
+      <td style="text-align: center">2GB</td>
+      <td style="text-align: center">75GB</td>
+      <td style="text-align: center">3.5TB</td>
+      <td style="text-align: left">OpenVZ,SolusVM admin,Raid 10,<a href="http://www.rocketvps.com/features.html">full server specs</a></td>
+      <td style="text-align: left">The pricing is competitive on RocketVPS, and I like full specs. Not a huge fan of OpenVZ, and SolusVM admin looks “just ok”. Appears to be 6 quite fast cores.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.burst.net/linvps.php">BurstNet</a></td>
+      <td style="text-align: center">$49.95 (VPS 6)</td>
+      <td style="text-align: center">1@4Ghz</td>
+      <td style="text-align: center">4GB</td>
+      <td style="text-align: center">250GB</td>
+      <td style="text-align: center">4TB</td>
+      <td style="text-align: left">RAID,1 IP,OpenVZ,vePortal,6 data centers</td>
+      <td style="text-align: left">A very highly rated host, but also very enterprise scale which may make impersonal. They are very competitive on price and scale. Only complaint is CPU, and that may just be bad docs. OS choices are pretty geriatric, unfortunately.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://asmallorange.com/hosting/cloud/">A Small Orange</a></td>
+      <td style="text-align: center">$50 (Tier 4)</td>
+      <td style="text-align: center">2@2.5Ghz</td>
+      <td style="text-align: center">2GB</td>
+      <td style="text-align: center">40GB</td>
+      <td style="text-align: center">1TB</td>
+      <td style="text-align: left">cPanel,Free Backups,KVM,Ubuntu 12.04 max,SSD,2 Dedicated IP</td>
+      <td style="text-align: left">Interesting mom-and-pop style. The extra IP address is nice, as is free backups, and SSD. 2 cores is a little light, and bandwidth and disk are a little lower than some others.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Here are options I explicitly excluded for one reason or another:</p>
+
+<ul>
+  <li>EC2 and GCE - Biggest issue here is the commodity disks and the weird ephemeral IP nonsense. I’ve done a lot of hosting with EC2 through my previous life, and have no interest in bringing that into my personal world.</li>
+  <li>Heroku - I’m actually a big fan of Heroku, but only if I had a desire to scale out, which I don’t. I’d rather have one efficient-as-possible VPS, as opposed to the Heroku sandbox. I also need root access.</li>
+  <li>HostGator - Hello 1998. No thank you.</li>
+  <li>SoftLayer - SoftLayer has a lot of good enterprise-level hosting offerings (and their dedicated is way cheaper than cloud in many cases), but it’s just not priced well for where I’m coming in. Feels targeted to bigger fish than I.</li>
+  <li>DreamHost - I had nothing but bad experiences with the snarky, always ironic DreamHost “support”. I have no interest to go back and feel like I’m in a hipster coffee shop all day.</li>
+</ul>
+
+<h3 id="summary">Summary</h3>
+
+<p>Right now I’m exploring hosts in this option:</p>
+
+<ol>
+  <li>Digital Ocean - This looks really compelling at the moment. Pricing is great; tools look great, and they have a good reputation right now.</li>
+  <li>Linode - Some folks simply swear by Linode, and I like some of their features such as HA proxy options. Pricing is good.</li>
+  <li>A Small Orange - These folks have a lot of street cred, and while their pricing isn’t totally competitive everywhere, their deployment looks pretty sharp all told.</li>
+</ol>
+
+<p>So did I miss anybody you’d suggest?</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-5 col-offset-7">
+				
+				<div class="post-details">
+	分类:
+		
+			
+				<a href="/category/journal"><span class="label">journal</span></a>
+			
+		
+	|
+	标签:
+		
+			
+				<a href="/tag/personal"><span class="label">personal</span></a>
+			
+				<a href="/tag/realjenius.com"><span class="label">realjenius.com</span></a>
+			
+				<a href="/tag/mediatemple"><span class="label">mediatemple</span></a>
+			
+		
+	|
+	<a href="http://panke.me/journal/2013/10/15/a-deal-with-the-devil.html"><span class="label label-info">Permalink</span></a>
+</div>
+
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="disqus_thread"></div>
+				<!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="" data-url=""></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"panke"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+<!-- 多说公共JS代码 end -->
+			</div>
+		</div>
+	</div>
+</article>
+	</div>
+</div>
+
+	    </div>
+		<footer class="rjfooter">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-offset-3">
+						<p>&copy 2016-2017 - panke.me | Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> &amp; <a href="http://github.com" target="_blank">GitHub</a></p>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-27375996-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        	$(document).ready(function() {
+    			$("#sitemapbtn").click(function() {
+					$("#sitemap").slideToggle();
+					return false;
+    			});
+    			$("#sitemapclose").click(function() {
+    				$("#sitemap").slideUp();
+    				return false;
+    			});
+        	});
+        </script>
+    </body>
+</html>

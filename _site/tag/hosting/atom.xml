@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+   	<title>panke.me - Tag: hosting</title>
+   
+   <link>http://panke.me</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>panke</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+  <title>Media Temple's New DV Platform</title>
+  <link>http://panke.me/journal/2013/07/31/media-temple-dv-platform.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-07-31T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/07/31/media-temple-dv-platform.html</guid>
+  <description><![CDATA[
+     <p>Earlier this year, I  underpinning the (ve) platform at <a href="http://mediatemple.net">Media Temple</a>. While their hardware is high quality, and their support is always great, the kernel was ancient, and it allowed me to trap myself into upgrade hell. The long and short of it was that Ubuntu 12.04 was very unadvisable as an OS choice on the (ve), and that included upgrading directly through the OS. This was largely due to a very old virtualization kernel that prevented some of the core libraries in 12.04 from being accessible due to needing too new of a kernel.</p>
+
+<p>Because of timing of some major platform changes, Media Temple was not offering a quick solution:</p>
+
+<blockquote>
+  <p>We still don’t have a time frame as to when Ubuntu 12.04 LTS will be available for the (ve) Servers. The ‘technical obstacle’ is we are bringing in a whole new infrastructure for our (ve) Servers. I apologize for the inconvenience but this is all the information I have for you at the moment.</p>
+</blockquote>
+
+<p>I’m happy to say that as of last month, they now have completely refreshed their virtualized platform offerings. Previously, the two platforms that MT offered were (DV) and (ve), with the former being a Plesk-based managed VPS that received controlled upgrades and improvements, and the latter being a bare-bones virtualized Linux box, much like you’d receive from an Amazon EC2 box.</p>
+
+<p>They still offer these two concepts, but have moved them onto the new hosted platform (which is a newer platform from Parallels), and have renamed the products to reflect their similarities:</p>
+
+<blockquote>
+  <p>We’ve consolidated all of our VPS platforms into one single, simple platform named the “DV”. We’ve simplified the VPS product line by consolidating and eliminating some things. We’ve removed the parens () ornamentation and we are no longer using version numbers. We’ve upgraded and changed the products formerly known as (dv) and (ve),  to <a href="http://mediatemple.net/webhosting/vps/managed/">DV Managed</a> and <a href="http://mediatemple.net/webhosting/vps/developer/">DV Developer</a>.</p>
+</blockquote>
+
+<p>I admittedly have not pulled the trigger on the upgrade yet. Unfortunately, it requires a full re-image of your instance, which will require me re-configuring a variety of sites and services. Because of that, I can’t speak to details like the kernel version at this point in time, but they are calling it 2013 tech, which suggests quite recent.</p>
+
+<p>I’ll check back in with more details once I find time to schedule the upgrade!</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>Do not Upgrade Your (ve) to Ubuntu 12.04!</title>
+  <link>http://panke.me/journal/2013/02/06/media-temple-ve-and-ubuntu-1204.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-02-06T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/02/06/media-temple-ve-and-ubuntu-1204.html</guid>
+  <description><![CDATA[
+     <p>A quick scan of my site shows that I’m typically one of <a href="http://www.mediatemple.net">Media Temple’s</a> <a href="http://panke.me/tag/media%20temple/">biggest supporters</a>. Their customer service is prompt, friendly, and their technological offering is always very stout for the price.</p>
+
+<p>However, for the past little bit, I have been battling a rather unfortunate situation (which admittedly is not all their fault) regarding Ubuntu upgrades and their (ve) servers. My site currently runs on a <a href="http://mediatemple.net/webhosting/ve/">Media Temple (ve)</a> hosting virtualized Ubuntu 10.04.4 LTS. I had been doing regular upgrades and dist-upgrades on this environment without fail, but I hit an issue where some of the packages in the Lucid Apt repos were just getting a little long in the tooth. I generally use Ruby, Nginx, and a few other things out there that have a tendency to move pretty quickly on their upgrades, and individual releases generally don’t introduce the major/minor package version upgrades of the sort that might happen with some of these components. Two and a half years can be a long time when it’s a server for a hobbyist exploring a lot of new tech.</p>
+
+<p>Now, I do know that with Ubuntu’s community, you can inevitably dig up somebody who has a PPA that can be tied to your respective LTS install to individually bring in packages up to a newer version than that particular major release ships, but inevitably those are supported less effectively than the mainline distro packages, and there’s also a spidering of trust it results in, where you being relying on more than just “official” community package maintainers. This is, in fact, what I’ve had to do, however.</p>
+
+<p>Choosing to leave the LTS wasn’t a huge deal for me anyway, as this is my personal server; not some commercially-hosted product. So, I decided to do the magical <code>do-release-upgrade</code> to level-up. Whoops.</p>
+
+<p>Earlier last year if you decided to do a release-upgrade on Media Temple (ve)s with “normal” as your release profile (as specified in the <code>/etc/update-manager/release-upgrades</code> file), it would upgrade you to 10.10, and everything was shiny. You could then upgrade to 11.04, and even to 11.10. No problems.</p>
+
+<p>However, if you tried to go to 12.04, the upgrade bombed very, very badly. In short, <a href="http://askubuntu.com/questions/146610/why-does-upgrading-to-12-04-on-an-openvz-vps-warn-that-the-kernel-size-is-0">this is the error I received</a>.</p>
+
+<blockquote>
+  <p>Please check your current kernel version with uname -r. If it is less than 2.6.24, the upgrade will fail half-way with a glibc error. That happens because the glibc included by default with 12.04 requires a minimum 2.6.24 kernel – glibc are the critical C libraries used by every application.</p>
+</blockquote>
+
+<p>Yup - sure enough, just as this link indicates, MediaTemple runs an <a href="http://openvz.org/Main_Page">OpenVZ</a>-based virtualization by <a href="http://www.parallels.com/">Parallels</a>. Here’s my <code>uname -r</code>:</p>
+
+<pre><code>2.6.18-028stab101.1
+</code></pre>
+
+<p>Uh-oh. 2.6.18 is definitely not 2.6.24. The forum Q&amp;A above suggests a rather ominous pinned dependency for <code>glibc</code>. I tried this temporarily, but never got it to work, and decided that it was not something I wanted to be shimmed on my server long-term anyway, so I went back to 10.04.</p>
+
+<p><em>(Incidentally, this isn’t discussed much, but if an Ubuntu upgrade fails, you better have a spare boat handy, as this one is going to sink, and no bailing of water will help. It’s very difficult to do anything resembling a rollback without just restoring a backup. So be prepared!)</em></p>
+
+<p>Now, something else happened shortly after 12.10 Ubuntu came out last year that made all of this muddier for Media Temple Ubuntinians. While 10.10 has been EOL for a while, it hasn’t actually been moved off of the main APT sources, so doing a “normal” upgrade would work as you’d expect. Through some administrative cleanup (I presume), it’s now properly under “old-releases” on the Ubuntu site. So if you try to upgrade from 10.04 LTS to 10.10 with <code>do-release-upgrade</code> and a normal upgrade setting, you will get a rather obscure 404 error. Worse, because Lucid isn’t actually in the EOL package tree for standard builds (because it’s not EOL), the general recommendation for upgrades fails (<a href="https://help.ubuntu.com/community/EOLUpgrades">see here</a>). In short, they recommend you to:</p>
+
+<ol>
+  <li>Move your current release sources to old-releases</li>
+  <li>Do a full “update+upgrade” to get caught up</li>
+  <li>Perform the do-upgrade-release to the next version, which may be EOL.</li>
+</ol>
+
+<p>This doesn’t work, as step-2 throws 404 errors. Now, I suspect so long as you did a full update before moving this over (flip steps one and two) it probably would work. But it feels rather unpleasant, and inevitably you’ll still hit 11.10 and have to stop. So now you’ve upgraded to a more recent build, but you’re no longer on an LTS release, and instead are on a release that will likely sunset in April, 2013, with nowhere to go.</p>
+
+<p><strong>Even worse</strong> for most (ve) folks is the fact that the default upgade process is not to do a “normal” release, but to do an LTS upgrade on 10.04 now that 12.04 is out. So if you login to your Media Temple instance, it will suggest you upgrade to Precise, and if you do -<strong>BOOM</strong>- trashed install. I made that mistake as well during this process.</p>
+
+<p>So in short, 10.04 LTS is probably the best you can do on a (ve) without doing some less-than-ideal workarounds, and the kernel is going to be 2.6.18 until Media Temple straightens it out.</p>
+
+<p>To describe how old 2.6.18 actually is, 2.6.16 (just 2 patches prior) came out in <em>March of 2006</em>. 2.6.27, which came out over a year after was, at release, a long-term-support kernel for Linux - and even that was EOL’ed back in early 2012.</p>
+
+<p>Now, to defend Media Temple a little bit, Ubuntu 10.04 LTS is still in active support, and will be for some time. So my distro is totally acceptable, even if the (admittedly, heavily patched and customized) kernel their virtualization uses is EOL. Also, from what I’ve been able to determine, this was originally a problem with Parallels, and not Media Temple. Unfortunately, it’s been something of a lacking priority for them, or at least not very transparent that it was a priority. Here is a forum thread that’s been going on since shortly after 12.04 went live: <a href="https://forum.mediatemple.net/topic/6345-ve-ubuntu-1204-lts/">Ubuntu 12.04 LTS on Media Temple (ve)</a>.</p>
+
+<p>Here are the most recent updates from Media Temple - November 6th of last year:</p>
+
+<blockquote>
+  <p>We still don’t have a time frame as to when Ubuntu 12.04 LTS will be available for the (ve) Servers.  The ‘technical obstacle’ is we are bringing in a whole new infrastructure for our (ve) Servers.  I apologize for the inconvenience but this is all the information I have for you at the moment.</p>
+</blockquote>
+
+<p>… and on January 11th this year:</p>
+
+<blockquote>
+  <p>Hey there! Apologize for the inconvenience but we currently don’t have any update on when Ubuntu 12.04 LTS will be available.</p>
+</blockquote>
+
+<p>I even decided to bring this up with the Media Temple twitter team, and got a similar non-commital response unfortunately: <a href="https://twitter.com/realjenius/status/298973645991182337">https://twitter.com/realjenius/status/298973645991182337</a>.</p>
+
+<p>But, even with bad news comes good. The main reason for the delay seems to be that they are working on some rather large (and non-descript) infrastructural change for the (ve) servers. The one huge benefit so far is that they doubled their RAM offering for all (ve) tiers, and existing customers were allowed to upgrade with a simple push of a button. So I guess I shouldn’t complain too much!</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>My Experience with a Media Temple (ve)</title>
+  <link>http://panke.me/journal/2010/08/04/my-experience-with-a-mediatemple-ve.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2010-08-04T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2010/08/04/my-experience-with-a-mediatemple-ve.html</guid>
+  <description><![CDATA[
+     <p>I just switched RealJenius.com (and a whole crap-ton of other sites I host) from a <a href="http://mediatemple.net/webhosting/dv/">MediaTemple (dv) 3.5</a> to one of their new <a href="http://mediatemple.net/webhosting/ve/">MediaTemple (ve)</a> servers. This was kind of an ideal move for me, as I’ve been using Ubuntu as my primary development desktop for months, and with my recent career change, I’ve been doing a lot more system administration work (on Ubuntu VMs none-the-less).</p>
+
+<p>If you’re as lured by the (ve) as I was, let me give you some details from my experience:</p>
+
+<ul>
+  <li>Provisioning is lightning-quick. I ordered the server, and it was available within 5 minutes.</li>
+  <li>It is truly as they say: just a Linux box with SSH. For my install, I was given a stripped down Ubuntu 10.04 server instance and told “Go Play!”.</li>
+  <li>For that reason I would recommend, if you are migrating from somewhere else, that you practice the migration on a VM somewhere, like with <a href="http://www.virtualbox.org">VirtualBox</a>. Since you’re responsible for the “whole shootin’ match”, it’s in your best interest to have everything inline to make your transition as seamless as possible.</li>
+  <li>Post-install configurations are everything! I have been using pre-packaged VPS solutions for so long, I forgot that they spend a lot of time tweaking and tuning software to fit in a box the size they choose. Software like PHP, Apache, MySQL, Java, Tomcat, etc - all comes with default values and selections that, I guarantee you, are different than most VPS’s are running.</li>
+  <li>Aptitude is your friend! I chose Ubuntu because I knew how blindingly simple the package manager was to use. The installation of Apache, PHP and MySQL support (while not tuned) was literally only bound by the time to download the packages. My job was to sit and watch it work.</li>
+</ul>
+
+<p>I chose to do a number of things to tune my installation after I got it up and running. There are a lot of things to consider when you are your own sys-admin!</p>
+
+<h2 id="tuning-apache-memory">Tuning Apache Memory</h2>
+
+<p>First - tell Apache to calm down on memory usage. The default Apache install will use <em>massive</em> amounts of room in each thread stack (mostly because Linux tells it to). In reality, unless you’re expecting to handle some pretty impressive load while shipping some pretty impressive HTML, you probably don’t need 8MB <em>per stack</em>. To detune Apache in Ubuntu 10.04 to use less memory, you can edit ‘/etc/init.d/apache2’ and put a stack-ulimit adjustment at the top of the file:</p>
+
+<pre><code>ulimit -s 256
+</code></pre>
+
+<p>Lowering my stack for Apache to 256k (which coincidentally is Java’s default stack size), lowered my memory usage for Apache and whatever else was on the box at the time (running standard pre-fork) from 750MB, to 280MB. Now, that includes virtual memory and everything else - but when you’ve only got 1GB to work with, that’s a pretty significant savings.</p>
+
+<h2 id="switching-apaches-multi-processing-module">Switching Apache’s Multi-Processing Module</h2>
+
+<p>The next thing I did to trim the Apache fat was to switch to mpm-worker threads instead of mpm-prefork. Now, most folks may comment here that mpm-worker actually uses more memory at idle, and while that’s technically true, it is much more predictable and scales much better from a memory perspective (think threads vs. processes if you are a Java or Ruby developer). It also generally happens to be faster, which is a nice benefit.</p>
+
+<p>Unfortunately, when you move away from pre-fork, you also move away from easy PHP installations. To get PHP to work with mpm-workers, you have to use something like FastCGI, which acts as a PHP worker process pool that runs outside of the Apache process. Now - I made this a lot harder on myself by trying to host sites outside of /var/www - I wanted all of the folks sites I host to be under their respective home folder: /home/guy-who-mooches/guys-site.com/yadaydayada (just kidding people who I host!). I’ll point you to several articles on the net about it:</p>
+
+<ul>
+  <li><a href="http://www.howtoforge.com/how-to-set-up-apache2-with-mod_fcgid-and-php5-on-ubuntu-8.10">http://www.howtoforge.com/how-to-set-up-apache2-with-mod_fcgid-and-php5-on-ubuntu-8.10</a></li>
+  <li><a href="http://www.chriswiegman.com/2010/06/running-apachefastcgisuexec-in-ubuntu-10-04-without-varwww/">http://www.chriswiegman.com/2010/06/running-apachefastcgisuexec-in-ubuntu-10-04-without-varwww/</a></li>
+  <li><a href="http://www.unixguru.biz/howto-apache2-suexec-php5-and-fastcgi-for-virtual-domains/">http://www.unixguru.biz/howto-apache2-suexec-php5-and-fastcgi-for-virtual-domains/</a></li>
+  <li><a href="http://www.linode.com/forums/viewtopic.php?t=2982">http://www.linode.com/forums/viewtopic.php?t=2982</a></li>
+</ul>
+
+<p>All of these sites have different (albeit similar) approaches. The key things to double check in this effort are:</p>
+
+<ul>
+  <li>Install <code>apache-suexec-custom</code> (the ‘custom’ is key!). Some sites suggest that you have to compile your own apache-suexec install; this is no longer true (that’s what the custom is for).</li>
+  <li>Leave Apache running (or make Apache run) as <code>www-data</code> - I made the mistake of switching it to the user apache/apache, and getting suexec-custom to work with that user was a fool’s errand for me.</li>
+  <li>With 10.04, you have to edit the file in <code>/etc/init.d/apache2/suexec</code> called <code>www-data</code> and change the first line from <code>/var/www</code> to wherever you want suexec to be allowed to run from (for me it had to be <code>/home</code>).</li>
+  <li>You’ll need to create a wrapper script for each user. Don’t use symbolic links. This wrapper script must have that user as the owner/group (whatever user is going in the suexec directive, anyway).</li>
+  <li>Pay attention to the properties you set in the wrapper script! They have drastic impacts on both performance and resource utilization. You need to have a feel for your site’s intended usage to be able to tune these.</li>
+  <li>The suxec directive and FCGI wrapper directives in the Virtual Host file vary in every article I read about this (there is more than one way to skin a cat) - I tried both the Action/AddHandler combo approach, and the FCGIWrapper approach. FCGIWrapper is simpler, but Action/AddHandler is more flexible. I’d start with FCGIWrapper to get it working, and when you are feeling more confident, try action/addhandler if you think you need it.</li>
+</ul>
+
+<p>Anyway - rather than rehash a full walk-through, I felt it would be better to provide some bullet-points. Until I embraced understanding how FastCGI actually worked, I found I was struggling to properly implement it. So take your time, read the articles, try to understand the scripts, and come back here and read my tips. I think you’ll be better off for it!</p>
+
+<h2 id="best-apache-tuning-tip">Best Apache Tuning Tip</h2>
+
+<p>Many folks say the best Apache tuning tip is to use <a href="http://nginx.org/">Nginx</a>. That may be true - I wanted to move fast, and I know very little about administering Nginx. I know that I will have to do some .htaccess file conversion… so maybe in a couple weeks.</p>
+
+<h2 id="user-management">User Management</h2>
+
+<p>I highly recommend creating a non-root user for yourself. Giving that non-root user sudo access gives you enough of a barrier to be careful, but still gives you the flexibility you need to administer. In Ubuntu, sudo-ing requires that your user be in the “sudo” group. That’s as simple as:</p>
+
+<pre><code>usermod -G sudo [username]
+</code></pre>
+
+<h2 id="use-identity-files">Use Identity Files</h2>
+
+<p>This is a huge boon in my opinion. Identity files are much more secure than passwords, and can make your login process faster (if you’re willing to trade-off the security of a passphrase). Here is a great article about it: <a href="http://www.csua.berkeley.edu/~ranga/notes/ssh_nopass.html">http://www.csua.berkeley.edu/~ranga/notes/ssh_nopass.html</a>&lt;/p&gt;</p>
+
+<h2 id="learn-to-ssh-tunnel">Learn to SSH Tunnel</h2>
+
+<p>SSH tunneling is secure. If you know how to tunnel, there is no reason to want to install PHP My Admin for example. It’s a security risk (don’t believe me? scan the Apache access logs of any decently popular domain, and you will see hack-attempts against dozens of phpmyadmin common URLs), and it’s not a very awesome administration tool. Meanwhile, MySQL administrator and MySQL Query Browser are awesome and just need an HTTP port. Here is one way to do it:</p>
+
+<pre><code>ssh -L 1234:127.0.0.1:3306 myuser@myfakeserver.com
+</code></pre>
+
+<p>This forwards the port 1234 on your machine to port 3306 on your server (which is the default port for MySQL). Then, when you open MySQL Administrator/Query Browser, just try to connect to 127.0.0.1 on port 1234. Now you have full administrative access to MySQL (bells and whistles abounding) and you can be comfortable that the traffic is encrypted.</p>
+
+<p>Tunneling with -D (dynamic SOCKS proxy) is also an excellent way to monitor a Java instance as well, using VisualVM and JMX (<a href="http://stackoverflow.com/questions/1609961/visualvm-over-ssh">http://stackoverflow.com/questions/1609961/visualvm-over-ssh</a>). Again, totally secure monitoring of a running JVM - hard to beat.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Media-Temple’s (ve) offering is excellent in my estimation. The servers are fast, the memory #s are phenomenal (especially considering you can run whatever you want), and you have total unadulterated control. Two-thumbs-up MT!</p>
+
+  ]]></description>
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+   	<title>panke.me - Tag: valve</title>
+   
+   <link>http://panke.me</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>panke</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+  <title>Steam for Linux Beta Released; Nvidia Making In-Roads</title>
+  <link>http://panke.me/journal/2012/11/06/steam-linux-official.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2012-11-06T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2012/11/06/steam-linux-official.html</guid>
+  <description><![CDATA[
+     
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/linux/steam.png" />
+	
+</div>
+
+<p>Today, Valve released the <a href="http://www.pcmag.com/article2/0,2817,2411827,00.asp">Steam for Linux beta client</a> (<a href="http://www.zdnet.com/big-time-gaming-coming-to-linux-7000006997/">more</a>, <a href="http://www.brightsideofnews.com/news/2012/11/6/valve-moves-to-change-pc-gaming-steam-goes-linux.aspx">and more</a>) to 1000 lucky testers. It’s an exciting official event (I ), and while the <a href="http://store.steampowered.com/search/?snr=1_4_4__12&amp;term=linux#os=linux&amp;advanced=0&amp;sort_order=ASC&amp;page=1">supported game list is still quite small</a>, there is no surprise that nearly all of the humble indie bundle games that went to Linux are also available on Steam.</p>
+
+<p>On another note, while there is a certain bit of “layman” reporting in this, I thought this was a surprising report from the Register on <a href="http://www.theregister.co.uk/2012/11/06/nvidia_heralds_steam_for_linux/">Nvidia releasing ‘double-speed’ drivers</a>. <a href="http://www.engadget.com/2012/11/06/nvidia-valve-geforce-linux-drivers-r310/">Engadget has a more technical</a> walkthrough as well.</p>
+
+<p>It was only a couple of months ago that <a href="http://www.wired.com/wiredenterprise/2012/06/torvalds-nvidia-linux/">Linus gave Nvidia the finger</a>, and there is good reason for that - so as an Nvidia card owner, I’m glad to see that Valve has encouraged to consume a large in-flow of patches and contributions to help them make their Linux offering less horrible.</p>
+
+<p>In reality, the drivers they are releasing only fix performance for a few cards and likely for specific problems found from the Source engine, but even still, a little traction can go a long way. There have been a lot of announcements of potential Linux support recently between Valve, <a href="http://blogs.unity3d.com/2012/07/03/linux-publishing-preview-what-how-and-wherefore-3/">Unity3d for Linux (which is used aggressively in the indie space)</a>, <a href="http://news.softpedia.com/news/Space-Sim-Star-Citizen-Is-Getting-Closer-to-a-Linux-Release-304249.shtml">Star Citizen by Chris Roberts (ala Wing Commander)</a>, and of course <a href="http://www.omgubuntu.co.uk/2012/09/humble-indie-bundle-6-arrives-with-6-linux-games-in-tow">Humble Indie Bundle</a>, things are starting to finally look up for Linux gamers!</p>
+
+<p>In closing, here is Linus giving his sign language to Nvidia:</p>
+
+
+  ]]></description>
+</item>
+
+</channel>
+</rss>
