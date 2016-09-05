@@ -15,7 +15,7 @@ module Jekyll
     end
 
     def build_subpages(site, type, posts) 
-      posts[1] = posts[1].sort_by { |p| -p.date.to_f }     
+      posts[1] = posts[1].sort_by { |p| -p.date.to_f }
       atomize(site, type, posts)
       paginate(site, type, posts)
     end
@@ -36,7 +36,7 @@ module Jekyll
         end
         newpage = GroupSubPage.new(site, site.source, path, type, posts[0])
         newpage.pager = pager
-        site.pages << newpage 
+        site.pages << newpage
 
       end
     end

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>panke.me - sublime text 多光标 Multiple Selections</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="panke.me - Hold my beer; watch this." />
+        <meta name="author" content="R.J. Lorimer" />
+        <meta charset="UTF-8" />
+
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+        <link href="/stylesheets/syntax-dark.css" rel="stylesheet" />
+        <link href="/stylesheets/main.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="navrow navbar-fixed-top">
+            <div class="container">
+                <div class="navbar navbar-inverse ">
+                    <a class="navbar-brand" href="/">
+                        <span class="title_letter">P</span>an<span class="title_letter">k</span>e.me
+                    </a>
+
+                    <ul class="nav navbar-nav ">
+
+                        <li>
+                            <a role="menuitem" tabindex="-1" href="/cats_and_tags.html">分类·标签</a>
+                        </li>
+                        <li class="visible-lg">
+                            <a role="menuitem" tabindex="-1" href="/tag/java/">Java Articles</a>
+                        </li>
+                        <li  class="visible-lg" >
+                            <a role="menuitem" tabindex="-1" href="/category/distilling-jruby/">Distilling JRuby Series</a>
+                        </li>
+                        <li  class="visible-lg" >
+                            <a role="menuitem" tabindex="-1" href="/tag/jekyll/">Jekyll Articles</a>
+                        </li>
+                        <li class="" ><a href="/about.html">关于</a></li>
+                        <!--<li class="dropdown hidden-sm" id="explore">
+                            <a class="dropdown-toggle" role="button" id="exploredrop" data-toggle="dropdown" href="#">Explore <b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="exploredrop">
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="/cats_and_tags.html#categories">Categories</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="/cats_and_tags.html#tags">Tags</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li role="presentation" >
+                                    <a role="menuitem" tabindex="-1" href="/tag/java/">Java Articles</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="/category/distilling-jruby/">Distilling JRuby Series</a>
+                                </li>
+                                <li role="presentation" >
+                                    <a role="menuitem" tabindex="-1" href="/tag/jekyll/">Jekyll Articles</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                    </ul>
+
+                    <!--<ul class="nav navbar-nav pull-right hidden-sm">
+                        <li class="dropdown" id="elsewhere">
+                            <a class="dropdown-toggle" role="button" id="elsewheredrop" data-toggle="dropdown" href="#">
+                                Elsewhere <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="elsewheredrop">
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="http://www.twitter.com/">Twitter</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1"  href="http://www.linkedin.com/in/rjlorimer">LinkedIn</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1"  href="https://github.com/">GitHub</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1"  href="http://live.xbox.com/en-US/profile/profile.aspx?pp=0&GamerTag=Real+Jenius">XBox Live</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1"  href="http://beeradvocate.com/user/profile/">BeerAdvocate</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="feeds">
+                            <a class="dropdown-toggle" role="button" id="feedsdrop" data-toggle="dropdown" href="#">
+                                Feeds <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="feedsdrop">
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1"  href="/atom.xml">Everything</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1"  href="/category/journal/atom.xml">Journal</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1"  href="/category/article/atom.xml">Articles</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1"  href="/tag/java/atom.xml">Java</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1"  href="/tag/ruby/atom.xml">Ruby</a>
+                                </li>
+                                <li role="presentation">
+                                    <a  role="menuitem" tabindex="-1" href="/tag/linux/atom.xml">Linux</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>-->
+                </div>
+            </div>
+        </div>
+<div class="container main">
+<div class="row">
+    <div class="col-lg-12" id="content">
+
+<article class="page">
+	<div class="page-header">
+		<h2 class="entry-title"><a href="/2016/08/05/sublime-text%E5%A4%9A%E5%85%89%E6%A0%87%E5%8A%9F%E8%83%BD.html">sublime text 多光标 Multiple Selections</a>
+			
+		</h2>
+        <small>
+                <span class="entry-date">2016-08-05</span>
+        </small>
+	</div>
+
+	<div class="article-body">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="article-body">
+					<p>前段时间投入到subliem text的阵营了，因为发现sublime text有许多非常好的特性，今天我们来了解下sublime text的多光标特性。</p>
+
+<p>本人环境：</p>
+
+<ul>
+  <li>windows 10</li>
+  <li>sublime text 3</li>
+</ul>
+
+<hr />
+
+<p>sublime text 的多光标功能是我以前在其他编辑器中未曾见过的，所谓的多光标就是在同一编辑文件中可以有多个闪动的光标，即我们可以同时编辑多处位置。</p>
+
+<h3 id="section">如何添加光标</h3>
+
+<hr />
+
+<ul>
+  <li><code>Ctrl</code> + 鼠标左键</li>
+</ul>
+
+<p>按住<code>Ctrl</code>键的同时，在你想添加光标的位置点击鼠标左键即可添加一个光标。</p>
+
+<ul>
+  <li><code>Ctrl</code> + <code>Alt</code> + 上下方向键</li>
+</ul>
+
+<p>按住<code>Ctrl</code> + <code>Alt</code>的同时按上方向键或下方向键，就会在上一行或下一行添加光标。</p>
+
+<ul>
+  <li><code>Ctrl</code> + <code>D</code></li>
+</ul>
+
+<p>按<code>Ctrl</code> + <code>D</code>键之前要先选中一段字符，然后按<code>Ctrl</code> + <code>D</code>，就会从当前光标向后查找与你选中的字符相同的字符，找到后就选中该字符并添加一个光标。</p>
+
+<ul>
+  <li><code>Ctrl</code> + <code>Shift</code> + <code>L</code></li>
+</ul>
+
+<p>使用<code>Ctrl</code> + <code>Shift</code> + <code>L</code>之前要先使用<code>Ctrl</code> + <code>L</code>组合键选中想要编辑的行（<code>Ctrl</code> + <code>L</code>是选中当前行快捷键，按一下会向下再选中一行），然后按<code>Ctrl</code> + <code>Shift</code> + <code>L</code>组合键就会在每行的末尾添加光标</p>
+
+<h3 id="section-1">如何删除光标</h3>
+
+<hr />
+
+<ul>
+  <li>删除全部光标</li>
+</ul>
+
+<p>删除多光标只要鼠标左键点击任何位置多光标就会消失,或按<code>Esc</code>键。</p>
+
+<ul>
+  <li>删除多光标中的某一个光标</li>
+</ul>
+
+<p>如果想删除多光标中的某一个光标只要按住<code>Alt</code> + <code>Shift</code> + 鼠标<strong>右</strong>键点击想删除的光标即可。</p>
+
+<h3 id="section-2">使用技巧</h3>
+
+<hr />
+
+<h4 id="section-3">将多行合并为一行</h4>
+
+<p><code>Ctrl</code> + <code>J</code> 快捷键可以将光标所在行和其下一行合并为一行，但如果想将多行合并为一行就需要多次按<code>Ctrl</code> + <code>J</code>快捷键。下面说下一个更简便的方法，首先根据上面说到的设置多光标的方法将需要合并为一行的行添加光标(不包括最后一行)，然后再按<code>Ctrl</code> + <code>J</code>快捷键。</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-5 col-offset-7">
+				
+				<div class="post-details">
+                分类:
+                    
+                        
+                    
+                |
+                标签:
+                    
+                        
+                            <a href="/tag/sublime"><span class="label">sublime</span></a>
+                        
+                    
+                
+                </div>
+
+                
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				
+				<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="/2016/08/05/sublime-text多光标功能" data-title="sublime text 多光标 Multiple Selections" data-url="http://panke.me/2016/08/05/sublime-text%E5%A4%9A%E5%85%89%E6%A0%87%E5%8A%9F%E8%83%BD.html"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"panke"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+           || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+			</div>
+		</div>
+	</div>
+</article>
+
+  </div>
+</div>
+</div>
+<footer class="rjfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-offset-3">
+                        <p>&copy 2016-2017 - panke.me | Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> &amp; <a href="http://github.com" target="_blank">GitHub</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-27375996-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#sitemapbtn").click(function() {
+                    $("#sitemap").slideToggle();
+                    return false;
+                });
+                $("#sitemapclose").click(function() {
+                    $("#sitemap").slideUp();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>
+

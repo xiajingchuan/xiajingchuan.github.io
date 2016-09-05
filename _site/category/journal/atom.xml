@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+    <title>panke.me - Category: journal</title>
+   
+   <link>http://panke.me</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>panke</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+  <title>Media Temple Makes a Deal with the Devil</title>
+  <link>http://panke.me/journal/2013/10/15/a-deal-with-the-devil.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-10-15T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/10/15/a-deal-with-the-devil.html</guid>
+  <description><![CDATA[
+     <p>Today, Media Temple announced that they are being acquired by GoDaddy.</p>
+
+<p>Here’s a tip for Media Temple: if you have to spend your entire FAQ trying to convince folks that the acquisition isn’t a bad idea… maybe <strong>it actually is a bad idea.</strong></p>
+
+<p>But surely, that’s not enough reason to switch hosts. It seems silly to move, just because of an acquisition that Media Temple has said so strongly <a href="http://weblog.mediatemple.net/2013/10/15/faqs-about-the-godaddy-acquisition/">won’t affect their service</a>:</p>
+
+<blockquote>
+  <h4 id="what-about-godaddys-reputation-in-the-tech-community">What about GoDaddy’s reputation in the tech community?</h4>
+  <p>GoDaddy has been transformed in recent months and is essentially a new company. If we did not like what we have seen, we would not have joined the GoDaddy family. They have overhauled their leadership team and attracted tech talent from the best-of-the-best. We love “the new GoDaddy” that CEO Blake Irving and his team have created, especially their new approach with advertising, product focus and UX.</p>
+
+  <p>Though neither GoDaddy’s brand nor operations are being integrated into ours, we are excited to be a positive influence on them with how to make even more improvements to better serve the Web pro community.</p>
+
+  <h4 id="will-media-temple-be-merging-with-godaddy">Will Media Temple be merging with GoDaddy?</h4>
+  <p>No, we keep operating independently. The strategy to keep the two companies operating independently was critical for us. While we are excited about GoDaddy CEO Blake Irving’s vision to build bridges between GoDaddy and the Web developer community, the commitment to maintain (mt)’s independent operations is what sealed the deal for us.</p>
+
+  <h4 id="how-does-this-affect-me-as-an-mt-customer">How does this affect me, as an (mt) customer?</h4>
+  <p>It doesn’t. (mt) and GoDaddy continue to operate independently, so it’s ‘business as usual.’ We’ll keep doing what we do best: serving you and helping you succeed online.</p>
+</blockquote>
+
+<p>Me believing any of these answers is predicated by me “trusting” the author; my web-host. While I have implicitly trusted the intentions of Media Temple over the years I have used their service, I have absolutely no trust for Go Daddy. And the reason is simple: They have shown time and again to have no integrity.</p>
+
+<p>Integrity is a key element in your relationship with your web-host, as you are giving them a lot of trust in the execution and support of your personal and business ventures. Sebastiaan de With has summarized perfectly how GoDaddy has shown they don’t have the type of integrity I’m interested in my host having:</p>
+
+<div>
+	<blockquote class="twitter-tweet"><p>“<a href="https://twitter.com/Scobleizer">@Scobleizer</a>: <a href="https://twitter.com/sdw">@sdw</a> <a href="https://twitter.com/mediatemple">@mediatemple</a> why switch? What are you looking for that you don&#39;t currently have?”&#10;&#10;Integrity. <a href="http://t.co/DEL6nu9rK8">pic.twitter.com/DEL6nu9rK8</a></p>&mdash; Sebastiaan de With (@sdw) <a href="https://twitter.com/sdw/statuses/390172367856496640">October 15, 2013</a></blockquote>
+	<script async="" src="http://panke.me//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>And so, with that, I must choose to vote with the only voice I have: my business. Which means I’m looking at the alternative hosts for the first time in many years. I currently run “unmanaged” VPS-style hosting via a DV-Developer at Media Temple, so my interests are specifically in finding a competitive and well-respected alternative in that space. If you are a Grid-Service or DV-Managed user; this list may not be useful for you.</p>
+
+<p>For my analysis, I’m explicitly targeting the “$50/month” price point in unmanaged servers (tier 2 at MT). Let’s enumerate what I get at Media Temple for that price:</p>
+
+<ul>
+  <li>16 cores; un-documented “fast-enough” CPU speeds.</li>
+  <li>2 GB of memory.</li>
+  <li>40 GB of RAID-10 storage.</li>
+  <li>650 GB bandwidth.</li>
+  <li>Root + SSH access.</li>
+  <li>Old but current-enough OpenVZ kernel capable of running Ubuntu 13.04.</li>
+  <li>Parallels power panel</li>
+  <li>Good top-level tools for re-provisioning, restoring in emergencies, upgrading on-the-spot, and managing DNS.</li>
+  <li>Basic real-time server statistics</li>
+  <li>Good tech support</li>
+  <li>No built-in backups.</li>
+</ul>
+
+<p>Now, let’s look at some competition (in no particular order)!</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align: left">Host</th>
+      <th style="text-align: center">Price</th>
+      <th style="text-align: center">CPU</th>
+      <th style="text-align: center">Memory</th>
+      <th style="text-align: center">Disk</th>
+      <th style="text-align: center">Bandwidth</th>
+      <th style="text-align: left">Other Details</th>
+      <th style="text-align: left">Thoughts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="http://www.atum.com/vps-hosting/unmanaged-vps/">ATUM</a></td>
+      <td style="text-align: center">$49 (Bronze)</td>
+      <td style="text-align: center">1@2.9Ghz</td>
+      <td style="text-align: center">1GB</td>
+      <td style="text-align: center">50GB</td>
+      <td style="text-align: center">2TB</td>
+      <td style="text-align: left">10K RPM Drives,Raid 5.</td>
+      <td style="text-align: left">Not a fan of the single core, and their docs on their VM tech and kernel level is absent. Have to contact for OS details.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.linode.com">Linode</a></td>
+      <td style="text-align: center">$40 (2GB)</td>
+      <td style="text-align: center">8@2x priority</td>
+      <td style="text-align: center">2GB</td>
+      <td style="text-align: center">96GB</td>
+      <td style="text-align: center">4TB</td>
+      <td style="text-align: left">Xen,HA,Data Center Choices,<a href="https://www.linode.com/linodes/">Image Config Tools</a></td>
+      <td style="text-align: left">Linode looks very powerful, and I like their backup pricing and very configurable tools. Xen hypervisor is very nice. 8 cores is good.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.digitalocean.com/pricing">Digital Ocean</a></td>
+      <td style="text-align: center">$40 (Tier 4)</td>
+      <td style="text-align: center">2@2-3Ghz</td>
+      <td style="text-align: center">4GB</td>
+      <td style="text-align: center">60GB</td>
+      <td style="text-align: center">4TB</td>
+      <td style="text-align: left">SSD,KVM,2-factor,custom admin,multiple data centers</td>
+      <td style="text-align: left">Only complaint on specs is cores. Price is good. Popular with the “hip” crowd. Custom admin looks nice. No documentation on kernel/OS options on site without registering. Competitive snapshots and backups for pricing. <a href="https://www.digitalocean.com/community">Awesome community docs</a>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://rimuhosting.com/">RimuHosting</a></td>
+      <td style="text-align: center">$50 (slider configurable)</td>
+      <td style="text-align: center">2@?</td>
+      <td style="text-align: center">2.5GB</td>
+      <td style="text-align: center">48GB</td>
+      <td style="text-align: center">100GB</td>
+      <td style="text-align: left">Xen,Market pricing,slider config,multi data center,dated 12.04 Ubuntu only.</td>
+      <td style="text-align: left">I tried RimuHosting previously. It’s a good company and they have decent tools, but their core count is low, and their pricing isn’t super competitive. Also, their Ubuntu options are old.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.rackspace.com/cloud/servers/">Rackspace</a></td>
+      <td style="text-align: center">$43.80 (Tier 2)</td>
+      <td style="text-align: center">1 “vCPU”</td>
+      <td style="text-align: center">1GB</td>
+      <td style="text-align: center">40GB</td>
+      <td style="text-align: center">.12c/GB</td>
+      <td style="text-align: left">…</td>
+      <td style="text-align: left">I’m not particularly a fan of the EC2-ish-ness of the RackSpace offering for my personal hosting. It’s an OpenStack platform, so it’s in many ways just like EC2. Probably good for horizontal scaling, but not really right for me.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.rocketvps.com/features.html">RocketVPS</a></td>
+      <td style="text-align: center">$44.99 (RS 4)</td>
+      <td style="text-align: center">6@2Ghz</td>
+      <td style="text-align: center">2GB</td>
+      <td style="text-align: center">75GB</td>
+      <td style="text-align: center">3.5TB</td>
+      <td style="text-align: left">OpenVZ,SolusVM admin,Raid 10,<a href="http://www.rocketvps.com/features.html">full server specs</a></td>
+      <td style="text-align: left">The pricing is competitive on RocketVPS, and I like full specs. Not a huge fan of OpenVZ, and SolusVM admin looks “just ok”. Appears to be 6 quite fast cores.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.burst.net/linvps.php">BurstNet</a></td>
+      <td style="text-align: center">$49.95 (VPS 6)</td>
+      <td style="text-align: center">1@4Ghz</td>
+      <td style="text-align: center">4GB</td>
+      <td style="text-align: center">250GB</td>
+      <td style="text-align: center">4TB</td>
+      <td style="text-align: left">RAID,1 IP,OpenVZ,vePortal,6 data centers</td>
+      <td style="text-align: left">A very highly rated host, but also very enterprise scale which may make impersonal. They are very competitive on price and scale. Only complaint is CPU, and that may just be bad docs. OS choices are pretty geriatric, unfortunately.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://asmallorange.com/hosting/cloud/">A Small Orange</a></td>
+      <td style="text-align: center">$50 (Tier 4)</td>
+      <td style="text-align: center">2@2.5Ghz</td>
+      <td style="text-align: center">2GB</td>
+      <td style="text-align: center">40GB</td>
+      <td style="text-align: center">1TB</td>
+      <td style="text-align: left">cPanel,Free Backups,KVM,Ubuntu 12.04 max,SSD,2 Dedicated IP</td>
+      <td style="text-align: left">Interesting mom-and-pop style. The extra IP address is nice, as is free backups, and SSD. 2 cores is a little light, and bandwidth and disk are a little lower than some others.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Here are options I explicitly excluded for one reason or another:</p>
+
+<ul>
+  <li>EC2 and GCE - Biggest issue here is the commodity disks and the weird ephemeral IP nonsense. I’ve done a lot of hosting with EC2 through my previous life, and have no interest in bringing that into my personal world.</li>
+  <li>Heroku - I’m actually a big fan of Heroku, but only if I had a desire to scale out, which I don’t. I’d rather have one efficient-as-possible VPS, as opposed to the Heroku sandbox. I also need root access.</li>
+  <li>HostGator - Hello 1998. No thank you.</li>
+  <li>SoftLayer - SoftLayer has a lot of good enterprise-level hosting offerings (and their dedicated is way cheaper than cloud in many cases), but it’s just not priced well for where I’m coming in. Feels targeted to bigger fish than I.</li>
+  <li>DreamHost - I had nothing but bad experiences with the snarky, always ironic DreamHost “support”. I have no interest to go back and feel like I’m in a hipster coffee shop all day.</li>
+</ul>
+
+<h3 id="summary">Summary</h3>
+
+<p>Right now I’m exploring hosts in this option:</p>
+
+<ol>
+  <li>Digital Ocean - This looks really compelling at the moment. Pricing is great; tools look great, and they have a good reputation right now.</li>
+  <li>Linode - Some folks simply swear by Linode, and I like some of their features such as HA proxy options. Pricing is good.</li>
+  <li>A Small Orange - These folks have a lot of street cred, and while their pricing isn’t totally competitive everywhere, their deployment looks pretty sharp all told.</li>
+</ol>
+
+<p>So did I miss anybody you’d suggest?</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>DV Developer Acquired</title>
+  <link>http://panke.me/journal/2013/10/01/dv-developer-install.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-10-01T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/10/01/dv-developer-install.html</guid>
+  <description><![CDATA[
+     <p>As I discussed earlier this year, , improving their underlying virtualization software, getting a more recent kernel, and otherwise polishing up the various bits. After slogging through the last couple months of my second child being born, I finally got my head above water and pulled the trigger on migrating to a new installation. I was on an old (ve), so I chose to go to a <a href="http://mediatemple.net/webhosting/vps/developer/">DV Developer</a>, Level 2.</p>
+
+<p>Since both the (ve) and the DV Developer are a raw, bare-bones Linux installation, there isn’t a ton to report in terms of pretty oohs and ahhs, and the provisioning and migration occurred entirely without incident (as it should be), so I can’t prattle on about that arduous process, since it was pretty much a single button press followed by “ssh #######” 5 minutes later.</p>
+
+<p>Nevertheless, I can show a few interesting tidbits for those that are interested.</p>
+
+<h2 id="as-advertised-boxi-ness">As Advertised Boxi-ness</h2>
+
+<p>The Level 2 is “2GB Memory, 40GB Storage, and 650GB Bandwidth”. One thing I’ve always appreciated about Media Temple is the number of cores they allow you to run on for your slice of the computing pie:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/misc/dv_stats.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>Other VPS offerings in the world seem to generally offer more like 2 or 4 cores, as opposed to the 16 made available on Media Temple. Even if the aggregate compute power available through MT is no better than other hosts, I prefer it being split across cores like this when hosting concurrent web apps.</p>
+
+<p>You can also see that I do in fact have 2GB of memory at my fingertips; no trickery there. I should also note that the disks are SAS, and the ethernet is gigabit - so you have very few bottlenecks baked in (as you might with something like EC2).</p>
+
+<h2 id="newer-kernel-newer-virtualization-platform">Newer Kernel; Newer Virtualization Platform</h2>
+
+<p>I lamented rather furiously about the state of the kernel on my (ve) - it was a rather ancient <code>2.6.18</code> build for OpenVZ from Parallels. Their new platform is a more recent, but not what I’d consider super modern <code>2.6.32</code>. It’s certainly new-enough for most needs. The new virtualization platform is also supposed to be more readily upgradable on their part, so hopefully it won’t fall behind quite so badly.</p>
+
+<p>Concretely speaking, I’m currently able to run Ubuntu Server 13.04 without issue, which is a significant step forward from the 10.04 dead-end I previously encountered.</p>
+
+<p>Media Temple also promises significant performance increases for the same resource utilization:</p>
+
+<blockquote>
+  <p>DV Developer, formerly known as (ve), streamlines the DV platform for speed, performance and efficiency. Packed with the same upgrades as DV Managed – 25% increase in LAMP performance, 10X increases in backups and maintenance, and industry leading software packages including Ubuntu, CentOS, Fedora, and Debian – DV Developer also provides rebootless updates - upgrade kernel and reboot without downtime, improved stats using vSwap, and unlimited scalability by removing the previous 20 service limit per account. DV Developer customers will also benefit from the new (mt) Media Temple 20/20 Uptime Guarantee. Pricing for DV Developer, including all upgrades, remains the same starting at $30 per month with no commitments required.</p>
+</blockquote>
+
+<h2 id="consoles-admins-apis-etc">Consoles, Admins, APIs, Etc.</h2>
+
+<p>None of this is particularly new (in fact, it’s effectively identical to the (ve)), but there are a number of good administrative features available:</p>
+
+<h3 id="admin-and-stats-panel">Admin and Stats Panel</h3>
+
+<p>MediaTemple has an a bevy of administration GUIs, and also has a stats panel that shows sliding history of box performance:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/misc/dv_admin_gui.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<h3 id="power-panel">Power Panel</h3>
+
+<p>You also get a Plesk Parallels Power Panel (Pay Phat Pive Pimes Past), which allows you to perform a number of tasks from a GUI console instead of SSH-ing in:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/misc/dv_power_panel.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<h3 id="apis">APIs</h3>
+
+<p>If you have need to automate your backends, you can with the <a href="http://mediatemple.net/api/">Media Temple ProDev API</a>. This allows you to do many of the things you’d expect:</p>
+
+<ul>
+  <li>Add services (instances)</li>
+  <li>Get current service information</li>
+  <li>Reboot services</li>
+  <li>Get service statistics, warnings, thresholds</li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>Overall I’m quite happy with the new DV Developer. It’s a much needed upgrade, and it has allowed me to modernize my stack across the board without having to work around any particular issues. While performance seems quite good, I had never really felt any reason to complain there, so I can’t speak about the marketed improvements; yet it wouldn’t surprise me given the advancements made (even just in kernels alone).</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>Tips For a New Elementary Install</title>
+  <link>http://panke.me/journal/2013/08/14/elementary-tweaks.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-08-14T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/08/14/elementary-tweaks.html</guid>
+  <description><![CDATA[
+     <p>If you, like me, decided to install and use the newly minted <a href="http://elementaryos.org/">Luna release of Elementary OS</a>, then you’ll want to get the most out of the various features, and begin feeling comfortable right away.</p>
+
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/linux/elementary-luna.png" />
+	
+</div>
+
+<p>First, I would point you over to the folks at <a href="http://www.elementaryupdate.com">elementaryupdate.com</a> as their site is full of Elementary-specific news and goodies. Among other things, they have a number of apps and themes available via PPA to help improve your Elementary experience.</p>
+
+<p>However, out of the mass of available information there, be sure to check out <a href="http://www.elementaryupdate.com/2013/06/finally-elementary-tweaks.html">Elementary Tweaks</a>. This is a tool that surfaces configuration UIs for a number of customization points. For those of you that have run Ubuntu, this is a very similar app to <a href="http://ubuntu-tweak.com/">Ubuntu Tweak</a>, and in fact does many of the same things. The big distinction is that this is written as an Elementary plugin, and so it shows up directly in the System Settings for Elementary:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/linux/elementary-tweak.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>Here are some of the things this enables you to do:
+* Change your Window decorations, GTK theme, and icon theme.
+* Change the default fonts.
+* Adjust or disable the animations and drop shadows.
+* Add application-specific shortcuts.
+* Change titlebar and scrollbar behavior.
+* Change application properties for a variety of built-in applications like the Plank dock, the file viewer, and the terminal.</p>
+
+<p>The last feature was the decider for me, as the default terminal settings are mostly OK, but I generally prefer an opaque backdrop and a custom font. Unlike the standard Gnome terminal, there simply is no configuration panel for the terminal out of the box in Luna, so this was a must for me.</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>Media Temple's New DV Platform</title>
+  <link>http://panke.me/journal/2013/07/31/media-temple-dv-platform.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-07-31T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/07/31/media-temple-dv-platform.html</guid>
+  <description><![CDATA[
+     <p>Earlier this year, I  underpinning the (ve) platform at <a href="http://mediatemple.net">Media Temple</a>. While their hardware is high quality, and their support is always great, the kernel was ancient, and it allowed me to trap myself into upgrade hell. The long and short of it was that Ubuntu 12.04 was very unadvisable as an OS choice on the (ve), and that included upgrading directly through the OS. This was largely due to a very old virtualization kernel that prevented some of the core libraries in 12.04 from being accessible due to needing too new of a kernel.</p>
+
+<p>Because of timing of some major platform changes, Media Temple was not offering a quick solution:</p>
+
+<blockquote>
+  <p>We still don’t have a time frame as to when Ubuntu 12.04 LTS will be available for the (ve) Servers. The ‘technical obstacle’ is we are bringing in a whole new infrastructure for our (ve) Servers. I apologize for the inconvenience but this is all the information I have for you at the moment.</p>
+</blockquote>
+
+<p>I’m happy to say that as of last month, they now have completely refreshed their virtualized platform offerings. Previously, the two platforms that MT offered were (DV) and (ve), with the former being a Plesk-based managed VPS that received controlled upgrades and improvements, and the latter being a bare-bones virtualized Linux box, much like you’d receive from an Amazon EC2 box.</p>
+
+<p>They still offer these two concepts, but have moved them onto the new hosted platform (which is a newer platform from Parallels), and have renamed the products to reflect their similarities:</p>
+
+<blockquote>
+  <p>We’ve consolidated all of our VPS platforms into one single, simple platform named the “DV”. We’ve simplified the VPS product line by consolidating and eliminating some things. We’ve removed the parens () ornamentation and we are no longer using version numbers. We’ve upgraded and changed the products formerly known as (dv) and (ve),  to <a href="http://mediatemple.net/webhosting/vps/managed/">DV Managed</a> and <a href="http://mediatemple.net/webhosting/vps/developer/">DV Developer</a>.</p>
+</blockquote>
+
+<p>I admittedly have not pulled the trigger on the upgrade yet. Unfortunately, it requires a full re-image of your instance, which will require me re-configuring a variety of sites and services. Because of that, I can’t speak to details like the kernel version at this point in time, but they are calling it 2013 tech, which suggests quite recent.</p>
+
+<p>I’ll check back in with more details once I find time to schedule the upgrade!</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>Bootstrap 3 Upgrade: What I Learned</title>
+  <link>http://panke.me/journal/2013/07/31/bootstrap3-upgrade.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-07-31T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/07/31/bootstrap3-upgrade.html</guid>
+  <description><![CDATA[
+     <p>Since the <a href="http://getbootstrap.com/">Bootstrap folks</a> have decided to <a href="http://blog.getbootstrap.com/2013/07/27/bootstrap-3-rc1/">promote Bootstrap 3 RC1 as their default version</a>, I decided to use it to upgrade my site. Along the way I chose to finally fix the responsive layout issues I’ve had since, supposedly, Bootstrap 3 does the whole responsive thing far better than Bootstrap 2 did.</p>
+
+<p>This <a href="https://github.com/twbs/bootstrap/pull/6342">pull request</a> contains a good summary of the changes, so I won’t renumerate them blindly here; but be sure to check them out. I will review some things to keep in mind, however.</p>
+
+<h3 id="grid-system">Grid System</h3>
+
+<p>The grid system has been changed completely. The class names are totally different, and they behave differently now too; especially when considering responsiveness. You really should consider revisiting all of your site scaffolding, as directly porting over may not do as you expect.</p>
+
+<p>That said, if you were using ~unresponsive~ Bootstrap, the closest migration is to use <code>col-# col-lg-#</code> everywhere you previously had <code>span#</code>. This tells Bootstrap to use the same gridding for both the smallest and largest devices.</p>
+
+<p>I fought the new model for a while, and I suspect you might too, but once you can understand it, it can be quite powerful.</p>
+
+<h3 id="button-defaults">Button Defaults</h3>
+
+<p>Aside from the obvious color changes, buttons no longer fallback to default styling when left as just “btn”. You need to now say “btn-default” if you have nothing else. Yes, this will probably require Regex to find on your site everywhere.</p>
+
+<h3 id="other-responsive-details">Other Responsive Details</h3>
+
+<p>There is now a whole series of “responsive” utilty classes that allow you to show/hide different page elements depending on certain page layouts. This is useful for those cases where the natural responsive re-flow is just not cutting it. Examples include <code>visible-sm</code> (only show this element on the smallest container model), and <code>hidden-lg</code> (show this on all but the largest/desktop container model).</p>
+
+<h3 id="form-changes">Form Changes</h3>
+
+<p>The form system now uses 100% of the parent container. This is a significant change from Bootstrap 2, and will impact you in a non-trivial way. Most forms will have to be revisited entirely. For example, I had several forms that used <code>help-inline</code>. That’s now gone!</p>
+
+<h3 id="summary">Summary</h3>
+
+<p>Overall I think that Bootstrap 3 is a move in the right direction for the framework. I do think that it will be a painful transition for many, however. My site is extremely simple on the public side, and it still took quite a while to make the move. More complex sites have a non-negligible migration path in front of them. Like the move from Bootstrap 1 to Bootstrap 2, you need to be prepared for some pain!</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>Do not Upgrade Your (ve) to Ubuntu 12.04!</title>
+  <link>http://panke.me/journal/2013/02/06/media-temple-ve-and-ubuntu-1204.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-02-06T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/02/06/media-temple-ve-and-ubuntu-1204.html</guid>
+  <description><![CDATA[
+     <p>A quick scan of my site shows that I’m typically one of <a href="http://www.mediatemple.net">Media Temple’s</a> <a href="http://panke.me/tag/media%20temple/">biggest supporters</a>. Their customer service is prompt, friendly, and their technological offering is always very stout for the price.</p>
+
+<p>However, for the past little bit, I have been battling a rather unfortunate situation (which admittedly is not all their fault) regarding Ubuntu upgrades and their (ve) servers. My site currently runs on a <a href="http://mediatemple.net/webhosting/ve/">Media Temple (ve)</a> hosting virtualized Ubuntu 10.04.4 LTS. I had been doing regular upgrades and dist-upgrades on this environment without fail, but I hit an issue where some of the packages in the Lucid Apt repos were just getting a little long in the tooth. I generally use Ruby, Nginx, and a few other things out there that have a tendency to move pretty quickly on their upgrades, and individual releases generally don’t introduce the major/minor package version upgrades of the sort that might happen with some of these components. Two and a half years can be a long time when it’s a server for a hobbyist exploring a lot of new tech.</p>
+
+<p>Now, I do know that with Ubuntu’s community, you can inevitably dig up somebody who has a PPA that can be tied to your respective LTS install to individually bring in packages up to a newer version than that particular major release ships, but inevitably those are supported less effectively than the mainline distro packages, and there’s also a spidering of trust it results in, where you being relying on more than just “official” community package maintainers. This is, in fact, what I’ve had to do, however.</p>
+
+<p>Choosing to leave the LTS wasn’t a huge deal for me anyway, as this is my personal server; not some commercially-hosted product. So, I decided to do the magical <code>do-release-upgrade</code> to level-up. Whoops.</p>
+
+<p>Earlier last year if you decided to do a release-upgrade on Media Temple (ve)s with “normal” as your release profile (as specified in the <code>/etc/update-manager/release-upgrades</code> file), it would upgrade you to 10.10, and everything was shiny. You could then upgrade to 11.04, and even to 11.10. No problems.</p>
+
+<p>However, if you tried to go to 12.04, the upgrade bombed very, very badly. In short, <a href="http://askubuntu.com/questions/146610/why-does-upgrading-to-12-04-on-an-openvz-vps-warn-that-the-kernel-size-is-0">this is the error I received</a>.</p>
+
+<blockquote>
+  <p>Please check your current kernel version with uname -r. If it is less than 2.6.24, the upgrade will fail half-way with a glibc error. That happens because the glibc included by default with 12.04 requires a minimum 2.6.24 kernel – glibc are the critical C libraries used by every application.</p>
+</blockquote>
+
+<p>Yup - sure enough, just as this link indicates, MediaTemple runs an <a href="http://openvz.org/Main_Page">OpenVZ</a>-based virtualization by <a href="http://www.parallels.com/">Parallels</a>. Here’s my <code>uname -r</code>:</p>
+
+<pre><code>2.6.18-028stab101.1
+</code></pre>
+
+<p>Uh-oh. 2.6.18 is definitely not 2.6.24. The forum Q&amp;A above suggests a rather ominous pinned dependency for <code>glibc</code>. I tried this temporarily, but never got it to work, and decided that it was not something I wanted to be shimmed on my server long-term anyway, so I went back to 10.04.</p>
+
+<p><em>(Incidentally, this isn’t discussed much, but if an Ubuntu upgrade fails, you better have a spare boat handy, as this one is going to sink, and no bailing of water will help. It’s very difficult to do anything resembling a rollback without just restoring a backup. So be prepared!)</em></p>
+
+<p>Now, something else happened shortly after 12.10 Ubuntu came out last year that made all of this muddier for Media Temple Ubuntinians. While 10.10 has been EOL for a while, it hasn’t actually been moved off of the main APT sources, so doing a “normal” upgrade would work as you’d expect. Through some administrative cleanup (I presume), it’s now properly under “old-releases” on the Ubuntu site. So if you try to upgrade from 10.04 LTS to 10.10 with <code>do-release-upgrade</code> and a normal upgrade setting, you will get a rather obscure 404 error. Worse, because Lucid isn’t actually in the EOL package tree for standard builds (because it’s not EOL), the general recommendation for upgrades fails (<a href="https://help.ubuntu.com/community/EOLUpgrades">see here</a>). In short, they recommend you to:</p>
+
+<ol>
+  <li>Move your current release sources to old-releases</li>
+  <li>Do a full “update+upgrade” to get caught up</li>
+  <li>Perform the do-upgrade-release to the next version, which may be EOL.</li>
+</ol>
+
+<p>This doesn’t work, as step-2 throws 404 errors. Now, I suspect so long as you did a full update before moving this over (flip steps one and two) it probably would work. But it feels rather unpleasant, and inevitably you’ll still hit 11.10 and have to stop. So now you’ve upgraded to a more recent build, but you’re no longer on an LTS release, and instead are on a release that will likely sunset in April, 2013, with nowhere to go.</p>
+
+<p><strong>Even worse</strong> for most (ve) folks is the fact that the default upgade process is not to do a “normal” release, but to do an LTS upgrade on 10.04 now that 12.04 is out. So if you login to your Media Temple instance, it will suggest you upgrade to Precise, and if you do -<strong>BOOM</strong>- trashed install. I made that mistake as well during this process.</p>
+
+<p>So in short, 10.04 LTS is probably the best you can do on a (ve) without doing some less-than-ideal workarounds, and the kernel is going to be 2.6.18 until Media Temple straightens it out.</p>
+
+<p>To describe how old 2.6.18 actually is, 2.6.16 (just 2 patches prior) came out in <em>March of 2006</em>. 2.6.27, which came out over a year after was, at release, a long-term-support kernel for Linux - and even that was EOL’ed back in early 2012.</p>
+
+<p>Now, to defend Media Temple a little bit, Ubuntu 10.04 LTS is still in active support, and will be for some time. So my distro is totally acceptable, even if the (admittedly, heavily patched and customized) kernel their virtualization uses is EOL. Also, from what I’ve been able to determine, this was originally a problem with Parallels, and not Media Temple. Unfortunately, it’s been something of a lacking priority for them, or at least not very transparent that it was a priority. Here is a forum thread that’s been going on since shortly after 12.04 went live: <a href="https://forum.mediatemple.net/topic/6345-ve-ubuntu-1204-lts/">Ubuntu 12.04 LTS on Media Temple (ve)</a>.</p>
+
+<p>Here are the most recent updates from Media Temple - November 6th of last year:</p>
+
+<blockquote>
+  <p>We still don’t have a time frame as to when Ubuntu 12.04 LTS will be available for the (ve) Servers.  The ‘technical obstacle’ is we are bringing in a whole new infrastructure for our (ve) Servers.  I apologize for the inconvenience but this is all the information I have for you at the moment.</p>
+</blockquote>
+
+<p>… and on January 11th this year:</p>
+
+<blockquote>
+  <p>Hey there! Apologize for the inconvenience but we currently don’t have any update on when Ubuntu 12.04 LTS will be available.</p>
+</blockquote>
+
+<p>I even decided to bring this up with the Media Temple twitter team, and got a similar non-commital response unfortunately: <a href="https://twitter.com/realjenius/status/298973645991182337">https://twitter.com/realjenius/status/298973645991182337</a>.</p>
+
+<p>But, even with bad news comes good. The main reason for the delay seems to be that they are working on some rather large (and non-descript) infrastructural change for the (ve) servers. The one huge benefit so far is that they doubled their RAM offering for all (ve) tiers, and existing customers were allowed to upgrade with a simple push of a button. So I guess I shouldn’t complain too much!</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>Good Week in Desktop Linux</title>
+  <link>http://panke.me/journal/2012/11/18/good-week-in-desktop-linux.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2012-11-18T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2012/11/18/good-week-in-desktop-linux.html</guid>
+  <description><![CDATA[
+     <p>If you’re a desktop Linux user… and let’s face it, there are .86 of you for every 100 people who read this blog (hello one armed man!)… then this week was a good one. Let’s go through some of the news!</p>
+
+<h2 id="elementary-os-luna-beta-1">Elementary OS Luna Beta 1</h2>
+
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/linux/elementary-luna.png" />
+	
+</div>
+
+<p>One of the most watched Linux distros for some time has been <a href="http://elementaryos.org">Elementary</a>. A number of GTK themes have come out of the work on the OS that have been some of the most well received in the Linux community.</p>
+
+<p>This week <a href="http://elementaryos.org/journal/luna-beta-1-released">Luna Beta 1 came out</a>, and it’s had a surprisingly positive number of reviews. Mine can be included in that. I have only installed it this weekend, but am already quite impressed with the polish and performance it has in comparison to Ubuntu 12.10.</p>
+
+<p>Since Elementary is built on top of the Ubuntu platform, it benefits from the significant amount of packaging and community work that Ubuntu benefits from, and then there is simply an additional layer of polish and smart bundling of software that simply makes it feel like a much more complete and comfortable OS.</p>
+
+<p>Now, that’s not to say it’s without bugs. I’ve had a few myself, including Noise (the custom media app) being unable to sync my music folder properly without crashing, and a number of system crash dialogs - but they have been relatively sparse so far. Overall, apps I’m used to having problems with in Linux (like Skype), have just worked; quite surprisingly.</p>
+
+<p>Monday will be the first real test, as I will be entering the workforce with it full-time. So far, however, color me impressed!</p>
+
+<h2 id="a-variety-of-steam-news">A Variety of Steam News</h2>
+
+<div class="img thumbnail pull-left">
+	<img src="http://panke.me/images/articles/linux/steam.png" />
+	
+</div>
+
+<p>Steam was officially launched to 1000 lucky folks on 11/06, and is starting to really pick up some… pressurized evaporated water. On Friday, the Valve folks <a href="http://blogs.valvesoftware.com/linux/the-great-winter-migration/">announced 500 additional slots in their BETA</a>, slowly but surely expanding the test base.</p>
+
+<p>It should be noted that <a href="http://news.yahoo.com/steam-linux-launches-beta-60-000-sign-first-183600349.html">60,000 people signed up for the initial BETA</a>, which is not a paltry number. It’s an encouraging sign that there is at least some viability there.</p>
+
+<p>In addition to 500 people being in the list, Friday also saw the official unveiling of <a href="http://store.steampowered.com/bigpicture/">Big Picture mode</a> on the Linux client, which <a href="http://www.theverge.com/2012/11/16/3652756/valve-big-picture-mode-steam-os-linux-game-console">some have seen as an opportunity for console-like gaming</a> from Linux (assuming, of course, that ‘if you build it, the games will come’ holds true).</p>
+
+<p>As I mentioned previously, the initial release had about <a href="http://www.pcgamer.com/2012/11/06/steam-linux-beta/">25 games</a>, most of which were indie games that for one reason or another were already cross-platform and available through other channels, like <a href="http://www.humblebundle.com/">Humble Indie Bundle</a>. That list has been gradually expanding over the last week, with a variety of other indie games and greenlight games coming alive. Which leads into the next topic…</p>
+
+<h2 id="unity-3d-40---now-runs-on-linux">Unity 3D 4.0 - Now Runs on Linux</h2>
+
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/linux/unity.png" />
+	
+</div>
+
+<p>One of the single most popular game engines right now is <a href="http://unity3d.com/">Unity</a> (not to be confused with Ubuntu Unity). My company works with a ton of clients using this as their gaming platform, and there are a number of good reasons why; not the least of which is the huge number of platforms it supports out of the box.</p>
+
+<p>The 4.0 release <a href="http://www.engadget.com/2012/11/15/unity-4-launch-linux-preview-directx-11-animation/">includes preview support for generating Linux binaries</a>, which is a huge boon for Linux, as it effectively brings the porting effort down to zero. Since most Unity games don’t have any platform-specific code, it’s very easy to just generate the Linux distro to get the extra coverage.</p>
+
+<h2 id="skype-41">Skype 4.1</h2>
+
+<div class="img thumbnail pull-left">
+	<img src="http://panke.me/images/articles/linux/skype.png" />
+	
+</div>
+
+<p>Microsoft <a href="http://ostatic.com/blog/skype-4-1-for-linux-brings-performance-improvements">released Skype 4.1 this week for Linux</a>, bringing with it support for integration with the Messenger IM service.</p>
+
+<p>This isn’t particularly notable as an individual release, but it does seem to further solidify the commitment (from Microsoft nonetheless!) to deliver a consistent, and hopefully quality, Skype client for Linux. Something those of us who use it for our jobs will appreciate.</p>
+
+<h2 id="netflix-kinda">Netflix (Kinda!)</h2>
+
+<p>Finally, folks finally got Netflix (in all its Silverlight DRM glory) running on Linux via <a href="http://www.engadget.com/2012/11/17/netflix-finally-comes-to-linux-sort-of/">use of Firefox running through Wine</a>. It apparently was quite a chore to get working; but you’ve gotta love the ingenuity of people.</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>Steam for Linux Beta Released; Nvidia Making In-Roads</title>
+  <link>http://panke.me/journal/2012/11/06/steam-linux-official.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2012-11-06T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2012/11/06/steam-linux-official.html</guid>
+  <description><![CDATA[
+     
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/linux/steam.png" />
+	
+</div>
+
+<p>Today, Valve released the <a href="http://www.pcmag.com/article2/0,2817,2411827,00.asp">Steam for Linux beta client</a> (<a href="http://www.zdnet.com/big-time-gaming-coming-to-linux-7000006997/">more</a>, <a href="http://www.brightsideofnews.com/news/2012/11/6/valve-moves-to-change-pc-gaming-steam-goes-linux.aspx">and more</a>) to 1000 lucky testers. It’s an exciting official event (I ), and while the <a href="http://store.steampowered.com/search/?snr=1_4_4__12&amp;term=linux#os=linux&amp;advanced=0&amp;sort_order=ASC&amp;page=1">supported game list is still quite small</a>, there is no surprise that nearly all of the humble indie bundle games that went to Linux are also available on Steam.</p>
+
+<p>On another note, while there is a certain bit of “layman” reporting in this, I thought this was a surprising report from the Register on <a href="http://www.theregister.co.uk/2012/11/06/nvidia_heralds_steam_for_linux/">Nvidia releasing ‘double-speed’ drivers</a>. <a href="http://www.engadget.com/2012/11/06/nvidia-valve-geforce-linux-drivers-r310/">Engadget has a more technical</a> walkthrough as well.</p>
+
+<p>It was only a couple of months ago that <a href="http://www.wired.com/wiredenterprise/2012/06/torvalds-nvidia-linux/">Linus gave Nvidia the finger</a>, and there is good reason for that - so as an Nvidia card owner, I’m glad to see that Valve has encouraged to consume a large in-flow of patches and contributions to help them make their Linux offering less horrible.</p>
+
+<p>In reality, the drivers they are releasing only fix performance for a few cards and likely for specific problems found from the Source engine, but even still, a little traction can go a long way. There have been a lot of announcements of potential Linux support recently between Valve, <a href="http://blogs.unity3d.com/2012/07/03/linux-publishing-preview-what-how-and-wherefore-3/">Unity3d for Linux (which is used aggressively in the indie space)</a>, <a href="http://news.softpedia.com/news/Space-Sim-Star-Citizen-Is-Getting-Closer-to-a-Linux-Release-304249.shtml">Star Citizen by Chris Roberts (ala Wing Commander)</a>, and of course <a href="http://www.omgubuntu.co.uk/2012/09/humble-indie-bundle-6-arrives-with-6-linux-games-in-tow">Humble Indie Bundle</a>, things are starting to finally look up for Linux gamers!</p>
+
+<p>In closing, here is Linus giving his sign language to Nvidia:</p>
+
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>Notice: Site Update</title>
+  <link>http://panke.me/journal/2012/11/02/site-updates.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2012-11-02T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2012/11/02/site-updates.html</guid>
+  <description><![CDATA[
+     <p>I just did a pretty big refresh of my site on the backend. The only change that should impact folks directly is that the feed URLs changed:</p>
+
+<ul>
+  <li><code>/feed</code> is now <code>/atom.xml</code></li>
+  <li><code>/category/[...]/feed</code> is now <code>/category/[...]/atom.xml</code></li>
+  <li><code>/tag/[...]/feed</code> is now <code>/tag/[...]/atom.xml</code></li>
+</ul>
+
+<p>I’ve put in some 301s for those URLs, so hopefully feeds will automatically update for you.</p>
+
+<p>If you have any issues with the site (links that don’t work, etc) please <a href="http://panke.me/contact.html">let me know</a>!</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>3 Weeks with CloudFlare</title>
+  <link>http://panke.me/journal/2011/08/29/3-weeks-with-cloudflare.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2011-08-29T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2011/08/29/3-weeks-with-cloudflare.html</guid>
+  <description><![CDATA[
+     
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/cloudflare/cloudflare.png" />
+	
+</div>
+
+<p>A few weeks ago I posted that I . I received a good bit of feedback on the post, so I thought it would be good to do a follow-up that covers the things I’ve learned and my overall impression since I first enabled this service.</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/cloudflare/views.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>The first thing I will note is that I have had no technical issues with the service as of yet. It has run flawlessly since I turned it on and started tinkering. As you can see from the above graph, a steady flow of traffic has been sent through their system for my site, and I’ve had no complaints or known issues over the past several days. So far so good on that front.</p>
+
+<p>I received some skepticism about the performance of CloudFlare from folks on Twitter, and although I admittedly didn’t share any particular specs regarding the performance, it was clear from the seat of my pants that everything was faster. I decided to go ahead and do some analysis with a dumped cache, Firebug, and some hosts file editing so I could bypass CloudFlare.</p>
+
+<p>Here is a snippet of the network downloads of my site running directly against my WordPress install:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/cloudflare/my_server_timeline.png" />
+	
+		<div class="well well-small">From my Server</div>
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>Here is a similar snapshot as pulled from CloudFlare:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/cloudflare/cloudflare_timeline.png" />
+	
+		<div class="well well-small">From CloudFlare</div>
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>As you can see - the latency from the CloudFlare servers is perceptibly better. Also note that while there is a built-in “wait” against my site (the purple section), there is effectively no wait from CloudFlare. Feel free to try this yourself against www.realjenius.com using the IP addresses above, if you’d like.</p>
+
+<p>Now, to be completely fair, this isn’t entirely apples to apples. One of the CloudFlare features I didn’t tout when I did the initial write-up that I have since enabled is the automatic minification of resources. CloudFlare can automatically minify Javascript, CSS, and HTML in your site markup, and cache the result. This is even part of the free service. While I use some minified resources already, my basic site markup is not compressed (nor is the generated HTML markup for my posts), so there is definitely some benefit to be gained here.</p>
+
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/cloudflare/minify.png" />
+	
+</div>
+
+<p>When connected to my server directly, without a cache, the initial download was <strong>417.4 KB</strong>. When connected through CloudFlare, the initial download was <strong>293.4 KB</strong>. That’s a pretty significant difference.</p>
+
+<p>One other interesting metric: over the past month CloudFlare has delivered hundreds of MB of cached resources on my behalf; effectively free bandwidth for me. Here is a bandwidth graph for my server over the past three months from within the MediaTemple monitoring tools - as you can see, there is a clear reduction (and stabilization) of the bandwidth consumption once August hits.</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/cloudflare/bandwidth.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>Overall, after the better part of a month, my opinion of CloudFlare is still a very favorable one. I haven’t made the jump to paid service as of yet, but am considering it much more strongly as the days progress.</p>
+
+  ]]></description>
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+   	<title>panke.me - Tag: mediatemple</title>
+   
+   <link>http://panke.me</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>panke</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+  <title>Media Temple Makes a Deal with the Devil</title>
+  <link>http://panke.me/journal/2013/10/15/a-deal-with-the-devil.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-10-15T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/10/15/a-deal-with-the-devil.html</guid>
+  <description><![CDATA[
+     <p>Today, Media Temple announced that they are being acquired by GoDaddy.</p>
+
+<p>Here’s a tip for Media Temple: if you have to spend your entire FAQ trying to convince folks that the acquisition isn’t a bad idea… maybe <strong>it actually is a bad idea.</strong></p>
+
+<p>But surely, that’s not enough reason to switch hosts. It seems silly to move, just because of an acquisition that Media Temple has said so strongly <a href="http://weblog.mediatemple.net/2013/10/15/faqs-about-the-godaddy-acquisition/">won’t affect their service</a>:</p>
+
+<blockquote>
+  <h4 id="what-about-godaddys-reputation-in-the-tech-community">What about GoDaddy’s reputation in the tech community?</h4>
+  <p>GoDaddy has been transformed in recent months and is essentially a new company. If we did not like what we have seen, we would not have joined the GoDaddy family. They have overhauled their leadership team and attracted tech talent from the best-of-the-best. We love “the new GoDaddy” that CEO Blake Irving and his team have created, especially their new approach with advertising, product focus and UX.</p>
+
+  <p>Though neither GoDaddy’s brand nor operations are being integrated into ours, we are excited to be a positive influence on them with how to make even more improvements to better serve the Web pro community.</p>
+
+  <h4 id="will-media-temple-be-merging-with-godaddy">Will Media Temple be merging with GoDaddy?</h4>
+  <p>No, we keep operating independently. The strategy to keep the two companies operating independently was critical for us. While we are excited about GoDaddy CEO Blake Irving’s vision to build bridges between GoDaddy and the Web developer community, the commitment to maintain (mt)’s independent operations is what sealed the deal for us.</p>
+
+  <h4 id="how-does-this-affect-me-as-an-mt-customer">How does this affect me, as an (mt) customer?</h4>
+  <p>It doesn’t. (mt) and GoDaddy continue to operate independently, so it’s ‘business as usual.’ We’ll keep doing what we do best: serving you and helping you succeed online.</p>
+</blockquote>
+
+<p>Me believing any of these answers is predicated by me “trusting” the author; my web-host. While I have implicitly trusted the intentions of Media Temple over the years I have used their service, I have absolutely no trust for Go Daddy. And the reason is simple: They have shown time and again to have no integrity.</p>
+
+<p>Integrity is a key element in your relationship with your web-host, as you are giving them a lot of trust in the execution and support of your personal and business ventures. Sebastiaan de With has summarized perfectly how GoDaddy has shown they don’t have the type of integrity I’m interested in my host having:</p>
+
+<div>
+	<blockquote class="twitter-tweet"><p>“<a href="https://twitter.com/Scobleizer">@Scobleizer</a>: <a href="https://twitter.com/sdw">@sdw</a> <a href="https://twitter.com/mediatemple">@mediatemple</a> why switch? What are you looking for that you don&#39;t currently have?”&#10;&#10;Integrity. <a href="http://t.co/DEL6nu9rK8">pic.twitter.com/DEL6nu9rK8</a></p>&mdash; Sebastiaan de With (@sdw) <a href="https://twitter.com/sdw/statuses/390172367856496640">October 15, 2013</a></blockquote>
+	<script async="" src="http://panke.me//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>And so, with that, I must choose to vote with the only voice I have: my business. Which means I’m looking at the alternative hosts for the first time in many years. I currently run “unmanaged” VPS-style hosting via a DV-Developer at Media Temple, so my interests are specifically in finding a competitive and well-respected alternative in that space. If you are a Grid-Service or DV-Managed user; this list may not be useful for you.</p>
+
+<p>For my analysis, I’m explicitly targeting the “$50/month” price point in unmanaged servers (tier 2 at MT). Let’s enumerate what I get at Media Temple for that price:</p>
+
+<ul>
+  <li>16 cores; un-documented “fast-enough” CPU speeds.</li>
+  <li>2 GB of memory.</li>
+  <li>40 GB of RAID-10 storage.</li>
+  <li>650 GB bandwidth.</li>
+  <li>Root + SSH access.</li>
+  <li>Old but current-enough OpenVZ kernel capable of running Ubuntu 13.04.</li>
+  <li>Parallels power panel</li>
+  <li>Good top-level tools for re-provisioning, restoring in emergencies, upgrading on-the-spot, and managing DNS.</li>
+  <li>Basic real-time server statistics</li>
+  <li>Good tech support</li>
+  <li>No built-in backups.</li>
+</ul>
+
+<p>Now, let’s look at some competition (in no particular order)!</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align: left">Host</th>
+      <th style="text-align: center">Price</th>
+      <th style="text-align: center">CPU</th>
+      <th style="text-align: center">Memory</th>
+      <th style="text-align: center">Disk</th>
+      <th style="text-align: center">Bandwidth</th>
+      <th style="text-align: left">Other Details</th>
+      <th style="text-align: left">Thoughts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="http://www.atum.com/vps-hosting/unmanaged-vps/">ATUM</a></td>
+      <td style="text-align: center">$49 (Bronze)</td>
+      <td style="text-align: center">1@2.9Ghz</td>
+      <td style="text-align: center">1GB</td>
+      <td style="text-align: center">50GB</td>
+      <td style="text-align: center">2TB</td>
+      <td style="text-align: left">10K RPM Drives,Raid 5.</td>
+      <td style="text-align: left">Not a fan of the single core, and their docs on their VM tech and kernel level is absent. Have to contact for OS details.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.linode.com">Linode</a></td>
+      <td style="text-align: center">$40 (2GB)</td>
+      <td style="text-align: center">8@2x priority</td>
+      <td style="text-align: center">2GB</td>
+      <td style="text-align: center">96GB</td>
+      <td style="text-align: center">4TB</td>
+      <td style="text-align: left">Xen,HA,Data Center Choices,<a href="https://www.linode.com/linodes/">Image Config Tools</a></td>
+      <td style="text-align: left">Linode looks very powerful, and I like their backup pricing and very configurable tools. Xen hypervisor is very nice. 8 cores is good.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.digitalocean.com/pricing">Digital Ocean</a></td>
+      <td style="text-align: center">$40 (Tier 4)</td>
+      <td style="text-align: center">2@2-3Ghz</td>
+      <td style="text-align: center">4GB</td>
+      <td style="text-align: center">60GB</td>
+      <td style="text-align: center">4TB</td>
+      <td style="text-align: left">SSD,KVM,2-factor,custom admin,multiple data centers</td>
+      <td style="text-align: left">Only complaint on specs is cores. Price is good. Popular with the “hip” crowd. Custom admin looks nice. No documentation on kernel/OS options on site without registering. Competitive snapshots and backups for pricing. <a href="https://www.digitalocean.com/community">Awesome community docs</a>.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://rimuhosting.com/">RimuHosting</a></td>
+      <td style="text-align: center">$50 (slider configurable)</td>
+      <td style="text-align: center">2@?</td>
+      <td style="text-align: center">2.5GB</td>
+      <td style="text-align: center">48GB</td>
+      <td style="text-align: center">100GB</td>
+      <td style="text-align: left">Xen,Market pricing,slider config,multi data center,dated 12.04 Ubuntu only.</td>
+      <td style="text-align: left">I tried RimuHosting previously. It’s a good company and they have decent tools, but their core count is low, and their pricing isn’t super competitive. Also, their Ubuntu options are old.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.rackspace.com/cloud/servers/">Rackspace</a></td>
+      <td style="text-align: center">$43.80 (Tier 2)</td>
+      <td style="text-align: center">1 “vCPU”</td>
+      <td style="text-align: center">1GB</td>
+      <td style="text-align: center">40GB</td>
+      <td style="text-align: center">.12c/GB</td>
+      <td style="text-align: left">…</td>
+      <td style="text-align: left">I’m not particularly a fan of the EC2-ish-ness of the RackSpace offering for my personal hosting. It’s an OpenStack platform, so it’s in many ways just like EC2. Probably good for horizontal scaling, but not really right for me.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.rocketvps.com/features.html">RocketVPS</a></td>
+      <td style="text-align: center">$44.99 (RS 4)</td>
+      <td style="text-align: center">6@2Ghz</td>
+      <td style="text-align: center">2GB</td>
+      <td style="text-align: center">75GB</td>
+      <td style="text-align: center">3.5TB</td>
+      <td style="text-align: left">OpenVZ,SolusVM admin,Raid 10,<a href="http://www.rocketvps.com/features.html">full server specs</a></td>
+      <td style="text-align: left">The pricing is competitive on RocketVPS, and I like full specs. Not a huge fan of OpenVZ, and SolusVM admin looks “just ok”. Appears to be 6 quite fast cores.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.burst.net/linvps.php">BurstNet</a></td>
+      <td style="text-align: center">$49.95 (VPS 6)</td>
+      <td style="text-align: center">1@4Ghz</td>
+      <td style="text-align: center">4GB</td>
+      <td style="text-align: center">250GB</td>
+      <td style="text-align: center">4TB</td>
+      <td style="text-align: left">RAID,1 IP,OpenVZ,vePortal,6 data centers</td>
+      <td style="text-align: left">A very highly rated host, but also very enterprise scale which may make impersonal. They are very competitive on price and scale. Only complaint is CPU, and that may just be bad docs. OS choices are pretty geriatric, unfortunately.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://asmallorange.com/hosting/cloud/">A Small Orange</a></td>
+      <td style="text-align: center">$50 (Tier 4)</td>
+      <td style="text-align: center">2@2.5Ghz</td>
+      <td style="text-align: center">2GB</td>
+      <td style="text-align: center">40GB</td>
+      <td style="text-align: center">1TB</td>
+      <td style="text-align: left">cPanel,Free Backups,KVM,Ubuntu 12.04 max,SSD,2 Dedicated IP</td>
+      <td style="text-align: left">Interesting mom-and-pop style. The extra IP address is nice, as is free backups, and SSD. 2 cores is a little light, and bandwidth and disk are a little lower than some others.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Here are options I explicitly excluded for one reason or another:</p>
+
+<ul>
+  <li>EC2 and GCE - Biggest issue here is the commodity disks and the weird ephemeral IP nonsense. I’ve done a lot of hosting with EC2 through my previous life, and have no interest in bringing that into my personal world.</li>
+  <li>Heroku - I’m actually a big fan of Heroku, but only if I had a desire to scale out, which I don’t. I’d rather have one efficient-as-possible VPS, as opposed to the Heroku sandbox. I also need root access.</li>
+  <li>HostGator - Hello 1998. No thank you.</li>
+  <li>SoftLayer - SoftLayer has a lot of good enterprise-level hosting offerings (and their dedicated is way cheaper than cloud in many cases), but it’s just not priced well for where I’m coming in. Feels targeted to bigger fish than I.</li>
+  <li>DreamHost - I had nothing but bad experiences with the snarky, always ironic DreamHost “support”. I have no interest to go back and feel like I’m in a hipster coffee shop all day.</li>
+</ul>
+
+<h3 id="summary">Summary</h3>
+
+<p>Right now I’m exploring hosts in this option:</p>
+
+<ol>
+  <li>Digital Ocean - This looks really compelling at the moment. Pricing is great; tools look great, and they have a good reputation right now.</li>
+  <li>Linode - Some folks simply swear by Linode, and I like some of their features such as HA proxy options. Pricing is good.</li>
+  <li>A Small Orange - These folks have a lot of street cred, and while their pricing isn’t totally competitive everywhere, their deployment looks pretty sharp all told.</li>
+</ol>
+
+<p>So did I miss anybody you’d suggest?</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>DV Developer Acquired</title>
+  <link>http://panke.me/journal/2013/10/01/dv-developer-install.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2013-10-01T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2013/10/01/dv-developer-install.html</guid>
+  <description><![CDATA[
+     <p>As I discussed earlier this year, , improving their underlying virtualization software, getting a more recent kernel, and otherwise polishing up the various bits. After slogging through the last couple months of my second child being born, I finally got my head above water and pulled the trigger on migrating to a new installation. I was on an old (ve), so I chose to go to a <a href="http://mediatemple.net/webhosting/vps/developer/">DV Developer</a>, Level 2.</p>
+
+<p>Since both the (ve) and the DV Developer are a raw, bare-bones Linux installation, there isn’t a ton to report in terms of pretty oohs and ahhs, and the provisioning and migration occurred entirely without incident (as it should be), so I can’t prattle on about that arduous process, since it was pretty much a single button press followed by “ssh #######” 5 minutes later.</p>
+
+<p>Nevertheless, I can show a few interesting tidbits for those that are interested.</p>
+
+<h2 id="as-advertised-boxi-ness">As Advertised Boxi-ness</h2>
+
+<p>The Level 2 is “2GB Memory, 40GB Storage, and 650GB Bandwidth”. One thing I’ve always appreciated about Media Temple is the number of cores they allow you to run on for your slice of the computing pie:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/misc/dv_stats.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>Other VPS offerings in the world seem to generally offer more like 2 or 4 cores, as opposed to the 16 made available on Media Temple. Even if the aggregate compute power available through MT is no better than other hosts, I prefer it being split across cores like this when hosting concurrent web apps.</p>
+
+<p>You can also see that I do in fact have 2GB of memory at my fingertips; no trickery there. I should also note that the disks are SAS, and the ethernet is gigabit - so you have very few bottlenecks baked in (as you might with something like EC2).</p>
+
+<h2 id="newer-kernel-newer-virtualization-platform">Newer Kernel; Newer Virtualization Platform</h2>
+
+<p>I lamented rather furiously about the state of the kernel on my (ve) - it was a rather ancient <code>2.6.18</code> build for OpenVZ from Parallels. Their new platform is a more recent, but not what I’d consider super modern <code>2.6.32</code>. It’s certainly new-enough for most needs. The new virtualization platform is also supposed to be more readily upgradable on their part, so hopefully it won’t fall behind quite so badly.</p>
+
+<p>Concretely speaking, I’m currently able to run Ubuntu Server 13.04 without issue, which is a significant step forward from the 10.04 dead-end I previously encountered.</p>
+
+<p>Media Temple also promises significant performance increases for the same resource utilization:</p>
+
+<blockquote>
+  <p>DV Developer, formerly known as (ve), streamlines the DV platform for speed, performance and efficiency. Packed with the same upgrades as DV Managed – 25% increase in LAMP performance, 10X increases in backups and maintenance, and industry leading software packages including Ubuntu, CentOS, Fedora, and Debian – DV Developer also provides rebootless updates - upgrade kernel and reboot without downtime, improved stats using vSwap, and unlimited scalability by removing the previous 20 service limit per account. DV Developer customers will also benefit from the new (mt) Media Temple 20/20 Uptime Guarantee. Pricing for DV Developer, including all upgrades, remains the same starting at $30 per month with no commitments required.</p>
+</blockquote>
+
+<h2 id="consoles-admins-apis-etc">Consoles, Admins, APIs, Etc.</h2>
+
+<p>None of this is particularly new (in fact, it’s effectively identical to the (ve)), but there are a number of good administrative features available:</p>
+
+<h3 id="admin-and-stats-panel">Admin and Stats Panel</h3>
+
+<p>MediaTemple has an a bevy of administration GUIs, and also has a stats panel that shows sliding history of box performance:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/misc/dv_admin_gui.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<h3 id="power-panel">Power Panel</h3>
+
+<p>You also get a Plesk Parallels Power Panel (Pay Phat Pive Pimes Past), which allows you to perform a number of tasks from a GUI console instead of SSH-ing in:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/misc/dv_power_panel.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<h3 id="apis">APIs</h3>
+
+<p>If you have need to automate your backends, you can with the <a href="http://mediatemple.net/api/">Media Temple ProDev API</a>. This allows you to do many of the things you’d expect:</p>
+
+<ul>
+  <li>Add services (instances)</li>
+  <li>Get current service information</li>
+  <li>Reboot services</li>
+  <li>Get service statistics, warnings, thresholds</li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>Overall I’m quite happy with the new DV Developer. It’s a much needed upgrade, and it has allowed me to modernize my stack across the board without having to work around any particular issues. While performance seems quite good, I had never really felt any reason to complain there, so I can’t speak about the marketed improvements; yet it wouldn’t surprise me given the advancements made (even just in kernels alone).</p>
+
+  ]]></description>
+</item>
+
+</channel>
+</rss>

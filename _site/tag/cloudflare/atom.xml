@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+   	<title>panke.me - Tag: cloudflare</title>
+   
+   <link>http://panke.me</link>
+   <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
+   <language>en-us</language>
+   <managingEditor>panke</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+  <title>3 Weeks with CloudFlare</title>
+  <link>http://panke.me/journal/2011/08/29/3-weeks-with-cloudflare.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2011-08-29T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2011/08/29/3-weeks-with-cloudflare.html</guid>
+  <description><![CDATA[
+     
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/cloudflare/cloudflare.png" />
+	
+</div>
+
+<p>A few weeks ago I posted that I . I received a good bit of feedback on the post, so I thought it would be good to do a follow-up that covers the things I’ve learned and my overall impression since I first enabled this service.</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/cloudflare/views.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>The first thing I will note is that I have had no technical issues with the service as of yet. It has run flawlessly since I turned it on and started tinkering. As you can see from the above graph, a steady flow of traffic has been sent through their system for my site, and I’ve had no complaints or known issues over the past several days. So far so good on that front.</p>
+
+<p>I received some skepticism about the performance of CloudFlare from folks on Twitter, and although I admittedly didn’t share any particular specs regarding the performance, it was clear from the seat of my pants that everything was faster. I decided to go ahead and do some analysis with a dumped cache, Firebug, and some hosts file editing so I could bypass CloudFlare.</p>
+
+<p>Here is a snippet of the network downloads of my site running directly against my WordPress install:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/cloudflare/my_server_timeline.png" />
+	
+		<div class="well well-small">From my Server</div>
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>Here is a similar snapshot as pulled from CloudFlare:</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/cloudflare/cloudflare_timeline.png" />
+	
+		<div class="well well-small">From CloudFlare</div>
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>As you can see - the latency from the CloudFlare servers is perceptibly better. Also note that while there is a built-in “wait” against my site (the purple section), there is effectively no wait from CloudFlare. Feel free to try this yourself against www.realjenius.com using the IP addresses above, if you’d like.</p>
+
+<p>Now, to be completely fair, this isn’t entirely apples to apples. One of the CloudFlare features I didn’t tout when I did the initial write-up that I have since enabled is the automatic minification of resources. CloudFlare can automatically minify Javascript, CSS, and HTML in your site markup, and cache the result. This is even part of the free service. While I use some minified resources already, my basic site markup is not compressed (nor is the generated HTML markup for my posts), so there is definitely some benefit to be gained here.</p>
+
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/cloudflare/minify.png" />
+	
+</div>
+
+<p>When connected to my server directly, without a cache, the initial download was <strong>417.4 KB</strong>. When connected through CloudFlare, the initial download was <strong>293.4 KB</strong>. That’s a pretty significant difference.</p>
+
+<p>One other interesting metric: over the past month CloudFlare has delivered hundreds of MB of cached resources on my behalf; effectively free bandwidth for me. Here is a bandwidth graph for my server over the past three months from within the MediaTemple monitoring tools - as you can see, there is a clear reduction (and stabilization) of the bandwidth consumption once August hits.</p>
+
+<div class="imgblock">
+<div class="noalignouter">
+	<div class="noaligninner">
+
+<div class="img thumbnail alignnone">
+	<img src="http://panke.me/images/articles/cloudflare/bandwidth.png" />
+	
+</div>
+
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<p>Overall, after the better part of a month, my opinion of CloudFlare is still a very favorable one. I haven’t made the jump to paid service as of yet, but am considering it much more strongly as the days progress.</p>
+
+  ]]></description>
+</item>
+
+	<item>
+  <title>CloudFlare and Media Temple: Free Goodies</title>
+  <link>http://panke.me/journal/2011/08/09/cloudflare-and-mediatemple.html</link>
+  <author>R.J. Lorimer</author>
+  <pubDate>2011-08-09T00:00:00+08:00</pubDate>
+  <guid>http://panke.me/journal/2011/08/09/cloudflare-and-mediatemple.html</guid>
+  <description><![CDATA[
+     
+<div class="img thumbnail pull-right">
+	<img src="http://panke.me/images/articles/cloudflare/cloudflare.png" />
+	
+</div>
+
+<p>Today, <a href="http://www.mediatemple.net">Media Temple</a> <a href="http://weblog.mediatemple.net/2011/08/08/supercharge-your-mt-website-with-cloudflare/">announced a partnership with CloudFlare</a>, a content delivery network and security layer for websites. This is an interesting partnership for a number of reasons:</p>
+
+<ul>
+  <li>CloudFlare performs content caching and delivery. This means that static content will be distributed regionally, and from (ideally) faster and more redundant hardware than your own. CDN distribution is almost always a good thing.</li>
+  <li>Additionally, CloudFlare shields your system from many malicious attacks, and also monitors for malicious activity (think botnets, spam, email scraping, etc).</li>
+  <li>The CloudFlare integration is, generally speaking, completely transparent. This is possible because CloudFlare is actually a site proxy. Unlike many CDN platforms, where you must route static content to some staticcdn.url.somewhere, CloudFlare is the top-level destination for your DNS, and then internally routes traffic from their system to yours, anywhere it need be dynamic.</li>
+  <li>For your first personal site, CloudFlare is free!</li>
+</ul>
+
+<p>As of early yesterday morning (just after it was announced), RealJenius.com has been running on CloudFlare. Over time, most of the traffic has migrated; since it relies entirely on DNS propagation, it takes a little time. I experienced a blip with my local router’s DNS cache that temporarily made my site in-accessible, but that had nothing to do with the process, and aside from that it has “just worked”. It took me no more time than it takes to brew a single Keurig cup of coffee.</p>
+
+<p>This site runs on a Media Temple (ve) with Nginx, and I had to perform no manual intervention. I clicked through the wizard to set up my site, and despite hosting several sites on my VPS, Media Temple suggested options, and choosing the correct domain re-wired the correct ANames, and everything has seemed to run along perfectly fine.</p>
+
+<div class="img thumbnail pull-left">
+	<img src="http://panke.me/images/articles/cloudflare/it-starts.png" />
+	
+		<div class="well well-small">The Traffic Starts!</div>
+	
+</div>
+
+<p>Since then, I’ve logged in to CloudFlare, and I’m just starting to see pretty graphs of traffic. The lines indicate different information:</p>
+
+<ul>
+  <li>Green indicates valid requests.</li>
+  <li>Purple indicates requests from addresses flagged as spam generators.</li>
+  <li>Red indicates threat traffic: bots and other malicious requests looking for vulnerabilities.</li>
+</ul>
+
+<p>CloudFlare also shows bandwidth and traffic savings, and as it stands now, nearly 40% of the traffic to my site has been reduced thanks to the service, and multiple MB of bandwidth. This is prior to full DNS propagation, so I only expect it to increase. Other stats are available about how often search engines have scanned your site, unique visitor counts, and a bevy of information about visitor locality. A lot of the information provides a good corollary to Google Analytics (another service that is surprisingly free).</p>
+
+<p>Up to this point, my description of the service has probably made you think “what’s the catch?” - admittedly, I wondered the same thing when I took the blue pill. In reality, there isn’t one, other than hooking you with free candy. CloudFlare is a tiered service. The free version, which is what is offered out of the gates to Media Temple hosted folks, is free even directly through their site; Media Temple has just seamlessly integrated the services so it’s easier to enable (which it definitely is). They also have a Pro and Enterprise tier - from which there are a number of benefits:</p>
+
+<ul>
+  <li>More control over threat level management - The free version runs with a default threat level, of which you have limited control.</li>
+  <li>Real-time traffic statistics - The reason I’m just now seeing traffic stats for my site is simply that they are delayed 24 hours on the free version.</li>
+  <li>Better caching - The pro mode promises “faster subsequent page loads” via the use of prioritized/optimized caching (most important resources) and a smart pre-fetching system.</li>
+  <li>Other features can be found on their <a href="https://www.cloudflare.com/plans.html">Pricing &amp; Features</a> page.</li>
+</ul>
+
+<p>CloudFlare’s pro plan is currently $20 a month for the first site, and $5 a month for each additional site. Overall, two thumbs up from me regarding ease-of-installation, price, and (at least so far) performance. I’ll probably report back when I’ve had more time under this new umbrella.</p>
+
+  ]]></description>
+</item>
+
+</channel>
+</rss>
