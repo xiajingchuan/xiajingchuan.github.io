@@ -1,0 +1,63 @@
+{% include header.html %}
+<div class="container main">
+<div class="row">
+    <div class="col-lg-12" id="content">
+
+<article class="page">
+	<div class="page-header">
+		<h2 class="entry-title"><a href="{{page.url}}">{{page.title}}</a>
+			
+		</h2>
+        <small>
+                <span class="entry-date">{{page.date  | date: "%Y-%m-%d"}}</span>
+        </small>
+	</div>
+
+	<div class="article-body">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="article-body">
+					{{ content }}
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-5 col-offset-7">
+				{% assign item = page %}
+				<div class="post-details">
+                分类:
+                    {% if item.categories %}
+                        {% for cat in item.categories %}
+                            <a href="/category/{{cat}}"><span class="label label-info">{{cat}}</span></a>
+                        {% endfor %}
+                    {% else %}
+                        None
+                    {% endif %}
+                |
+                标签:
+                    {% if item.tags %}
+                        {% for tag in item.tags %}
+                            <a href="/tag/{{tag}}"><span class="label">{{tag}}</span></a>
+                        {% endfor %}
+                    {% else %}
+                        None
+                    {% endif %}
+                
+                </div>
+
+                {% assign item = nil %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				
+				{% include comment.html %}
+			</div>
+		</div>
+	</div>
+</article>
+
+  </div>
+</div>
+</div>
+{% include footer.html %}
