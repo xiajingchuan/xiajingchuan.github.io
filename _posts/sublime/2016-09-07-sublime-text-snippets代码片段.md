@@ -113,7 +113,7 @@ YAML: source.yaml
 
 还有一个标签在上面的示例中没有显示出来，那就是`<description>`标签，这个是对`snippet`的描述，显示的位置如下：
 
-![snippet](/images/article/sublime/snippet.png)
+![snippet](/images/articles/sublime/snippet.png)
 
 如果没有设置`<description>`标签，则该位置会显示该`snippet`保存时的文件名。
 
