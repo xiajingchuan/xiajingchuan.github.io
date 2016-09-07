@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title>panke.me - sublime text插件管理器Package Control</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="panke.me - come on, just do IT" />
+        <meta name="author" content="panke" />
+        <meta charset="UTF-8" />
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+        <!--<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto+Slab' rel='stylesheet' type='text/css'>-->
+        <!--<link href='http://fonts.useso.com/css?family=Source+Code+Pro|Roboto+Slab' rel='stylesheet' type='text/css'>-->
+        <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+        <link href="/stylesheets/syntax-dark.css" rel="stylesheet" />
+        <link href="/stylesheets/main.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="navrow navbar-fixed-top">
+            <div class="container">
+                <div class="navbar navbar-inverse ">
+                    <a class="navbar-brand" href="/">
+                        <span class="title_letter">P</span>an<span class="title_letter">k</span>e.me
+                    </a>
+
+                    <ul class="nav navbar-nav ">
+
+                        <li>
+                            <a role="menuitem" tabindex="-1" href="/cats_and_tags.html">分类·标签</a>
+                        </li>
+                        <li class="visible-lg">
+                            <a role="menuitem" tabindex="-1" href="/category/sublime/">Sublime text</a>
+                        </li>
+                        
+                        <li class="" ><a href="/about.html">关于</a></li>
+                        
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+<div class="container main">
+<div class="row">
+    <div class="col-lg-12" id="content">
+
+<article class="page">
+	<div class="page-header">
+		<h2 class="entry-title"><a href="/sublime/2016/08/23/sublime-text-%E6%8F%92%E4%BB%B6.html">sublime text插件管理器Package Control</a>
+			
+		</h2>
+        <small>
+                <span class="entry-date">2016-08-23</span>
+        </small>
+	</div>
+
+	<div class="article-body">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="article-body">
+					<p>今天说下sublime text编辑器的插件。
+插件是sublime text的一个很好的特性，跟大多数编辑器一样，可以对编辑器进行很好的扩展。
+下面说下如何安装插件：</p>
+
+<p>首先要想安装插件，就必须先安装package control包管理器。</p>
+
+<p>复制以下代码：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+</code></pre>
+</div>
+
+<p>上面是sublime text3的，sublime text2的可以访问这个链接获取<a href="https://packagecontrol.io/installation#st2">https://packagecontrol.io/installation#st2</a></p>
+
+<p>复制好后在sublime text的菜单栏点击 <code class="highlighter-rouge">View &gt; Show Console</code> ,将内容粘贴到下面的输入框中然后回车，安装好后会在菜单<code class="highlighter-rouge">Preferences</code>下看到<code class="highlighter-rouge">Package Control</code>的选项。如果没有请重启下编辑器。</p>
+
+<p>现在<code class="highlighter-rouge">Package Control</code>已经安装好了，下面说下如何使用<code class="highlighter-rouge">Package Control</code>安装插件:</p>
+
+<ul>
+  <li>点击菜单 <code class="highlighter-rouge">Preferences &gt; Package Control</code> 选择<code class="highlighter-rouge">Install Packages</code>然后回车，等待几秒后会列出一个插件的列表，你可以选择一个或者输入插件名称然后回车安装</li>
+  <li>或者按<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">Shift</code> + <code class="highlighter-rouge">P</code> 打开命令面板，输入<code class="highlighter-rouge">Package Control:Install Packages</code>回车，输入插件名称回车。</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-5 col-offset-7">
+				
+				<div class="post-details">
+                分类:
+                    
+                        
+                            <a href="/category/sublime"><span class="label label-info">sublime</span></a>
+                        
+                    
+                |
+                标签:
+                    
+                        
+                            <a href="/tag/sublime"><span class="label">sublime</span></a>
+                        
+                    
+                
+                </div>
+
+                
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				
+				<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="/sublime/2016/08/23/sublime-text-插件" data-title="sublime text插件管理器Package Control" data-url="http://panke.me/sublime/2016/08/23/sublime-text-%E6%8F%92%E4%BB%B6.html"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"panke"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+           || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+			</div>
+		</div>
+	</div>
+</article>
+
+  </div>
+</div>
+</div>
+        <footer class="rjfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-offset-3">
+                        <p>&copy 2016-2017 - panke.me | Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> &amp; <a href="http://github.com" target="_blank">GitHub</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--百度统计-->
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?636e4d44e75130851c01bc55c06a9905";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+        <!--百度统计-->
+    </body>
+</html>
+
