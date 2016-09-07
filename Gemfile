@@ -1,7 +1,7 @@
 source 'https://ruby.taobao.org/'
 
 gem 'jekyll'
-gem 'github-pages', group: :jekyll_plugins
+#gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-paginate'
 # gem 'redcarpet', '~> 3.2.3'
 #gem 'jekyll-watch', '~> 1.2.1'
